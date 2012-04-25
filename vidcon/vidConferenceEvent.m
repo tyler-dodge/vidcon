@@ -34,4 +34,14 @@
             (selfStartComparedToStart == NSOrderedDescending && //check if self's start is between start and end
              selfEndComparedToStart == NSOrderedAscending);
 }
+-(vidConferenceEvent *)initWithName:(NSString *)name startingAt:(NSDate *)start endingAt:(NSDate *)end
+{
+    self = [self init];
+    if (self) {
+        self.name = name;
+        self.start = start;
+        self.end = end;
+    }
+    return self;
+}
 @end

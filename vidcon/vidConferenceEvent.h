@@ -19,4 +19,7 @@
 
 -(BOOL)isInRangeStartingAt:(NSDate *)start
                   EndingAt:(NSDate *)end;
+-(vidConferenceEvent *)initWithName:(NSString *)name
+                         startingAt:(NSDate *)start
+                           endingAt:(NSDate *)end;
 @end

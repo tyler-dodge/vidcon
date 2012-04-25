@@ -37,7 +37,7 @@
                                                 sinceDate:self.minimum];
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
         [dateFormat setDateFormat:@"h:mm a"];
-        NSString *dateString = [dateFormat stringFromDate:labelDate];
+        NSString *dateString = [@" " stringByAppendingString:[dateFormat stringFromDate:labelDate]];
         label.text =  dateString;
         if (labelPosition < 0) {
             label.frame = CGRectMake(0, 0,
@@ -62,8 +62,10 @@ WithWidthPerInterval:(float)widthPerInterval
     self.intervalSize = timeInterval;
     self.widthPerInterval = widthPerInterval;
     self.minimum = minimum;
-    for (int i = 0; i < self.frame.size.width / widthPerInterval; i++) {
-        UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,50,20)];
+    for (int i = 0; i < self.frame.size.width / widthPerInterval + 1; i++) {
+        UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(0,0,self.widthPerInterval,self.frame.size.height)];
+        label.layer.borderColor = [[UIColor blackColor] CGColor];
+        label.layer.borderWidth = 1;
         [self.labels addObject:label];
         [self addSubview:label];
     }

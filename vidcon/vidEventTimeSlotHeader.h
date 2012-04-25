@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "vidConferenceEventCell.h"
+#import <QuartzCore/QuartzCore.h>
+
 @interface vidEventTimeSlotHeader : UIView
 -(void)initWithInterval:(NSTimeInterval)timeInterval
                        WithWidthPerInterval:(float)widthPerInterval

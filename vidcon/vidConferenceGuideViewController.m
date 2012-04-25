@@ -52,8 +52,22 @@
 {
     _eventScrollView = eventScrollView;
     _eventScrollView.delegate = self;
-    [self.eventScrollView addSubview:[[vidConferenceEventCell alloc] initStartingAt:[NSDate dateWithTimeIntervalSinceNow:0] EndingAt:[NSDate dateWithTimeIntervalSinceNow:60*30] minimumDate:[NSDate dateWithTimeIntervalSinceNow:0]]];
-    [self.eventScrollView addSubview:[[vidConferenceEventCell alloc] initStartingAt:[NSDate dateWithTimeIntervalSinceNow:60*45] EndingAt:[NSDate dateWithTimeIntervalSinceNow:60*120] minimumDate:[NSDate dateWithTimeIntervalSinceNow:0]]];
+    [self.eventScrollView addSubview:[[vidConferenceEventCell alloc] initWithEvent:
+                                      [[vidConferenceEvent alloc] initWithName:@"test"
+                                                                    startingAt:[NSDate dateWithTimeIntervalSinceNow:0]
+                                                                      endingAt:[NSDate dateWithTimeIntervalSinceNow:60*30]]
+                                                                       minimumDate:[NSDate dateWithTimeIntervalSinceNow:0]]];
+    [self.eventScrollView addSubview:[[vidConferenceEventCell alloc] initWithEvent:
+                                      [[vidConferenceEvent alloc] initWithName:@"second event"
+                                                                    startingAt:[NSDate dateWithTimeIntervalSinceNow:60*45]
+                                                                      endingAt:[NSDate dateWithTimeIntervalSinceNow:60*120]]
+                                                                       minimumDate:[NSDate dateWithTimeIntervalSinceNow:0]]];
+    [self.eventScrollView addSubview:[[vidConferenceEventCell alloc] initWithEvent:
+                                      [[vidConferenceEvent alloc] initWithName:@"second event"
+                                                                    startingAt:[NSDate dateWithTimeIntervalSinceNow:60*530]
+                                                                      endingAt:[NSDate dateWithTimeIntervalSinceNow:60*500]]
+                                                                       minimumDate:[NSDate dateWithTimeIntervalSinceNow:0]]];
+      
     float fullWidth = 0;
     for(UIView * view in self.eventScrollView.subviews) {
         float newWidth = view.frame.origin.x + view.frame.size.width;

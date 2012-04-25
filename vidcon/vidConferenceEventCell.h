@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import "vidConferenceEvent.h"
 #define WIDTH_PER_MINUTE 5
 #define SECONDS_IN_MINUTE 60
-#define EVENT_HEIGHT 30
+#define EVENT_HEIGHT 70
 
-@interface vidConferenceEventCell : UILabel
+@interface vidConferenceEventCell : UIView
 
-@property (strong, nonatomic) NSDate * start;
-@property (strong, nonatomic) NSDate * end;
--(vidConferenceEventCell *)initStartingAt:(NSDate *)start
-                                 EndingAt:(NSDate *)end
+@property (strong, nonatomic) vidConferenceEvent * event;
+-(vidConferenceEventCell *)initWithEvent:(vidConferenceEvent *)event
                               minimumDate:(NSDate *)minimum;
 @end

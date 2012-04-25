@@ -8,38 +8,57 @@
 
 #import "vidConferenceEventCell.h"
 @interface vidConferenceEventCell ()
+@property (strong, nonatomic) UILabel * timeRangeLabel;
+@property (strong, nonatomic) UILabel * nameLabel;
 @property (strong, nonatomic) NSDate * minimum;
 -(void)onUpdateStartOrEnd;
 @end
 @implementation vidConferenceEventCell
-@synthesize start = _start;
-@synthesize end = _end;
+@synthesize event = _event;
 @synthesize minimum = _minimum;
--(void)setStart:(NSDate *)start
+
+-(void)setEvent:(vidConferenceEvent *)event
 {
-    _start = start;
-    [self onUpdateStartOrEnd];
-}
--(void)setEnd:(NSDate *)end
-{
-    _end = end;
+    _event = event;
     [self onUpdateStartOrEnd];
 }
 -(void)onUpdateStartOrEnd
 {
-    float newLeft = [self.start timeIntervalSinceDate:self.minimum] / SECONDS_IN_MINUTE * WIDTH_PER_MINUTE;
-    float newWidth = [self.end timeIntervalSinceDate:self.start] / SECONDS_IN_MINUTE * WIDTH_PER_MINUTE;
+    float newLeft = [self.event.start timeIntervalSinceDate:self.minimum] / SECONDS_IN_MINUTE * WIDTH_PER_MINUTE;
+    float newWidth = [self.event.end timeIntervalSinceDate:self.event.start] / SECONDS_IN_MINUTE * WIDTH_PER_MINUTE;
     self.frame = CGRectMake(newLeft, 0, newWidth, EVENT_HEIGHT);
-    self.text = [self.start description];
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"h:mm a"];
+    self.timeRangeLabel.frame = CGRectMake(0, 0, self.frame.size.width, 20);
+    self.timeRangeLabel.layer.borderColor = [[UIColor blackColor] CGColor];
+    self.timeRangeLabel.layer.borderWidth = 1;
+    self.nameLabel.frame = CGRectMake(0, 20, self.frame.size.width, self.frame.size.height-20);
+    self.nameLabel.backgroundColor = [UIColor grayColor];
+    self.nameLabel.text = [@" " stringByAppendingString:self.event.name];
+    if (self.event.start != nil && self.event.end != nil) {
+        
+        self.timeRangeLabel.text = [NSString stringWithFormat:@" %@ - %@",
+                                    [dateFormat stringFromDate:self.event.start],
+                                    [dateFormat stringFromDate:self.event.end]];
+    }
     
 }
--(vidConferenceEventCell *)initStartingAt:(NSDate *)start EndingAt:(NSDate *)end minimumDate:(NSDate *)minimum
+-(vidConferenceEventCell *)initWithEvent:(vidConferenceEvent *)event minimumDate:(NSDate *)minimum
 {
     self = [self init];
+    self.timeRangeLabel = [[UILabel alloc] init];
+    self.timeRangeLabel.textAlignment = UITextAlignmentRight;
+    self.timeRangeLabel.font = [UIFont systemFontOfSize:10];
+    [self addSubview:self.timeRangeLabel];
+    
+    self.nameLabel = [[UILabel alloc] init];
+    [self addSubview:self.nameLabel];
+    
     self.backgroundColor = [UIColor grayColor];
+    self.layer.borderColor = [[UIColor blackColor] CGColor];
+    self.layer.borderWidth = 1;
     self.minimum = minimum;
-    self.start = start;
-    self.end = end;
+    self.event = event;
     return self;
 }
 @end
