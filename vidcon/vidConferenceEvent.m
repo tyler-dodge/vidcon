@@ -14,6 +14,7 @@
 @synthesize name = _name;
 @synthesize speaker = _speaker;
 @synthesize description = _description;
+@synthesize verticalIndex = _verticalIndex;
 -(BOOL)isInRangeStartingAt:(NSDate *)start EndingAt:(NSDate *)end
 {
     NSComparisonResult selfStartComparedToStart = [self.start compare:start];
@@ -28,11 +29,13 @@
             (selfStartComparedToEnd == NSOrderedAscending && //check if end is within self's range
              selfEndComparedToEnd == NSOrderedDescending) ||
         
-            (selfStartComparedToEnd == NSOrderedDescending && //check if self's end is between start and end
-             selfEndComparedToEnd == NSOrderedAscending) ||
+            (selfStartComparedToStart == NSOrderedDescending && //check if self's end is between start and end
+             selfStartComparedToEnd == NSOrderedAscending) ||
         
-            (selfStartComparedToStart == NSOrderedDescending && //check if self's start is between start and end
-             selfEndComparedToStart == NSOrderedAscending);
+            (selfEndComparedToStart == NSOrderedDescending && //check if self's start is between start and end
+             selfEndComparedToEnd == NSOrderedAscending) ||
+            (selfEndComparedToEnd == NSOrderedSame &&
+             selfStartComparedToStart == NSOrderedSame);
 }
 -(vidConferenceEvent *)initWithName:(NSString *)name startingAt:(NSDate *)start endingAt:(NSDate *)end
 {

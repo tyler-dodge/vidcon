@@ -24,9 +24,9 @@
 }
 -(void)onUpdateStartOrEnd
 {
-    float newLeft = [self.event.start timeIntervalSinceDate:self.minimum] / SECONDS_IN_MINUTE * WIDTH_PER_MINUTE;
-    float newWidth = [self.event.end timeIntervalSinceDate:self.event.start] / SECONDS_IN_MINUTE * WIDTH_PER_MINUTE;
-    self.frame = CGRectMake(newLeft, 0, newWidth, EVENT_HEIGHT);
+    float newLeft = [vidConferenceEventCell widthFromStart:self.minimum toEnd:self.event.start];
+    float newWidth = [vidConferenceEventCell widthFromStart:self.event.start toEnd:self.event.end];
+    self.frame = CGRectMake(newLeft, self.event.verticalIndex * EVENT_HEIGHT, newWidth, EVENT_HEIGHT);
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"h:mm a"];
     self.timeRangeLabel.frame = CGRectMake(0, 0, self.frame.size.width, 20);
@@ -42,6 +42,10 @@
                                     [dateFormat stringFromDate:self.event.end]];
     }
     
+}
++(float)widthFromStart:(NSDate *)start toEnd:(NSDate *)end
+{
+    return [end timeIntervalSinceDate:start] / SECONDS_IN_MINUTE * WIDTH_PER_MINUTE;
 }
 -(vidConferenceEventCell *)initWithEvent:(vidConferenceEvent *)event minimumDate:(NSDate *)minimum
 {

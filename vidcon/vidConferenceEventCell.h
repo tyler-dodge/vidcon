@@ -18,4 +18,6 @@
 @property (strong, nonatomic) vidConferenceEvent * event;
 -(vidConferenceEventCell *)initWithEvent:(vidConferenceEvent *)event
                               minimumDate:(NSDate *)minimum;
++(float)widthFromStart:(NSDate *)start
+                toEnd:(NSDate *)end;
 @end
