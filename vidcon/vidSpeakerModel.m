@@ -38,7 +38,9 @@
 }
 -(id)initWithJson:(NSString *)jsonString
 {
-#warning Not actually implemented yet
+    jsonString = @"{ \"name\": \"Hello!\" }";
+    NSDictionary *resultsDictionary = [jsonString objectFromJSONString];
+    
     self = [self init];
     self.name = @"Bob Dole";
     self.shortDescription = @"a person.";
@@ -61,9 +63,9 @@
 -(vidSpeakerModel *)initWithJsonFile:(NSString *)filePath
 {
     self = [self init];
-    [self.speakers addObject:[[vidSpeaker alloc] initWithJson:@""]];
-    [self.speakers addObject:[[vidSpeaker alloc] initWithJson:@""]];
-    [self.speakers addObject:[[vidSpeaker alloc] initWithJson:@""]];
+    [self.speakers addObject:[[vidSpeaker alloc] initWithJson:@"{ \"name\": \"Jerry\" }"]];
+    //[self.speakers addObject:[[vidSpeaker alloc] initWithJson:@""]];
+    //[self.speakers addObject:[[vidSpeaker alloc] initWithJson:@""]];
     return self;
 }
 -(vidSpeaker *)speakerAtIndexPath:(NSIndexPath *)path
