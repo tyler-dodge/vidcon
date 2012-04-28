@@ -16,7 +16,10 @@
 @property (strong, nonatomic) vidSpeaker * speaker;
 @property (strong, nonatomic) NSString * room;
 @property (strong, nonatomic) NSString * description;
-
+@property (nonatomic) int verticalIndex; //index set by conference guide to prevent overlapping
 -(BOOL)isInRangeStartingAt:(NSDate *)start
                   EndingAt:(NSDate *)end;
+-(vidConferenceEvent *)initWithName:(NSString *)name
+                         startingAt:(NSDate *)start
+                           endingAt:(NSDate *)end;
 @end

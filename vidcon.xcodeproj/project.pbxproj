@@ -23,7 +23,6 @@
 		8F6BA0551523BDFC004C5DF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BA0541523BDFC004C5DF3 /* main.m */; };
 		8F6BA0591523BDFC004C5DF3 /* vidAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BA0581523BDFC004C5DF3 /* vidAppDelegate.m */; };
 		8F6BA05C1523BDFC004C5DF3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F6BA05A1523BDFC004C5DF3 /* MainStoryboard_iPhone.storyboard */; };
-		8F6BA05F1523BDFC004C5DF3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F6BA05D1523BDFC004C5DF3 /* MainStoryboard_iPad.storyboard */; };
 		8F6BA0621523BDFC004C5DF3 /* vidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BA0611523BDFC004C5DF3 /* vidViewController.m */; };
 		8F6BA06A1523BDFC004C5DF3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6BA0691523BDFC004C5DF3 /* SenTestingKit.framework */; };
 		8F6BA06B1523BDFC004C5DF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6BA0481523BDFC004C5DF3 /* UIKit.framework */; };
@@ -71,7 +70,6 @@
 		8F6BA0571523BDFC004C5DF3 /* vidAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vidAppDelegate.h; sourceTree = "<group>"; };
 		8F6BA0581523BDFC004C5DF3 /* vidAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vidAppDelegate.m; sourceTree = "<group>"; };
 		8F6BA05B1523BDFC004C5DF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		8F6BA05E1523BDFC004C5DF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		8F6BA0601523BDFC004C5DF3 /* vidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vidViewController.h; sourceTree = "<group>"; };
 		8F6BA0611523BDFC004C5DF3 /* vidViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vidViewController.m; sourceTree = "<group>"; };
 		8F6BA0681523BDFC004C5DF3 /* vidconTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vidconTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,7 +175,6 @@
 				8F6BA0571523BDFC004C5DF3 /* vidAppDelegate.h */,
 				8F6BA0581523BDFC004C5DF3 /* vidAppDelegate.m */,
 				8F6BA05A1523BDFC004C5DF3 /* MainStoryboard_iPhone.storyboard */,
-				8F6BA05D1523BDFC004C5DF3 /* MainStoryboard_iPad.storyboard */,
 				8F6BA0601523BDFC004C5DF3 /* vidViewController.h */,
 				8F6BA0611523BDFC004C5DF3 /* vidViewController.m */,
 				8FFA8C191538B73000BFD0AF /* vidSpeakerViewController.h */,
@@ -311,7 +308,6 @@
 			files = (
 				8F6BA0531523BDFC004C5DF3 /* InfoPlist.strings in Resources */,
 				8F6BA05C1523BDFC004C5DF3 /* MainStoryboard_iPhone.storyboard in Resources */,
-				8F6BA05F1523BDFC004C5DF3 /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,14 +391,6 @@
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		8F6BA05D1523BDFC004C5DF3 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F6BA05E1523BDFC004C5DF3 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 		8F6BA0721523BDFC004C5DF3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,7 +424,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,7 +444,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -471,8 +459,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vidcon/vidcon-Prefix.pch";
 				INFOPLIST_FILE = "vidcon/vidcon-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -487,8 +476,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vidcon/vidcon-Prefix.pch";
 				INFOPLIST_FILE = "vidcon/vidcon-Info.plist";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
