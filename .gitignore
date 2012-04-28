@@ -2,5 +2,6 @@
 *.xcuserdatad/*
 *.xcuserdatad
 *.xcuserstate
+*.xcbkptlist
 *~
 \#*
