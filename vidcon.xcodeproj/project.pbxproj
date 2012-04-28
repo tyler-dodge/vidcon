@@ -476,6 +476,7 @@
 				GCC_PREFIX_HEADER = "vidcon/vidcon-Prefix.pch";
 				INFOPLIST_FILE = "vidcon/vidcon-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -494,6 +495,7 @@
 				GCC_PREFIX_HEADER = "vidcon/vidcon-Prefix.pch";
 				INFOPLIST_FILE = "vidcon/vidcon-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = 1;
