@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JSONKit/JSONKit.h>
 @interface vidSpeaker : NSObject
 @property (strong, readonly) NSString * name;
 @property (strong, readonly) UIImage * image;
