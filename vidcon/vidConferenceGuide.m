@@ -16,6 +16,8 @@
 @synthesize events = _events;
 @synthesize lastDate = _lastDate;
 @synthesize firstDate = _firstDate;
+@synthesize verticalIndex = _verticalIndex;
+@synthesize maxVerticalIndex = _maxVerticalIndex;
 -(NSDate *)firstDate
 {
     if (!_firstDate) {
