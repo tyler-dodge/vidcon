@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1C6203CE1548A16200EF9150 /* JSONKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6203CD1548A16200EF9150 /* JSONKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		22B0866F154C7100007CF794 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B0866E154C7100007CF794 /* Icon.png */; };
+		22B08672154C7103007CF794 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08671154C7103007CF794 /* Icon@2x.png */; };
+		22B08674154C711A007CF794 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08673154C711A007CF794 /* Icon-72.png */; };
+		22B08676154C711C007CF794 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08675154C711C007CF794 /* Icon-72@2x.png */; };
 		8F371C021523F984008943A2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F371C011523F984008943A2 /* Parse.framework */; };
 		8F371C051523FA28008943A2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F371C041523FA28008943A2 /* AudioToolbox.framework */; };
 		8F371C071523FA32008943A2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F371C061523FA32008943A2 /* CFNetwork.framework */; };
@@ -51,6 +55,10 @@
 
 /* Begin PBXFileReference section */
 		1C6203CD1548A16200EF9150 /* JSONKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSONKit.framework; sourceTree = "<group>"; };
+		22B0866E154C7100007CF794 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		22B08671154C7103007CF794 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		22B08673154C711A007CF794 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		22B08675154C711C007CF794 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		8F371C011523F984008943A2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		8F371C041523FA28008943A2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8F371C061523FA32008943A2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -132,6 +140,10 @@
 		8F6BA0391523BDFC004C5DF3 = {
 			isa = PBXGroup;
 			children = (
+				22B08675154C711C007CF794 /* Icon-72@2x.png */,
+				22B08673154C711A007CF794 /* Icon-72.png */,
+				22B08671154C7103007CF794 /* Icon@2x.png */,
+				22B0866E154C7100007CF794 /* Icon.png */,
 				8F6BA04E1523BDFC004C5DF3 /* vidcon */,
 				8F6BA06F1523BDFC004C5DF3 /* vidconTests */,
 				8F6BA0471523BDFC004C5DF3 /* Frameworks */,
@@ -308,6 +320,10 @@
 			files = (
 				8F6BA0531523BDFC004C5DF3 /* InfoPlist.strings in Resources */,
 				8F6BA05C1523BDFC004C5DF3 /* MainStoryboard_iPhone.storyboard in Resources */,
+				22B0866F154C7100007CF794 /* Icon.png in Resources */,
+				22B08672154C7103007CF794 /* Icon@2x.png in Resources */,
+				22B08674154C711A007CF794 /* Icon-72.png in Resources */,
+				22B08676154C711C007CF794 /* Icon-72@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +475,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vidcon/vidcon-Prefix.pch";
 				INFOPLIST_FILE = "vidcon/vidcon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -476,6 +493,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "vidcon/vidcon-Prefix.pch";
 				INFOPLIST_FILE = "vidcon/vidcon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = 1;
