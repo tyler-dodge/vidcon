@@ -22,7 +22,7 @@
 @synthesize eventCells = _eventCells;
 @synthesize visibleEvents = _visibleEvents;
 @synthesize model = _model;
-
+@synthesize unusedCells = _unusedCells;
 #pragma Lazy instantiation
 -(NSMutableDictionary *)eventCells
 {
