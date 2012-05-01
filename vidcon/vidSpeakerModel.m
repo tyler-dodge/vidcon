@@ -42,7 +42,7 @@
     NSDictionary *resultsDictionary = [jsonString objectFromJSONString];
     
     self = [self init];
-    self.name = @"Bob Dole";
+    self.name = @"Person 1";
     self.shortDescription = @"a person.";
     self.longDescription = @"a person with lots and lots and lots and lots and lots and lots and lots of description";
     return self;
