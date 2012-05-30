@@ -39,7 +39,6 @@
 -(id)initWithJson:(NSString *)jsonString
 {
     jsonString = @"{ \"name\": \"Hello!\" }";
-    NSDictionary *resultsDictionary = [jsonString objectFromJSONString];
     
     self = [self init];
     self.name = @"Person 1";
