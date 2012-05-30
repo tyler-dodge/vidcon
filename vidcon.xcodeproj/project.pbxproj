@@ -33,6 +33,140 @@
 		8F6BA0771523BDFC004C5DF3 /* vidconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BA0761523BDFC004C5DF3 /* vidconTests.m */; };
 		8F6DA6B61538BD9400911E1A /* vidSpeakerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6DA6B51538BD9400911E1A /* vidSpeakerModel.m */; };
 		8F6DA6BA1538C4A000911E1A /* vidSpeakerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6DA6B91538C49F00911E1A /* vidSpeakerCell.m */; };
+		8F760B191575A74800C71652 /* 5sf.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A901575A74800C71652 /* 5sf.jpeg */; };
+		8F760B1A1575A74800C71652 /* aaronyonda.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A911575A74800C71652 /* aaronyonda.jpeg */; };
+		8F760B1B1575A74800C71652 /* adoriandeck.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A921575A74800C71652 /* adoriandeck.png */; };
+		8F760B1C1575A74800C71652 /* alli.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A931575A74800C71652 /* alli.png */; };
+		8F760B1D1575A74800C71652 /* AmeriDoTe.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A941575A74800C71652 /* AmeriDoTe.jpeg */; };
+		8F760B1E1575A74800C71652 /* AndrewIsMusic.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A951575A74800C71652 /* AndrewIsMusic.png */; };
+		8F760B1F1575A74800C71652 /* benator.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A961575A74800C71652 /* benator.jpeg */; };
+		8F760B201575A74800C71652 /* billberryshow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A971575A74800C71652 /* billberryshow.png */; };
+		8F760B211575A74800C71652 /* BlackNerd.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A981575A74800C71652 /* BlackNerd.png */; };
+		8F760B221575A74800C71652 /* bonniegrrl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A991575A74800C71652 /* bonniegrrl.jpg */; };
+		8F760B231575A74800C71652 /* BrandonJLa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A9A1575A74800C71652 /* BrandonJLa.jpg */; };
+		8F760B241575A74800C71652 /* BrigitteDale.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A9B1575A74800C71652 /* BrigitteDale.jpg */; };
+		8F760B251575A74800C71652 /* brittanitaylor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A9C1575A74800C71652 /* brittanitaylor.jpg */; };
+		8F760B261575A74800C71652 /* BrockBaker.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A9D1575A74800C71652 /* BrockBaker.jpeg */; };
+		8F760B271575A74800C71652 /* buckhollywood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A9E1575A74800C71652 /* buckhollywood.jpg */; };
+		8F760B281575A74800C71652 /* BurnieBurnis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A9F1575A74800C71652 /* BurnieBurnis.jpg */; };
+		8F760B291575A74800C71652 /* CharlesTrippy.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AA01575A74800C71652 /* CharlesTrippy.png */; };
+		8F760B2A1575A74800C71652 /* ChrisMcCaleb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AA11575A74800C71652 /* ChrisMcCaleb.jpg */; };
+		8F760B2B1575A74800C71652 /* CoreyVidal.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AA21575A74800C71652 /* CoreyVidal.png */; };
+		8F760B2C1575A74800C71652 /* corridordigital.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AA31575A74800C71652 /* corridordigital.jpg */; };
+		8F760B2D1575A74800C71652 /* cpreksta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AA41575A74800C71652 /* cpreksta.jpg */; };
+		8F760B2E1575A74800C71652 /* DanDobi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AA51575A74800C71652 /* DanDobi.jpeg */; };
+		8F760B2F1575A74800C71652 /* daneboe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AA61575A74800C71652 /* daneboe.jpg */; };
+		8F760B301575A74800C71652 /* danisnotonfire.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AA71575A74800C71652 /* danisnotonfire.png */; };
+		8F760B311575A74800C71652 /* davedays.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AA81575A74800C71652 /* davedays.jpg */; };
+		8F760B321575A74800C71652 /* davidchoimusic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AA91575A74800C71652 /* davidchoimusic.jpg */; };
+		8F760B331575A74800C71652 /* DeliciousSteak.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AAA1575A74800C71652 /* DeliciousSteak.jpg */; };
+		8F760B341575A74800C71652 /* deshawnraw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AAB1575A74800C71652 /* deshawnraw.jpg */; };
+		8F760B351575A74800C71652 /* destorm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AAC1575A74800C71652 /* destorm.jpg */; };
+		8F760B361575A74800C71652 /* devinsupertramp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AAD1575A74800C71652 /* devinsupertramp.jpg */; };
+		8F760B371575A74800C71652 /* DJmonopoli.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AAE1575A74800C71652 /* DJmonopoli.jpeg */; };
+		8F760B381575A74800C71652 /* eddplant.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AAF1575A74800C71652 /* eddplant.jpeg */; };
+		8F760B391575A74800C71652 /* ElliottcMorgan.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AB01575A74800C71652 /* ElliottcMorgan.jpeg */; };
+		8F760B3A1575A74800C71652 /* elmify.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AB11575A74800C71652 /* elmify.png */; };
+		8F760B3B1575A74800C71652 /* erikaninja.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AB21575A74800C71652 /* erikaninja.png */; };
+		8F760B3C1575A74800C71652 /* ethannewberry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AB31575A74800C71652 /* ethannewberry.jpg */; };
+		8F760B3D1575A74800C71652 /* exoticjess.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AB41575A74800C71652 /* exoticjess.png */; };
+		8F760B3E1575A74800C71652 /* feliciaday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AB51575A74800C71652 /* feliciaday.jpg */; };
+		8F760B3F1575A74800C71652 /* fwong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AB61575A74800C71652 /* fwong.jpg */; };
+		8F760B401575A74800C71652 /* Gennefer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AB71575A74800C71652 /* Gennefer.jpg */; };
+		8F760B411575A74800C71652 /* GraceHelbig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AB81575A74800C71652 /* GraceHelbig.jpg */; };
+		8F760B421575A74800C71652 /* hankgreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AB91575A74800C71652 /* hankgreen.jpg */; };
+		8F760B431575A74800C71652 /* harleyplays.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ABA1575A74800C71652 /* harleyplays.jpg */; };
+		8F760B441575A74800C71652 /* harto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ABB1575A74800C71652 /* harto.jpg */; };
+		8F760B451575A74800C71652 /* hayleyghoover.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ABC1575A74800C71652 /* hayleyghoover.jpeg */; };
+		8F760B461575A74800C71652 /* iamgak.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ABD1575A74800C71652 /* iamgak.png */; };
+		8F760B471575A74800C71652 /* iijeriichoii.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ABE1575A74800C71652 /* iijeriichoii.jpeg */; };
+		8F760B481575A74800C71652 /* iJustine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ABF1575A74800C71652 /* iJustine.jpg */; };
+		8F760B491575A74800C71652 /* irl_encounters.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AC01575A74800C71652 /* irl_encounters.png */; };
+		8F760B4A1575A74800C71652 /* ItsAlexClark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AC11575A74800C71652 /* ItsAlexClark.jpg */; };
+		8F760B4B1575A74800C71652 /* Jacksfilms.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AC21575A74800C71652 /* Jacksfilms.jpeg */; };
+		8F760B4C1575A74800C71652 /* janeespenson.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AC31575A74800C71652 /* janeespenson.jpeg */; };
+		8F760B4D1575A74800C71652 /* jason_horton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AC41575A74800C71652 /* jason_horton.jpg */; };
+		8F760B4E1575A74800C71652 /* jessewelle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AC51575A74800C71652 /* jessewelle.jpg */; };
+		8F760B4F1575A74800C71652 /* jfwong.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AC61575A74800C71652 /* jfwong.png */; };
+		8F760B501575A74800C71652 /* joebereta.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AC71575A74800C71652 /* joebereta.jpeg */; };
+		8F760B511575A74800C71652 /* JoeNationTV.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AC81575A74800C71652 /* JoeNationTV.png */; };
+		8F760B521575A74800C71652 /* joesdaily.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AC91575A74800C71652 /* joesdaily.jpg */; };
+		8F760B531575A74800C71652 /* JonPaula.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ACA1575A74800C71652 /* JonPaula.jpg */; };
+		8F760B541575A74800C71652 /* Jory_Caron.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ACB1575A74800C71652 /* Jory_Caron.jpg */; };
+		8F760B551575A74800C71652 /* JoshSundquist.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ACC1575A74800C71652 /* JoshSundquist.jpg */; };
+		8F760B561575A74800C71652 /* juliansmithtv.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ACD1575A74800C71652 /* juliansmithtv.png */; };
+		8F760B571575A74800C71652 /* kimevey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ACE1575A74800C71652 /* kimevey.jpg */; };
+		8F760B581575A74800C71652 /* kinagrannis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ACF1575A74800C71652 /* kinagrannis.jpg */; };
+		8F760B591575A74800C71652 /* KoolJeffrey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AD01575A74800C71652 /* KoolJeffrey.jpg */; };
+		8F760B5A1575A74800C71652 /* KristinaHorner.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AD11575A74800C71652 /* KristinaHorner.jpeg */; };
+		8F760B5B1575A74800C71652 /* LandonAustin.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AD21575A74800C71652 /* LandonAustin.jpeg */; };
+		8F760B5C1575A74800C71652 /* laurenfrancesca.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AD31575A74800C71652 /* laurenfrancesca.jpg */; };
+		8F760B5D1575A74800C71652 /* LeagueOfSTEAM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AD41575A74800C71652 /* LeagueOfSTEAM.jpg */; };
+		8F760B5E1575A74800C71652 /* leenewtonsays.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AD51575A74800C71652 /* leenewtonsays.jpeg */; };
+		8F760B5F1575A74800C71652 /* LiamDrydenEtc.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AD61575A74800C71652 /* LiamDrydenEtc.png */; };
+		8F760B601575A74800C71652 /* lilschwartzie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AD71575A74800C71652 /* lilschwartzie.jpg */; };
+		8F760B611575A74800C71652 /* lindseystirling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AD81575A74800C71652 /* lindseystirling.jpg */; };
+		8F760B621575A74800C71652 /* lovelyladycakes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AD91575A74800C71652 /* lovelyladycakes.jpeg */; };
+		8F760B631575A74800C71652 /* lukeconard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ADA1575A74800C71652 /* lukeconard.jpg */; };
+		8F760B641575A74800C71652 /* MakeMeBad35.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ADB1575A74800C71652 /* MakeMeBad35.jpg */; };
+		8F760B651575A74800C71652 /* MarcHustvedt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ADC1575A74800C71652 /* MarcHustvedt.jpg */; };
+		8F760B661575A74800C71652 /* markgantt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760ADD1575A74800C71652 /* markgantt.jpg */; };
+		8F760B6A1575A74800C71652 /* mediocrefilms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AE21575A74800C71652 /* mediocrefilms.jpg */; };
+		8F760B6B1575A74800C71652 /* meghantonjes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AE31575A74800C71652 /* meghantonjes.jpg */; };
+		8F760B6C1575A74800C71652 /* metonyv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AE41575A74800C71652 /* metonyv.jpg */; };
+		8F760B6D1575A74800C71652 /* michaelaranda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AE51575A74800C71652 /* michaelaranda.jpg */; };
+		8F760B6E1575A74800C71652 /* michelleglavan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AE61575A74800C71652 /* michelleglavan.jpg */; };
+		8F760B6F1575A74800C71652 /* MikeChangSPS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AE71575A74800C71652 /* MikeChangSPS.jpg */; };
+		8F760B701575A74800C71652 /* mikediva.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AE81575A74800C71652 /* mikediva.jpg */; };
+		8F760B711575A74800C71652 /* mmalkoff.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AE91575A74800C71652 /* mmalkoff.jpg */; };
+		8F760B721575A74800C71652 /* mmitchelldaviss.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AEA1575A74800C71652 /* mmitchelldaviss.png */; };
+		8F760B731575A74800C71652 /* Moonbath.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AEB1575A74800C71652 /* Moonbath.png */; };
+		8F760B741575A74800C71652 /* MrMattEnlow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AEC1575A74800C71652 /* MrMattEnlow.jpg */; };
+		8F760B751575A74800C71652 /* mysteryguitarm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AED1575A74800C71652 /* mysteryguitarm.jpg */; };
+		8F760B761575A74800C71652 /* NickPitera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AEE1575A74800C71652 /* NickPitera.jpg */; };
+		8F760B771575A74800C71652 /* nunzitweets.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AEF1575A74800C71652 /* nunzitweets.jpeg */; };
+		8F760B781575A74800C71652 /* okaymaggie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AF01575A74800C71652 /* okaymaggie.jpg */; };
+		8F760B791575A74800C71652 /* olgakay.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AF11575A74800C71652 /* olgakay.png */; };
+		8F760B7A1575A74800C71652 /* OpTicH3CZ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AF21575A74800C71652 /* OpTicH3CZ.jpg */; };
+		8F760B7B1575A74800C71652 /* pattersonart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AF31575A74800C71652 /* pattersonart.jpg */; };
+		8F760B7C1575A74800C71652 /* peterbragiel.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AF41575A74800C71652 /* peterbragiel.jpeg */; };
+		8F760B7D1575A74800C71652 /* Phillyd.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AF51575A74800C71652 /* Phillyd.jpeg */; };
+		8F760B7E1575A74800C71652 /* PianoGuys.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AF61575A74800C71652 /* PianoGuys.png */; };
+		8F760B7F1575A74800C71652 /* ponceman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AF71575A74800C71652 /* ponceman.jpg */; };
+		8F760B801575A74800C71652 /* pyrobooby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AF81575A74800C71652 /* pyrobooby.jpg */; };
+		8F760B811575A74800C71652 /* realjohngreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AF91575A74800C71652 /* realjohngreen.jpg */; };
+		8F760B821575A74800C71652 /* rhettandlink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AFA1575A74800C71652 /* rhettandlink.jpg */; };
+		8F760B831575A74800C71652 /* ryanvance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AFB1575A74800C71652 /* ryanvance.jpg */; };
+		8F760B841575A74800C71652 /* SabrinaAbuObeid.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AFC1575A74800C71652 /* SabrinaAbuObeid.jpeg */; };
+		8F760B851575A74800C71652 /* SeaNanners.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AFD1575A74800C71652 /* SeaNanners.jpg */; };
+		8F760B861575A74800C71652 /* SeanKlitzner.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AFE1575A74800C71652 /* SeanKlitzner.png */; };
+		8F760B871575A74800C71652 /* severshed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760AFF1575A74800C71652 /* severshed.jpg */; };
+		8F760B881575A74800C71652 /* shanedawson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B001575A74800C71652 /* shanedawson.jpg */; };
+		8F760B891575A74800C71652 /* Smosh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B011575A74800C71652 /* Smosh.jpg */; };
+		8F760B8A1575A74800C71652 /* Songpidgeon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B021575A74800C71652 /* Songpidgeon.jpg */; };
+		8F760B8B1575A74800C71652 /* spandyandy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B031575A74800C71652 /* spandyandy.jpg */; };
+		8F760B8C1575A74800C71652 /* Supricky06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B041575A74800C71652 /* Supricky06.jpg */; };
+		8F760B8D1575A74800C71652 /* swiftkaratechop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B051575A74800C71652 /* swiftkaratechop.jpg */; };
+		8F760B8E1575A74800C71652 /* tayzonday.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B061575A74800C71652 /* tayzonday.jpg */; };
+		8F760B8F1575A74800C71652 /* tcwnyc.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B071575A74800C71652 /* tcwnyc.jpeg */; };
+		8F760B901575A74800C71652 /* teamrootberry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B081575A74800C71652 /* teamrootberry.jpg */; };
+		8F760B911575A74800C71652 /* temperature3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B091575A74800C71652 /* temperature3.jpeg */; };
+		8F760B921575A74800C71652 /* TheFineBros.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B0A1575A74800C71652 /* TheFineBros.jpg */; };
+		8F760B931575A74800C71652 /* thesap.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B0B1575A74800C71652 /* thesap.jpg */; };
+		8F760B941575A74800C71652 /* TheScarySnowman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B0C1575A74800C71652 /* TheScarySnowman.jpg */; };
+		8F760B951575A74800C71652 /* thewinggirls.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B0D1575A74800C71652 /* thewinggirls.png */; };
+		8F760B961575A74800C71652 /* TMarTn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B0E1575A74800C71652 /* TMarTn.jpg */; };
+		8F760B971575A74800C71652 /* tobyturner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B0F1575A74800C71652 /* tobyturner.jpg */; };
+		8F760B981575A74800C71652 /* totallysketch.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B101575A74800C71652 /* totallysketch.png */; };
+		8F760B991575A74800C71652 /* TSPcomedy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B111575A74800C71652 /* TSPcomedy.jpg */; };
+		8F760B9A1575A74800C71652 /* TurnipTime.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B121575A74800C71652 /* TurnipTime.jpg */; };
+		8F760B9B1575A74800C71652 /* Veritasium.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B131575A74800C71652 /* Veritasium.jpeg */; };
+		8F760B9C1575A74800C71652 /* whatsupelle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B141575A74800C71652 /* whatsupelle.jpg */; };
+		8F760B9D1575A74800C71652 /* WhatYouCanDo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B151575A74800C71652 /* WhatYouCanDo.jpeg */; };
+		8F760B9E1575A74800C71652 /* Whiteboy7thst.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B161575A74800C71652 /* Whiteboy7thst.jpg */; };
+		8F760B9F1575A74800C71652 /* WoodysGamerTag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B171575A74800C71652 /* WoodysGamerTag.jpg */; };
+		8F760BA01575A74800C71652 /* Yosemitebear62.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B181575A74800C71652 /* Yosemitebear62.jpg */; };
+		8F760BA21575A80E00C71652 /* guests.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F760BA11575A80E00C71652 /* guests.json */; };
 		8FE4398E15471D49003D9657 /* vidConferenceGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4398D15471D49003D9657 /* vidConferenceGuide.m */; };
 		8FE4399215471DE1003D9657 /* vidConferenceEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4399115471DE1003D9657 /* vidConferenceEvent.m */; };
 		8FE4399515471E0C003D9657 /* vidConferenceEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4399415471E0C003D9657 /* vidConferenceEventCell.m */; };
@@ -86,6 +220,140 @@
 		8F6DA6B51538BD9400911E1A /* vidSpeakerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSpeakerModel.m; sourceTree = "<group>"; };
 		8F6DA6B81538C49F00911E1A /* vidSpeakerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSpeakerCell.h; sourceTree = "<group>"; };
 		8F6DA6B91538C49F00911E1A /* vidSpeakerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSpeakerCell.m; sourceTree = "<group>"; };
+		8F760A901575A74800C71652 /* 5sf.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5sf.jpeg; sourceTree = "<group>"; };
+		8F760A911575A74800C71652 /* aaronyonda.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aaronyonda.jpeg; sourceTree = "<group>"; };
+		8F760A921575A74800C71652 /* adoriandeck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adoriandeck.png; sourceTree = "<group>"; };
+		8F760A931575A74800C71652 /* alli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alli.png; sourceTree = "<group>"; };
+		8F760A941575A74800C71652 /* AmeriDoTe.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AmeriDoTe.jpeg; sourceTree = "<group>"; };
+		8F760A951575A74800C71652 /* AndrewIsMusic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AndrewIsMusic.png; sourceTree = "<group>"; };
+		8F760A961575A74800C71652 /* benator.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = benator.jpeg; sourceTree = "<group>"; };
+		8F760A971575A74800C71652 /* billberryshow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = billberryshow.png; sourceTree = "<group>"; };
+		8F760A981575A74800C71652 /* BlackNerd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlackNerd.png; sourceTree = "<group>"; };
+		8F760A991575A74800C71652 /* bonniegrrl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bonniegrrl.jpg; sourceTree = "<group>"; };
+		8F760A9A1575A74800C71652 /* BrandonJLa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BrandonJLa.jpg; sourceTree = "<group>"; };
+		8F760A9B1575A74800C71652 /* BrigitteDale.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BrigitteDale.jpg; sourceTree = "<group>"; };
+		8F760A9C1575A74800C71652 /* brittanitaylor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = brittanitaylor.jpg; sourceTree = "<group>"; };
+		8F760A9D1575A74800C71652 /* BrockBaker.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BrockBaker.jpeg; sourceTree = "<group>"; };
+		8F760A9E1575A74800C71652 /* buckhollywood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buckhollywood.jpg; sourceTree = "<group>"; };
+		8F760A9F1575A74800C71652 /* BurnieBurnis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BurnieBurnis.jpg; sourceTree = "<group>"; };
+		8F760AA01575A74800C71652 /* CharlesTrippy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharlesTrippy.png; sourceTree = "<group>"; };
+		8F760AA11575A74800C71652 /* ChrisMcCaleb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChrisMcCaleb.jpg; sourceTree = "<group>"; };
+		8F760AA21575A74800C71652 /* CoreyVidal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CoreyVidal.png; sourceTree = "<group>"; };
+		8F760AA31575A74800C71652 /* corridordigital.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = corridordigital.jpg; sourceTree = "<group>"; };
+		8F760AA41575A74800C71652 /* cpreksta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cpreksta.jpg; sourceTree = "<group>"; };
+		8F760AA51575A74800C71652 /* DanDobi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DanDobi.jpeg; sourceTree = "<group>"; };
+		8F760AA61575A74800C71652 /* daneboe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daneboe.jpg; sourceTree = "<group>"; };
+		8F760AA71575A74800C71652 /* danisnotonfire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = danisnotonfire.png; sourceTree = "<group>"; };
+		8F760AA81575A74800C71652 /* davedays.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = davedays.jpg; sourceTree = "<group>"; };
+		8F760AA91575A74800C71652 /* davidchoimusic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = davidchoimusic.jpg; sourceTree = "<group>"; };
+		8F760AAA1575A74800C71652 /* DeliciousSteak.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DeliciousSteak.jpg; sourceTree = "<group>"; };
+		8F760AAB1575A74800C71652 /* deshawnraw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deshawnraw.jpg; sourceTree = "<group>"; };
+		8F760AAC1575A74800C71652 /* destorm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = destorm.jpg; sourceTree = "<group>"; };
+		8F760AAD1575A74800C71652 /* devinsupertramp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = devinsupertramp.jpg; sourceTree = "<group>"; };
+		8F760AAE1575A74800C71652 /* DJmonopoli.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DJmonopoli.jpeg; sourceTree = "<group>"; };
+		8F760AAF1575A74800C71652 /* eddplant.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eddplant.jpeg; sourceTree = "<group>"; };
+		8F760AB01575A74800C71652 /* ElliottcMorgan.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ElliottcMorgan.jpeg; sourceTree = "<group>"; };
+		8F760AB11575A74800C71652 /* elmify.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elmify.png; sourceTree = "<group>"; };
+		8F760AB21575A74800C71652 /* erikaninja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = erikaninja.png; sourceTree = "<group>"; };
+		8F760AB31575A74800C71652 /* ethannewberry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ethannewberry.jpg; sourceTree = "<group>"; };
+		8F760AB41575A74800C71652 /* exoticjess.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exoticjess.png; sourceTree = "<group>"; };
+		8F760AB51575A74800C71652 /* feliciaday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = feliciaday.jpg; sourceTree = "<group>"; };
+		8F760AB61575A74800C71652 /* fwong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fwong.jpg; sourceTree = "<group>"; };
+		8F760AB71575A74800C71652 /* Gennefer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gennefer.jpg; sourceTree = "<group>"; };
+		8F760AB81575A74800C71652 /* GraceHelbig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GraceHelbig.jpg; sourceTree = "<group>"; };
+		8F760AB91575A74800C71652 /* hankgreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hankgreen.jpg; sourceTree = "<group>"; };
+		8F760ABA1575A74800C71652 /* harleyplays.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harleyplays.jpg; sourceTree = "<group>"; };
+		8F760ABB1575A74800C71652 /* harto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harto.jpg; sourceTree = "<group>"; };
+		8F760ABC1575A74800C71652 /* hayleyghoover.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hayleyghoover.jpeg; sourceTree = "<group>"; };
+		8F760ABD1575A74800C71652 /* iamgak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iamgak.png; sourceTree = "<group>"; };
+		8F760ABE1575A74800C71652 /* iijeriichoii.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iijeriichoii.jpeg; sourceTree = "<group>"; };
+		8F760ABF1575A74800C71652 /* iJustine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iJustine.jpg; sourceTree = "<group>"; };
+		8F760AC01575A74800C71652 /* irl_encounters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = irl_encounters.png; sourceTree = "<group>"; };
+		8F760AC11575A74800C71652 /* ItsAlexClark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ItsAlexClark.jpg; sourceTree = "<group>"; };
+		8F760AC21575A74800C71652 /* Jacksfilms.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jacksfilms.jpeg; sourceTree = "<group>"; };
+		8F760AC31575A74800C71652 /* janeespenson.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = janeespenson.jpeg; sourceTree = "<group>"; };
+		8F760AC41575A74800C71652 /* jason_horton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jason_horton.jpg; sourceTree = "<group>"; };
+		8F760AC51575A74800C71652 /* jessewelle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jessewelle.jpg; sourceTree = "<group>"; };
+		8F760AC61575A74800C71652 /* jfwong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jfwong.png; sourceTree = "<group>"; };
+		8F760AC71575A74800C71652 /* joebereta.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = joebereta.jpeg; sourceTree = "<group>"; };
+		8F760AC81575A74800C71652 /* JoeNationTV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JoeNationTV.png; sourceTree = "<group>"; };
+		8F760AC91575A74800C71652 /* joesdaily.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = joesdaily.jpg; sourceTree = "<group>"; };
+		8F760ACA1575A74800C71652 /* JonPaula.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JonPaula.jpg; sourceTree = "<group>"; };
+		8F760ACB1575A74800C71652 /* Jory_Caron.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jory_Caron.jpg; sourceTree = "<group>"; };
+		8F760ACC1575A74800C71652 /* JoshSundquist.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JoshSundquist.jpg; sourceTree = "<group>"; };
+		8F760ACD1575A74800C71652 /* juliansmithtv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = juliansmithtv.png; sourceTree = "<group>"; };
+		8F760ACE1575A74800C71652 /* kimevey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kimevey.jpg; sourceTree = "<group>"; };
+		8F760ACF1575A74800C71652 /* kinagrannis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kinagrannis.jpg; sourceTree = "<group>"; };
+		8F760AD01575A74800C71652 /* KoolJeffrey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KoolJeffrey.jpg; sourceTree = "<group>"; };
+		8F760AD11575A74800C71652 /* KristinaHorner.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KristinaHorner.jpeg; sourceTree = "<group>"; };
+		8F760AD21575A74800C71652 /* LandonAustin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LandonAustin.jpeg; sourceTree = "<group>"; };
+		8F760AD31575A74800C71652 /* laurenfrancesca.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laurenfrancesca.jpg; sourceTree = "<group>"; };
+		8F760AD41575A74800C71652 /* LeagueOfSTEAM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LeagueOfSTEAM.jpg; sourceTree = "<group>"; };
+		8F760AD51575A74800C71652 /* leenewtonsays.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leenewtonsays.jpeg; sourceTree = "<group>"; };
+		8F760AD61575A74800C71652 /* LiamDrydenEtc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LiamDrydenEtc.png; sourceTree = "<group>"; };
+		8F760AD71575A74800C71652 /* lilschwartzie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lilschwartzie.jpg; sourceTree = "<group>"; };
+		8F760AD81575A74800C71652 /* lindseystirling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lindseystirling.jpg; sourceTree = "<group>"; };
+		8F760AD91575A74800C71652 /* lovelyladycakes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lovelyladycakes.jpeg; sourceTree = "<group>"; };
+		8F760ADA1575A74800C71652 /* lukeconard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lukeconard.jpg; sourceTree = "<group>"; };
+		8F760ADB1575A74800C71652 /* MakeMeBad35.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MakeMeBad35.jpg; sourceTree = "<group>"; };
+		8F760ADC1575A74800C71652 /* MarcHustvedt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MarcHustvedt.jpg; sourceTree = "<group>"; };
+		8F760ADD1575A74800C71652 /* markgantt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = markgantt.jpg; sourceTree = "<group>"; };
+		8F760AE21575A74800C71652 /* mediocrefilms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mediocrefilms.jpg; sourceTree = "<group>"; };
+		8F760AE31575A74800C71652 /* meghantonjes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = meghantonjes.jpg; sourceTree = "<group>"; };
+		8F760AE41575A74800C71652 /* metonyv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = metonyv.jpg; sourceTree = "<group>"; };
+		8F760AE51575A74800C71652 /* michaelaranda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = michaelaranda.jpg; sourceTree = "<group>"; };
+		8F760AE61575A74800C71652 /* michelleglavan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = michelleglavan.jpg; sourceTree = "<group>"; };
+		8F760AE71575A74800C71652 /* MikeChangSPS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MikeChangSPS.jpg; sourceTree = "<group>"; };
+		8F760AE81575A74800C71652 /* mikediva.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mikediva.jpg; sourceTree = "<group>"; };
+		8F760AE91575A74800C71652 /* mmalkoff.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mmalkoff.jpg; sourceTree = "<group>"; };
+		8F760AEA1575A74800C71652 /* mmitchelldaviss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mmitchelldaviss.png; sourceTree = "<group>"; };
+		8F760AEB1575A74800C71652 /* Moonbath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Moonbath.png; sourceTree = "<group>"; };
+		8F760AEC1575A74800C71652 /* MrMattEnlow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MrMattEnlow.jpg; sourceTree = "<group>"; };
+		8F760AED1575A74800C71652 /* mysteryguitarm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mysteryguitarm.jpg; sourceTree = "<group>"; };
+		8F760AEE1575A74800C71652 /* NickPitera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NickPitera.jpg; sourceTree = "<group>"; };
+		8F760AEF1575A74800C71652 /* nunzitweets.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nunzitweets.jpeg; sourceTree = "<group>"; };
+		8F760AF01575A74800C71652 /* okaymaggie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = okaymaggie.jpg; sourceTree = "<group>"; };
+		8F760AF11575A74800C71652 /* olgakay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = olgakay.png; sourceTree = "<group>"; };
+		8F760AF21575A74800C71652 /* OpTicH3CZ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OpTicH3CZ.jpg; sourceTree = "<group>"; };
+		8F760AF31575A74800C71652 /* pattersonart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pattersonart.jpg; sourceTree = "<group>"; };
+		8F760AF41575A74800C71652 /* peterbragiel.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peterbragiel.jpeg; sourceTree = "<group>"; };
+		8F760AF51575A74800C71652 /* Phillyd.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Phillyd.jpeg; sourceTree = "<group>"; };
+		8F760AF61575A74800C71652 /* PianoGuys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PianoGuys.png; sourceTree = "<group>"; };
+		8F760AF71575A74800C71652 /* ponceman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ponceman.jpg; sourceTree = "<group>"; };
+		8F760AF81575A74800C71652 /* pyrobooby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pyrobooby.jpg; sourceTree = "<group>"; };
+		8F760AF91575A74800C71652 /* realjohngreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = realjohngreen.jpg; sourceTree = "<group>"; };
+		8F760AFA1575A74800C71652 /* rhettandlink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rhettandlink.jpg; sourceTree = "<group>"; };
+		8F760AFB1575A74800C71652 /* ryanvance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ryanvance.jpg; sourceTree = "<group>"; };
+		8F760AFC1575A74800C71652 /* SabrinaAbuObeid.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SabrinaAbuObeid.jpeg; sourceTree = "<group>"; };
+		8F760AFD1575A74800C71652 /* SeaNanners.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SeaNanners.jpg; sourceTree = "<group>"; };
+		8F760AFE1575A74800C71652 /* SeanKlitzner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SeanKlitzner.png; sourceTree = "<group>"; };
+		8F760AFF1575A74800C71652 /* severshed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = severshed.jpg; sourceTree = "<group>"; };
+		8F760B001575A74800C71652 /* shanedawson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shanedawson.jpg; sourceTree = "<group>"; };
+		8F760B011575A74800C71652 /* Smosh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Smosh.jpg; sourceTree = "<group>"; };
+		8F760B021575A74800C71652 /* Songpidgeon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Songpidgeon.jpg; sourceTree = "<group>"; };
+		8F760B031575A74800C71652 /* spandyandy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spandyandy.jpg; sourceTree = "<group>"; };
+		8F760B041575A74800C71652 /* Supricky06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Supricky06.jpg; sourceTree = "<group>"; };
+		8F760B051575A74800C71652 /* swiftkaratechop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swiftkaratechop.jpg; sourceTree = "<group>"; };
+		8F760B061575A74800C71652 /* tayzonday.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tayzonday.jpg; sourceTree = "<group>"; };
+		8F760B071575A74800C71652 /* tcwnyc.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tcwnyc.jpeg; sourceTree = "<group>"; };
+		8F760B081575A74800C71652 /* teamrootberry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teamrootberry.jpg; sourceTree = "<group>"; };
+		8F760B091575A74800C71652 /* temperature3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = temperature3.jpeg; sourceTree = "<group>"; };
+		8F760B0A1575A74800C71652 /* TheFineBros.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheFineBros.jpg; sourceTree = "<group>"; };
+		8F760B0B1575A74800C71652 /* thesap.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thesap.jpg; sourceTree = "<group>"; };
+		8F760B0C1575A74800C71652 /* TheScarySnowman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheScarySnowman.jpg; sourceTree = "<group>"; };
+		8F760B0D1575A74800C71652 /* thewinggirls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thewinggirls.png; sourceTree = "<group>"; };
+		8F760B0E1575A74800C71652 /* TMarTn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TMarTn.jpg; sourceTree = "<group>"; };
+		8F760B0F1575A74800C71652 /* tobyturner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tobyturner.jpg; sourceTree = "<group>"; };
+		8F760B101575A74800C71652 /* totallysketch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = totallysketch.png; sourceTree = "<group>"; };
+		8F760B111575A74800C71652 /* TSPcomedy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TSPcomedy.jpg; sourceTree = "<group>"; };
+		8F760B121575A74800C71652 /* TurnipTime.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TurnipTime.jpg; sourceTree = "<group>"; };
+		8F760B131575A74800C71652 /* Veritasium.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Veritasium.jpeg; sourceTree = "<group>"; };
+		8F760B141575A74800C71652 /* whatsupelle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whatsupelle.jpg; sourceTree = "<group>"; };
+		8F760B151575A74800C71652 /* WhatYouCanDo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhatYouCanDo.jpeg; sourceTree = "<group>"; };
+		8F760B161575A74800C71652 /* Whiteboy7thst.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Whiteboy7thst.jpg; sourceTree = "<group>"; };
+		8F760B171575A74800C71652 /* WoodysGamerTag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WoodysGamerTag.jpg; sourceTree = "<group>"; };
+		8F760B181575A74800C71652 /* Yosemitebear62.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yosemitebear62.jpg; sourceTree = "<group>"; };
+		8F760BA11575A80E00C71652 /* guests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guests.json; sourceTree = "<group>"; };
 		8FE4398C15471D49003D9657 /* vidConferenceGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidConferenceGuide.h; sourceTree = "<group>"; };
 		8FE4398D15471D49003D9657 /* vidConferenceGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidConferenceGuide.m; sourceTree = "<group>"; };
 		8FE4399015471DE1003D9657 /* vidConferenceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidConferenceEvent.h; sourceTree = "<group>"; };
@@ -134,10 +402,7 @@
 		8F6BA0391523BDFC004C5DF3 = {
 			isa = PBXGroup;
 			children = (
-				22B08675154C711C007CF794 /* Icon-72@2x.png */,
-				22B08673154C711A007CF794 /* Icon-72.png */,
-				22B08671154C7103007CF794 /* Icon@2x.png */,
-				22B0866E154C7100007CF794 /* Icon.png */,
+				8F76097D1575A3A200C71652 /* icon */,
 				8F6BA04E1523BDFC004C5DF3 /* vidcon */,
 				8F6BA06F1523BDFC004C5DF3 /* vidconTests */,
 				8F6BA0471523BDFC004C5DF3 /* Frameworks */,
@@ -175,6 +440,8 @@
 		8F6BA04E1523BDFC004C5DF3 /* vidcon */ = {
 			isa = PBXGroup;
 			children = (
+				8F760BA11575A80E00C71652 /* guests.json */,
+				8F76097E1575A6C100C71652 /* guestPics */,
 				8FE4399615471E13003D9657 /* conferenceGuide */,
 				8F6BA0571523BDFC004C5DF3 /* vidAppDelegate.h */,
 				8F6BA0581523BDFC004C5DF3 /* vidAppDelegate.m */,
@@ -222,6 +489,157 @@
 				8F6BA0721523BDFC004C5DF3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F76097D1575A3A200C71652 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				22B08675154C711C007CF794 /* Icon-72@2x.png */,
+				22B08673154C711A007CF794 /* Icon-72.png */,
+				22B08671154C7103007CF794 /* Icon@2x.png */,
+				22B0866E154C7100007CF794 /* Icon.png */,
+			);
+			name = icon;
+			sourceTree = "<group>";
+		};
+		8F76097E1575A6C100C71652 /* guestPics */ = {
+			isa = PBXGroup;
+			children = (
+				8F760A901575A74800C71652 /* 5sf.jpeg */,
+				8F760A911575A74800C71652 /* aaronyonda.jpeg */,
+				8F760A921575A74800C71652 /* adoriandeck.png */,
+				8F760A931575A74800C71652 /* alli.png */,
+				8F760A941575A74800C71652 /* AmeriDoTe.jpeg */,
+				8F760A951575A74800C71652 /* AndrewIsMusic.png */,
+				8F760A961575A74800C71652 /* benator.jpeg */,
+				8F760A971575A74800C71652 /* billberryshow.png */,
+				8F760A981575A74800C71652 /* BlackNerd.png */,
+				8F760A991575A74800C71652 /* bonniegrrl.jpg */,
+				8F760A9A1575A74800C71652 /* BrandonJLa.jpg */,
+				8F760A9B1575A74800C71652 /* BrigitteDale.jpg */,
+				8F760A9C1575A74800C71652 /* brittanitaylor.jpg */,
+				8F760A9D1575A74800C71652 /* BrockBaker.jpeg */,
+				8F760A9E1575A74800C71652 /* buckhollywood.jpg */,
+				8F760A9F1575A74800C71652 /* BurnieBurnis.jpg */,
+				8F760AA01575A74800C71652 /* CharlesTrippy.png */,
+				8F760AA11575A74800C71652 /* ChrisMcCaleb.jpg */,
+				8F760AA21575A74800C71652 /* CoreyVidal.png */,
+				8F760AA31575A74800C71652 /* corridordigital.jpg */,
+				8F760AA41575A74800C71652 /* cpreksta.jpg */,
+				8F760AA51575A74800C71652 /* DanDobi.jpeg */,
+				8F760AA61575A74800C71652 /* daneboe.jpg */,
+				8F760AA71575A74800C71652 /* danisnotonfire.png */,
+				8F760AA81575A74800C71652 /* davedays.jpg */,
+				8F760AA91575A74800C71652 /* davidchoimusic.jpg */,
+				8F760AAA1575A74800C71652 /* DeliciousSteak.jpg */,
+				8F760AAB1575A74800C71652 /* deshawnraw.jpg */,
+				8F760AAC1575A74800C71652 /* destorm.jpg */,
+				8F760AAD1575A74800C71652 /* devinsupertramp.jpg */,
+				8F760AAE1575A74800C71652 /* DJmonopoli.jpeg */,
+				8F760AAF1575A74800C71652 /* eddplant.jpeg */,
+				8F760AB01575A74800C71652 /* ElliottcMorgan.jpeg */,
+				8F760AB11575A74800C71652 /* elmify.png */,
+				8F760AB21575A74800C71652 /* erikaninja.png */,
+				8F760AB31575A74800C71652 /* ethannewberry.jpg */,
+				8F760AB41575A74800C71652 /* exoticjess.png */,
+				8F760AB51575A74800C71652 /* feliciaday.jpg */,
+				8F760AB61575A74800C71652 /* fwong.jpg */,
+				8F760AB71575A74800C71652 /* Gennefer.jpg */,
+				8F760AB81575A74800C71652 /* GraceHelbig.jpg */,
+				8F760AB91575A74800C71652 /* hankgreen.jpg */,
+				8F760ABA1575A74800C71652 /* harleyplays.jpg */,
+				8F760ABB1575A74800C71652 /* harto.jpg */,
+				8F760ABC1575A74800C71652 /* hayleyghoover.jpeg */,
+				8F760ABD1575A74800C71652 /* iamgak.png */,
+				8F760ABE1575A74800C71652 /* iijeriichoii.jpeg */,
+				8F760ABF1575A74800C71652 /* iJustine.jpg */,
+				8F760AC01575A74800C71652 /* irl_encounters.png */,
+				8F760AC11575A74800C71652 /* ItsAlexClark.jpg */,
+				8F760AC21575A74800C71652 /* Jacksfilms.jpeg */,
+				8F760AC31575A74800C71652 /* janeespenson.jpeg */,
+				8F760AC41575A74800C71652 /* jason_horton.jpg */,
+				8F760AC51575A74800C71652 /* jessewelle.jpg */,
+				8F760AC61575A74800C71652 /* jfwong.png */,
+				8F760AC71575A74800C71652 /* joebereta.jpeg */,
+				8F760AC81575A74800C71652 /* JoeNationTV.png */,
+				8F760AC91575A74800C71652 /* joesdaily.jpg */,
+				8F760ACA1575A74800C71652 /* JonPaula.jpg */,
+				8F760ACB1575A74800C71652 /* Jory_Caron.jpg */,
+				8F760ACC1575A74800C71652 /* JoshSundquist.jpg */,
+				8F760ACD1575A74800C71652 /* juliansmithtv.png */,
+				8F760ACE1575A74800C71652 /* kimevey.jpg */,
+				8F760ACF1575A74800C71652 /* kinagrannis.jpg */,
+				8F760AD01575A74800C71652 /* KoolJeffrey.jpg */,
+				8F760AD11575A74800C71652 /* KristinaHorner.jpeg */,
+				8F760AD21575A74800C71652 /* LandonAustin.jpeg */,
+				8F760AD31575A74800C71652 /* laurenfrancesca.jpg */,
+				8F760AD41575A74800C71652 /* LeagueOfSTEAM.jpg */,
+				8F760AD51575A74800C71652 /* leenewtonsays.jpeg */,
+				8F760AD61575A74800C71652 /* LiamDrydenEtc.png */,
+				8F760AD71575A74800C71652 /* lilschwartzie.jpg */,
+				8F760AD81575A74800C71652 /* lindseystirling.jpg */,
+				8F760AD91575A74800C71652 /* lovelyladycakes.jpeg */,
+				8F760ADA1575A74800C71652 /* lukeconard.jpg */,
+				8F760ADB1575A74800C71652 /* MakeMeBad35.jpg */,
+				8F760ADC1575A74800C71652 /* MarcHustvedt.jpg */,
+				8F760ADD1575A74800C71652 /* markgantt.jpg */,
+				8F760AE21575A74800C71652 /* mediocrefilms.jpg */,
+				8F760AE31575A74800C71652 /* meghantonjes.jpg */,
+				8F760AE41575A74800C71652 /* metonyv.jpg */,
+				8F760AE51575A74800C71652 /* michaelaranda.jpg */,
+				8F760AE61575A74800C71652 /* michelleglavan.jpg */,
+				8F760AE71575A74800C71652 /* MikeChangSPS.jpg */,
+				8F760AE81575A74800C71652 /* mikediva.jpg */,
+				8F760AE91575A74800C71652 /* mmalkoff.jpg */,
+				8F760AEA1575A74800C71652 /* mmitchelldaviss.png */,
+				8F760AEB1575A74800C71652 /* Moonbath.png */,
+				8F760AEC1575A74800C71652 /* MrMattEnlow.jpg */,
+				8F760AED1575A74800C71652 /* mysteryguitarm.jpg */,
+				8F760AEE1575A74800C71652 /* NickPitera.jpg */,
+				8F760AEF1575A74800C71652 /* nunzitweets.jpeg */,
+				8F760AF01575A74800C71652 /* okaymaggie.jpg */,
+				8F760AF11575A74800C71652 /* olgakay.png */,
+				8F760AF21575A74800C71652 /* OpTicH3CZ.jpg */,
+				8F760AF31575A74800C71652 /* pattersonart.jpg */,
+				8F760AF41575A74800C71652 /* peterbragiel.jpeg */,
+				8F760AF51575A74800C71652 /* Phillyd.jpeg */,
+				8F760AF61575A74800C71652 /* PianoGuys.png */,
+				8F760AF71575A74800C71652 /* ponceman.jpg */,
+				8F760AF81575A74800C71652 /* pyrobooby.jpg */,
+				8F760AF91575A74800C71652 /* realjohngreen.jpg */,
+				8F760AFA1575A74800C71652 /* rhettandlink.jpg */,
+				8F760AFB1575A74800C71652 /* ryanvance.jpg */,
+				8F760AFC1575A74800C71652 /* SabrinaAbuObeid.jpeg */,
+				8F760AFD1575A74800C71652 /* SeaNanners.jpg */,
+				8F760AFE1575A74800C71652 /* SeanKlitzner.png */,
+				8F760AFF1575A74800C71652 /* severshed.jpg */,
+				8F760B001575A74800C71652 /* shanedawson.jpg */,
+				8F760B011575A74800C71652 /* Smosh.jpg */,
+				8F760B021575A74800C71652 /* Songpidgeon.jpg */,
+				8F760B031575A74800C71652 /* spandyandy.jpg */,
+				8F760B041575A74800C71652 /* Supricky06.jpg */,
+				8F760B051575A74800C71652 /* swiftkaratechop.jpg */,
+				8F760B061575A74800C71652 /* tayzonday.jpg */,
+				8F760B071575A74800C71652 /* tcwnyc.jpeg */,
+				8F760B081575A74800C71652 /* teamrootberry.jpg */,
+				8F760B091575A74800C71652 /* temperature3.jpeg */,
+				8F760B0A1575A74800C71652 /* TheFineBros.jpg */,
+				8F760B0B1575A74800C71652 /* thesap.jpg */,
+				8F760B0C1575A74800C71652 /* TheScarySnowman.jpg */,
+				8F760B0D1575A74800C71652 /* thewinggirls.png */,
+				8F760B0E1575A74800C71652 /* TMarTn.jpg */,
+				8F760B0F1575A74800C71652 /* tobyturner.jpg */,
+				8F760B101575A74800C71652 /* totallysketch.png */,
+				8F760B111575A74800C71652 /* TSPcomedy.jpg */,
+				8F760B121575A74800C71652 /* TurnipTime.jpg */,
+				8F760B131575A74800C71652 /* Veritasium.jpeg */,
+				8F760B141575A74800C71652 /* whatsupelle.jpg */,
+				8F760B151575A74800C71652 /* WhatYouCanDo.jpeg */,
+				8F760B161575A74800C71652 /* Whiteboy7thst.jpg */,
+				8F760B171575A74800C71652 /* WoodysGamerTag.jpg */,
+				8F760B181575A74800C71652 /* Yosemitebear62.jpg */,
+			);
+			path = guestPics;
 			sourceTree = "<group>";
 		};
 		8FE4399615471E13003D9657 /* conferenceGuide */ = {
@@ -316,6 +734,140 @@
 				22B08672154C7103007CF794 /* Icon@2x.png in Resources */,
 				22B08674154C711A007CF794 /* Icon-72.png in Resources */,
 				22B08676154C711C007CF794 /* Icon-72@2x.png in Resources */,
+				8F760B191575A74800C71652 /* 5sf.jpeg in Resources */,
+				8F760B1A1575A74800C71652 /* aaronyonda.jpeg in Resources */,
+				8F760B1B1575A74800C71652 /* adoriandeck.png in Resources */,
+				8F760B1C1575A74800C71652 /* alli.png in Resources */,
+				8F760B1D1575A74800C71652 /* AmeriDoTe.jpeg in Resources */,
+				8F760B1E1575A74800C71652 /* AndrewIsMusic.png in Resources */,
+				8F760B1F1575A74800C71652 /* benator.jpeg in Resources */,
+				8F760B201575A74800C71652 /* billberryshow.png in Resources */,
+				8F760B211575A74800C71652 /* BlackNerd.png in Resources */,
+				8F760B221575A74800C71652 /* bonniegrrl.jpg in Resources */,
+				8F760B231575A74800C71652 /* BrandonJLa.jpg in Resources */,
+				8F760B241575A74800C71652 /* BrigitteDale.jpg in Resources */,
+				8F760B251575A74800C71652 /* brittanitaylor.jpg in Resources */,
+				8F760B261575A74800C71652 /* BrockBaker.jpeg in Resources */,
+				8F760B271575A74800C71652 /* buckhollywood.jpg in Resources */,
+				8F760B281575A74800C71652 /* BurnieBurnis.jpg in Resources */,
+				8F760B291575A74800C71652 /* CharlesTrippy.png in Resources */,
+				8F760B2A1575A74800C71652 /* ChrisMcCaleb.jpg in Resources */,
+				8F760B2B1575A74800C71652 /* CoreyVidal.png in Resources */,
+				8F760B2C1575A74800C71652 /* corridordigital.jpg in Resources */,
+				8F760B2D1575A74800C71652 /* cpreksta.jpg in Resources */,
+				8F760B2E1575A74800C71652 /* DanDobi.jpeg in Resources */,
+				8F760B2F1575A74800C71652 /* daneboe.jpg in Resources */,
+				8F760B301575A74800C71652 /* danisnotonfire.png in Resources */,
+				8F760B311575A74800C71652 /* davedays.jpg in Resources */,
+				8F760B321575A74800C71652 /* davidchoimusic.jpg in Resources */,
+				8F760B331575A74800C71652 /* DeliciousSteak.jpg in Resources */,
+				8F760B341575A74800C71652 /* deshawnraw.jpg in Resources */,
+				8F760B351575A74800C71652 /* destorm.jpg in Resources */,
+				8F760B361575A74800C71652 /* devinsupertramp.jpg in Resources */,
+				8F760B371575A74800C71652 /* DJmonopoli.jpeg in Resources */,
+				8F760B381575A74800C71652 /* eddplant.jpeg in Resources */,
+				8F760B391575A74800C71652 /* ElliottcMorgan.jpeg in Resources */,
+				8F760B3A1575A74800C71652 /* elmify.png in Resources */,
+				8F760B3B1575A74800C71652 /* erikaninja.png in Resources */,
+				8F760B3C1575A74800C71652 /* ethannewberry.jpg in Resources */,
+				8F760B3D1575A74800C71652 /* exoticjess.png in Resources */,
+				8F760B3E1575A74800C71652 /* feliciaday.jpg in Resources */,
+				8F760B3F1575A74800C71652 /* fwong.jpg in Resources */,
+				8F760B401575A74800C71652 /* Gennefer.jpg in Resources */,
+				8F760B411575A74800C71652 /* GraceHelbig.jpg in Resources */,
+				8F760B421575A74800C71652 /* hankgreen.jpg in Resources */,
+				8F760B431575A74800C71652 /* harleyplays.jpg in Resources */,
+				8F760B441575A74800C71652 /* harto.jpg in Resources */,
+				8F760B451575A74800C71652 /* hayleyghoover.jpeg in Resources */,
+				8F760B461575A74800C71652 /* iamgak.png in Resources */,
+				8F760B471575A74800C71652 /* iijeriichoii.jpeg in Resources */,
+				8F760B481575A74800C71652 /* iJustine.jpg in Resources */,
+				8F760B491575A74800C71652 /* irl_encounters.png in Resources */,
+				8F760B4A1575A74800C71652 /* ItsAlexClark.jpg in Resources */,
+				8F760B4B1575A74800C71652 /* Jacksfilms.jpeg in Resources */,
+				8F760B4C1575A74800C71652 /* janeespenson.jpeg in Resources */,
+				8F760B4D1575A74800C71652 /* jason_horton.jpg in Resources */,
+				8F760B4E1575A74800C71652 /* jessewelle.jpg in Resources */,
+				8F760B4F1575A74800C71652 /* jfwong.png in Resources */,
+				8F760B501575A74800C71652 /* joebereta.jpeg in Resources */,
+				8F760B511575A74800C71652 /* JoeNationTV.png in Resources */,
+				8F760B521575A74800C71652 /* joesdaily.jpg in Resources */,
+				8F760B531575A74800C71652 /* JonPaula.jpg in Resources */,
+				8F760B541575A74800C71652 /* Jory_Caron.jpg in Resources */,
+				8F760B551575A74800C71652 /* JoshSundquist.jpg in Resources */,
+				8F760B561575A74800C71652 /* juliansmithtv.png in Resources */,
+				8F760B571575A74800C71652 /* kimevey.jpg in Resources */,
+				8F760B581575A74800C71652 /* kinagrannis.jpg in Resources */,
+				8F760B591575A74800C71652 /* KoolJeffrey.jpg in Resources */,
+				8F760B5A1575A74800C71652 /* KristinaHorner.jpeg in Resources */,
+				8F760B5B1575A74800C71652 /* LandonAustin.jpeg in Resources */,
+				8F760B5C1575A74800C71652 /* laurenfrancesca.jpg in Resources */,
+				8F760B5D1575A74800C71652 /* LeagueOfSTEAM.jpg in Resources */,
+				8F760B5E1575A74800C71652 /* leenewtonsays.jpeg in Resources */,
+				8F760B5F1575A74800C71652 /* LiamDrydenEtc.png in Resources */,
+				8F760B601575A74800C71652 /* lilschwartzie.jpg in Resources */,
+				8F760B611575A74800C71652 /* lindseystirling.jpg in Resources */,
+				8F760B621575A74800C71652 /* lovelyladycakes.jpeg in Resources */,
+				8F760B631575A74800C71652 /* lukeconard.jpg in Resources */,
+				8F760B641575A74800C71652 /* MakeMeBad35.jpg in Resources */,
+				8F760B651575A74800C71652 /* MarcHustvedt.jpg in Resources */,
+				8F760B661575A74800C71652 /* markgantt.jpg in Resources */,
+				8F760B6A1575A74800C71652 /* mediocrefilms.jpg in Resources */,
+				8F760B6B1575A74800C71652 /* meghantonjes.jpg in Resources */,
+				8F760B6C1575A74800C71652 /* metonyv.jpg in Resources */,
+				8F760B6D1575A74800C71652 /* michaelaranda.jpg in Resources */,
+				8F760B6E1575A74800C71652 /* michelleglavan.jpg in Resources */,
+				8F760B6F1575A74800C71652 /* MikeChangSPS.jpg in Resources */,
+				8F760B701575A74800C71652 /* mikediva.jpg in Resources */,
+				8F760B711575A74800C71652 /* mmalkoff.jpg in Resources */,
+				8F760B721575A74800C71652 /* mmitchelldaviss.png in Resources */,
+				8F760B731575A74800C71652 /* Moonbath.png in Resources */,
+				8F760B741575A74800C71652 /* MrMattEnlow.jpg in Resources */,
+				8F760B751575A74800C71652 /* mysteryguitarm.jpg in Resources */,
+				8F760B761575A74800C71652 /* NickPitera.jpg in Resources */,
+				8F760B771575A74800C71652 /* nunzitweets.jpeg in Resources */,
+				8F760B781575A74800C71652 /* okaymaggie.jpg in Resources */,
+				8F760B791575A74800C71652 /* olgakay.png in Resources */,
+				8F760B7A1575A74800C71652 /* OpTicH3CZ.jpg in Resources */,
+				8F760B7B1575A74800C71652 /* pattersonart.jpg in Resources */,
+				8F760B7C1575A74800C71652 /* peterbragiel.jpeg in Resources */,
+				8F760B7D1575A74800C71652 /* Phillyd.jpeg in Resources */,
+				8F760B7E1575A74800C71652 /* PianoGuys.png in Resources */,
+				8F760B7F1575A74800C71652 /* ponceman.jpg in Resources */,
+				8F760B801575A74800C71652 /* pyrobooby.jpg in Resources */,
+				8F760B811575A74800C71652 /* realjohngreen.jpg in Resources */,
+				8F760B821575A74800C71652 /* rhettandlink.jpg in Resources */,
+				8F760B831575A74800C71652 /* ryanvance.jpg in Resources */,
+				8F760B841575A74800C71652 /* SabrinaAbuObeid.jpeg in Resources */,
+				8F760B851575A74800C71652 /* SeaNanners.jpg in Resources */,
+				8F760B861575A74800C71652 /* SeanKlitzner.png in Resources */,
+				8F760B871575A74800C71652 /* severshed.jpg in Resources */,
+				8F760B881575A74800C71652 /* shanedawson.jpg in Resources */,
+				8F760B891575A74800C71652 /* Smosh.jpg in Resources */,
+				8F760B8A1575A74800C71652 /* Songpidgeon.jpg in Resources */,
+				8F760B8B1575A74800C71652 /* spandyandy.jpg in Resources */,
+				8F760B8C1575A74800C71652 /* Supricky06.jpg in Resources */,
+				8F760B8D1575A74800C71652 /* swiftkaratechop.jpg in Resources */,
+				8F760B8E1575A74800C71652 /* tayzonday.jpg in Resources */,
+				8F760B8F1575A74800C71652 /* tcwnyc.jpeg in Resources */,
+				8F760B901575A74800C71652 /* teamrootberry.jpg in Resources */,
+				8F760B911575A74800C71652 /* temperature3.jpeg in Resources */,
+				8F760B921575A74800C71652 /* TheFineBros.jpg in Resources */,
+				8F760B931575A74800C71652 /* thesap.jpg in Resources */,
+				8F760B941575A74800C71652 /* TheScarySnowman.jpg in Resources */,
+				8F760B951575A74800C71652 /* thewinggirls.png in Resources */,
+				8F760B961575A74800C71652 /* TMarTn.jpg in Resources */,
+				8F760B971575A74800C71652 /* tobyturner.jpg in Resources */,
+				8F760B981575A74800C71652 /* totallysketch.png in Resources */,
+				8F760B991575A74800C71652 /* TSPcomedy.jpg in Resources */,
+				8F760B9A1575A74800C71652 /* TurnipTime.jpg in Resources */,
+				8F760B9B1575A74800C71652 /* Veritasium.jpeg in Resources */,
+				8F760B9C1575A74800C71652 /* whatsupelle.jpg in Resources */,
+				8F760B9D1575A74800C71652 /* WhatYouCanDo.jpeg in Resources */,
+				8F760B9E1575A74800C71652 /* Whiteboy7thst.jpg in Resources */,
+				8F760B9F1575A74800C71652 /* WoodysGamerTag.jpg in Resources */,
+				8F760BA01575A74800C71652 /* Yosemitebear62.jpg in Resources */,
+				8F760BA21575A80E00C71652 /* guests.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
