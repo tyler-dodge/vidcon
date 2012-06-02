@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22B0866F154C7100007CF794 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B0866E154C7100007CF794 /* Icon.png */; };
-		22B08672154C7103007CF794 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08671154C7103007CF794 /* Icon@2x.png */; };
-		22B08674154C711A007CF794 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08673154C711A007CF794 /* Icon-72.png */; };
-		22B08676154C711C007CF794 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08675154C711C007CF794 /* Icon-72@2x.png */; };
+		22B239DD15799DDF00B24904 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B0866E154C7100007CF794 /* Icon.png */; };
+		22B239DE15799DE400B24904 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08671154C7103007CF794 /* Icon@2x.png */; };
+		22B239DF15799DF500B24904 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08673154C711A007CF794 /* Icon-72.png */; };
+		22B239E015799DF800B24904 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08675154C711C007CF794 /* Icon-72@2x.png */; };
 		8F371C051523FA28008943A2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F371C041523FA28008943A2 /* AudioToolbox.framework */; };
 		8F371C071523FA32008943A2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F371C061523FA32008943A2 /* CFNetwork.framework */; };
 		8F371C091523FA3A008943A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F371C081523FA3A008943A2 /* SystemConfiguration.framework */; };
@@ -312,10 +312,10 @@
 			files = (
 				8F6BA0531523BDFC004C5DF3 /* InfoPlist.strings in Resources */,
 				8F6BA05C1523BDFC004C5DF3 /* MainStoryboard_iPhone.storyboard in Resources */,
-				22B0866F154C7100007CF794 /* Icon.png in Resources */,
-				22B08672154C7103007CF794 /* Icon@2x.png in Resources */,
-				22B08674154C711A007CF794 /* Icon-72.png in Resources */,
-				22B08676154C711C007CF794 /* Icon-72@2x.png in Resources */,
+				22B239DD15799DDF00B24904 /* Icon.png in Resources */,
+				22B239DE15799DE400B24904 /* Icon@2x.png in Resources */,
+				22B239DF15799DF500B24904 /* Icon-72.png in Resources */,
+				22B239E015799DF800B24904 /* Icon-72@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +475,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -498,7 +498,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
