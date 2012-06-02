@@ -11,6 +11,16 @@
 		22B08672154C7103007CF794 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08671154C7103007CF794 /* Icon@2x.png */; };
 		22B08674154C711A007CF794 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08673154C711A007CF794 /* Icon-72.png */; };
 		22B08676154C711C007CF794 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08675154C711C007CF794 /* Icon-72@2x.png */; };
+		8F151B491576C45800208D44 /* notificationicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B471576C45800208D44 /* notificationicon.png */; };
+		8F151B4A1576C45800208D44 /* notificationicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B481576C45800208D44 /* notificationicon@2x.png */; };
+		8F151B4D1576C4AC00208D44 /* guestsicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B4B1576C4AC00208D44 /* guestsicon.png */; };
+		8F151B4E1576C4AC00208D44 /* guestsicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B4C1576C4AC00208D44 /* guestsicon@2x.png */; };
+		8F151B5A1576CC2A00208D44 /* businesscardicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B581576CC2A00208D44 /* businesscardicon.png */; };
+		8F151B5B1576CC2A00208D44 /* businesscardicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B591576CC2A00208D44 /* businesscardicon@2x.png */; };
+		8F151B5E1577059E00208D44 /* sponsors.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B5C1577059E00208D44 /* sponsors.png */; };
+		8F151B5F1577059E00208D44 /* sponsors@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B5D1577059E00208D44 /* sponsors@2x.png */; };
+		8F151B69157712D000208D44 /* vidconicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B68157712D000208D44 /* vidconicon@2x.png */; };
+		8F151B73157716A900208D44 /* vidconicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B72157716A900208D44 /* vidconicon.png */; };
 		8F371C051523FA28008943A2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F371C041523FA28008943A2 /* AudioToolbox.framework */; };
 		8F371C071523FA32008943A2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F371C061523FA32008943A2 /* CFNetwork.framework */; };
 		8F371C091523FA3A008943A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F371C081523FA3A008943A2 /* SystemConfiguration.framework */; };
@@ -167,6 +177,11 @@
 		8F760B9F1575A74800C71652 /* WoodysGamerTag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B171575A74800C71652 /* WoodysGamerTag.jpg */; };
 		8F760BA01575A74800C71652 /* Yosemitebear62.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B181575A74800C71652 /* Yosemitebear62.jpg */; };
 		8F760BA21575A80E00C71652 /* guests.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F760BA11575A80E00C71652 /* guests.json */; };
+		8F760BAD1575B44400C71652 /* vidSelectedSpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F760BAC1575B44400C71652 /* vidSelectedSpeakerViewController.m */; };
+		8FA7877D157677030031FFE3 /* vidBusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7877C157677030031FFE3 /* vidBusinessCardViewController.m */; };
+		8FA787851576778F0031FFE3 /* vidHotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA787841576778F0031FFE3 /* vidHotelViewController.m */; };
+		8FAE653C1579700B001F36A4 /* GuestScroller@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAE653B1579700B001F36A4 /* GuestScroller@2x.png */; };
+		8FC3E4581576764B00E42A82 /* vidSponsorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3E4571576764B00E42A82 /* vidSponsorViewController.m */; };
 		8FE4398E15471D49003D9657 /* vidConferenceGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4398D15471D49003D9657 /* vidConferenceGuide.m */; };
 		8FE4399215471DE1003D9657 /* vidConferenceEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4399115471DE1003D9657 /* vidConferenceEvent.m */; };
 		8FE4399515471E0C003D9657 /* vidConferenceEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4399415471E0C003D9657 /* vidConferenceEventCell.m */; };
@@ -190,6 +205,16 @@
 		22B08671154C7103007CF794 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		22B08673154C711A007CF794 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		22B08675154C711C007CF794 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		8F151B471576C45800208D44 /* notificationicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notificationicon.png; sourceTree = "<group>"; };
+		8F151B481576C45800208D44 /* notificationicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notificationicon@2x.png"; sourceTree = "<group>"; };
+		8F151B4B1576C4AC00208D44 /* guestsicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guestsicon.png; sourceTree = "<group>"; };
+		8F151B4C1576C4AC00208D44 /* guestsicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "guestsicon@2x.png"; sourceTree = "<group>"; };
+		8F151B581576CC2A00208D44 /* businesscardicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = businesscardicon.png; sourceTree = "<group>"; };
+		8F151B591576CC2A00208D44 /* businesscardicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "businesscardicon@2x.png"; sourceTree = "<group>"; };
+		8F151B5C1577059E00208D44 /* sponsors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sponsors.png; sourceTree = "<group>"; };
+		8F151B5D1577059E00208D44 /* sponsors@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sponsors@2x.png"; sourceTree = "<group>"; };
+		8F151B68157712D000208D44 /* vidconicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vidconicon@2x.png"; sourceTree = "<group>"; };
+		8F151B72157716A900208D44 /* vidconicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vidconicon.png; sourceTree = "<group>"; };
 		8F371C041523FA28008943A2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8F371C061523FA32008943A2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8F371C081523FA3A008943A2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -354,6 +379,15 @@
 		8F760B171575A74800C71652 /* WoodysGamerTag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WoodysGamerTag.jpg; sourceTree = "<group>"; };
 		8F760B181575A74800C71652 /* Yosemitebear62.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yosemitebear62.jpg; sourceTree = "<group>"; };
 		8F760BA11575A80E00C71652 /* guests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guests.json; sourceTree = "<group>"; };
+		8F760BAB1575B44400C71652 /* vidSelectedSpeakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSelectedSpeakerViewController.h; sourceTree = "<group>"; };
+		8F760BAC1575B44400C71652 /* vidSelectedSpeakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSelectedSpeakerViewController.m; sourceTree = "<group>"; };
+		8FA7877B157677030031FFE3 /* vidBusinessCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidBusinessCardViewController.h; sourceTree = "<group>"; };
+		8FA7877C157677030031FFE3 /* vidBusinessCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidBusinessCardViewController.m; sourceTree = "<group>"; };
+		8FA787831576778F0031FFE3 /* vidHotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidHotelViewController.h; sourceTree = "<group>"; };
+		8FA787841576778F0031FFE3 /* vidHotelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidHotelViewController.m; sourceTree = "<group>"; };
+		8FAE653B1579700B001F36A4 /* GuestScroller@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GuestScroller@2x.png"; sourceTree = "<group>"; };
+		8FC3E4561576764B00E42A82 /* vidSponsorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSponsorViewController.h; sourceTree = "<group>"; };
+		8FC3E4571576764B00E42A82 /* vidSponsorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSponsorViewController.m; sourceTree = "<group>"; };
 		8FE4398C15471D49003D9657 /* vidConferenceGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidConferenceGuide.h; sourceTree = "<group>"; };
 		8FE4398D15471D49003D9657 /* vidConferenceGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidConferenceGuide.m; sourceTree = "<group>"; };
 		8FE4399015471DE1003D9657 /* vidConferenceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidConferenceEvent.h; sourceTree = "<group>"; };
@@ -440,6 +474,17 @@
 		8F6BA04E1523BDFC004C5DF3 /* vidcon */ = {
 			isa = PBXGroup;
 			children = (
+				8FAE653B1579700B001F36A4 /* GuestScroller@2x.png */,
+				8F151B471576C45800208D44 /* notificationicon.png */,
+				8F151B481576C45800208D44 /* notificationicon@2x.png */,
+				8F151B581576CC2A00208D44 /* businesscardicon.png */,
+				8F151B591576CC2A00208D44 /* businesscardicon@2x.png */,
+				8F151B4B1576C4AC00208D44 /* guestsicon.png */,
+				8F151B4C1576C4AC00208D44 /* guestsicon@2x.png */,
+				8F151B5C1577059E00208D44 /* sponsors.png */,
+				8F151B5D1577059E00208D44 /* sponsors@2x.png */,
+				8F151B68157712D000208D44 /* vidconicon@2x.png */,
+				8F151B72157716A900208D44 /* vidconicon.png */,
 				8F760BA11575A80E00C71652 /* guests.json */,
 				8F76097E1575A6C100C71652 /* guestPics */,
 				8FE4399615471E13003D9657 /* conferenceGuide */,
@@ -457,6 +502,14 @@
 				8F6DA6B91538C49F00911E1A /* vidSpeakerCell.m */,
 				8FE4399B1547287D003D9657 /* vidConferenceGuideViewController.h */,
 				8FE4399C1547287D003D9657 /* vidConferenceGuideViewController.m */,
+				8F760BAB1575B44400C71652 /* vidSelectedSpeakerViewController.h */,
+				8F760BAC1575B44400C71652 /* vidSelectedSpeakerViewController.m */,
+				8FC3E4561576764B00E42A82 /* vidSponsorViewController.h */,
+				8FC3E4571576764B00E42A82 /* vidSponsorViewController.m */,
+				8FA7877B157677030031FFE3 /* vidBusinessCardViewController.h */,
+				8FA7877C157677030031FFE3 /* vidBusinessCardViewController.m */,
+				8FA787831576778F0031FFE3 /* vidHotelViewController.h */,
+				8FA787841576778F0031FFE3 /* vidHotelViewController.m */,
 			);
 			path = vidcon;
 			sourceTree = "<group>";
@@ -868,6 +921,17 @@
 				8F760B9F1575A74800C71652 /* WoodysGamerTag.jpg in Resources */,
 				8F760BA01575A74800C71652 /* Yosemitebear62.jpg in Resources */,
 				8F760BA21575A80E00C71652 /* guests.json in Resources */,
+				8F151B491576C45800208D44 /* notificationicon.png in Resources */,
+				8F151B4A1576C45800208D44 /* notificationicon@2x.png in Resources */,
+				8F151B4D1576C4AC00208D44 /* guestsicon.png in Resources */,
+				8F151B4E1576C4AC00208D44 /* guestsicon@2x.png in Resources */,
+				8F151B5A1576CC2A00208D44 /* businesscardicon.png in Resources */,
+				8F151B5B1576CC2A00208D44 /* businesscardicon@2x.png in Resources */,
+				8F151B5E1577059E00208D44 /* sponsors.png in Resources */,
+				8F151B5F1577059E00208D44 /* sponsors@2x.png in Resources */,
+				8F151B69157712D000208D44 /* vidconicon@2x.png in Resources */,
+				8F151B73157716A900208D44 /* vidconicon.png in Resources */,
+				8FAE653C1579700B001F36A4 /* GuestScroller@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -913,6 +977,10 @@
 				8FE4399515471E0C003D9657 /* vidConferenceEventCell.m in Sources */,
 				8FE4399D1547287D003D9657 /* vidConferenceGuideViewController.m in Sources */,
 				8FE439A5154728FC003D9657 /* vidEventTimeSlotHeader.m in Sources */,
+				8F760BAD1575B44400C71652 /* vidSelectedSpeakerViewController.m in Sources */,
+				8FC3E4581576764B00E42A82 /* vidSponsorViewController.m in Sources */,
+				8FA7877D157677030031FFE3 /* vidBusinessCardViewController.m in Sources */,
+				8FA787851576778F0031FFE3 /* vidHotelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

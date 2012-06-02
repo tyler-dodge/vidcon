@@ -21,4 +21,11 @@
 
 -(vidSpeakerModel *)initWithJsonFile:(NSString *)filePath;
 
+-(NSUInteger)speakersInSection:(NSUInteger)section;
+-(NSUInteger)numberOfSections;
+
+-(void)startSearch;
+-(void)updateSearch:(NSString *)term;
+@property (strong, readwrite, nonatomic)NSArray * searchResults;
+-(void)endSearch;
 @end
