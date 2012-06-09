@@ -6,11 +6,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1478"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Vid Tab Bar View Controller-->
         <scene sceneID="XNb-62-Kn3">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nKC-d1-qm4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController definesPresentationContext="YES" id="hsh-xI-4KH" sceneMemberID="viewController">
+                <tabBarController definesPresentationContext="YES" id="hsh-xI-4KH" customClass="vidTabBarViewController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="nXB-oc-XnH">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -38,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hotels" id="cg4-7u-EgC"/>
+                    <navigationItem key="navigationItem" title="News" id="cg4-7u-EgC"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1323" y="488"/>
@@ -69,13 +69,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="76"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="GuestScroller@2x.png" id="bJA-td-Yp0">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="GuestScroller@2x.png" id="bJA-td-Yp0">
                                             <rect key="frame" x="0.0" y="0.0" width="319" height="76"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" id="W3P-NY-ZPf">
                                             <rect key="frame" x="5" y="5" width="68" height="68"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="  Speaker Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="8WE-1f-ojG">
                                             <rect key="frame" x="81" y="0.0" width="176" height="26"/>
@@ -88,9 +88,42 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
+                                    <outlet property="backgroundImage" destination="bJA-td-Yp0" id="L4U-uj-vOC"/>
                                     <outlet property="nameLabel" destination="8WE-1f-ojG" id="AXf-G7-LVJ"/>
                                     <outlet property="picture" destination="W3P-NY-ZPf" id="6S1-YD-57d"/>
                                     <segue destination="Qwr-DV-VOo" kind="push" id="TnI-pH-BOH"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SpeakerCellALT" rowHeight="77" id="ww0-1h-Xvj" customClass="vidSpeakerCell">
+                                <rect key="frame" x="0.0" y="143" width="320" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="76"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="GuestScrollerALT@2x.png" id="tfd-qI-Wpj">
+                                            <rect key="frame" x="0.0" y="0.0" width="319" height="76"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" id="nft-Gt-lnm">
+                                            <rect key="frame" x="5" y="5" width="68" height="68"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="  Speaker Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="BRN-kg-zeO">
+                                            <rect key="frame" x="81" y="0.0" width="176" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="backgroundImage" destination="tfd-qI-Wpj" id="5A5-BW-b5S"/>
+                                    <outlet property="nameLabel" destination="BRN-kg-zeO" id="8Pm-XU-98i"/>
+                                    <outlet property="picture" destination="nft-Gt-lnm" id="POu-b6-tuH"/>
+                                    <segue destination="Qwr-DV-VOo" kind="push" id="bDW-Y4-yv9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -115,7 +148,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1729" y="-1251"/>
+            <point key="canvasLocation" x="1323" y="-1233"/>
         </scene>
         <!--Vid Conference Guide View Controller - Guide-->
         <scene sceneID="GtB-yC-WJ4">
@@ -145,13 +178,13 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1615" y="-662"/>
+            <point key="canvasLocation" x="1746" y="-662"/>
         </scene>
-        <!--Navigation Controller - Speakers-->
+        <!--Vid Navigation View Controller - Speakers-->
         <scene sceneID="bPz-nz-jbw">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aB7-k9-i6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController title="Speakers" id="vws-Uy-gUi" sceneMemberID="viewController">
+                <navigationController title="Speakers" id="vws-Uy-gUi" customClass="vidNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Guests" image="guestsicon.png" id="O9f-zW-d3h"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="vxL-Gm-AET">
@@ -166,30 +199,71 @@
             </objects>
             <point key="canvasLocation" x="797" y="-1233"/>
         </scene>
-        <!--Navigation Controller - Guide-->
+        <!--Vid Navigation View Controller - Guide-->
         <scene sceneID="uAj-J7-K8A">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FIL-ks-r5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController id="qPo-Dg-2Nz" sceneMemberID="viewController">
+                <navigationController id="qPo-Dg-2Nz" customClass="vidNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Guide" image="vidconicon.png" id="fcp-JB-Wjw"/>
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="2He-3h-MI7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="xy8-Sj-AG4" kind="relationship" relationship="rootViewController" id="Gb5-6j-Evf"/>
+                        <segue destination="BN9-c7-0uV" kind="relationship" relationship="rootViewController" id="7O8-nb-aKM"/>
                     </connections>
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="797" y="-662"/>
         </scene>
-        <!--Navigation Controller - Sponsors-->
+        <!--Vid Conference Guide Main View Controller - Conference Guide-->
+        <scene sceneID="jTS-6w-MIH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gEe-NQ-qDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="BN9-c7-0uV" customClass="vidConferenceGuideMainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G5y-0a-ers">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="GuideBackground@2x.png" id="MNl-Af-4gy">
+                                <rect key="frame" x="0.0" y="1" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ncP-ix-DDS">
+                                <rect key="frame" x="0.0" y="247" width="94" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xy8-Sj-AG4" kind="push" id="gmQ-T2-gTb"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="NoP-kh-kVq">
+                                <rect key="frame" x="0.0" y="327" width="320" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Conference Guide" id="DrX-wQ-FDA"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1323" y="-662"/>
+        </scene>
+        <!--Vid Navigation View Controller - Sponsors-->
         <scene sceneID="3LF-L6-8Q8">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6U-MG-nEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController id="WvJ-n0-YcX" sceneMemberID="viewController">
+                <navigationController id="WvJ-n0-YcX" customClass="vidNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Sponsors" image="sponsors.png" id="063-LE-S2v"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="RbI-o9-uvp">
@@ -204,11 +278,11 @@
             </objects>
             <point key="canvasLocation" x="797" y="-83"/>
         </scene>
-        <!--Navigation Controller - News-->
+        <!--Vid Navigation View Controller - News-->
         <scene sceneID="a5a-fW-sv0">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZp-th-ztR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController id="dsw-5G-iZK" sceneMemberID="viewController">
+                <navigationController id="dsw-5G-iZK" customClass="vidNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="News" image="notificationicon.png" id="p94-Xo-R2u"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="IaJ-Hd-GqE">
@@ -431,7 +505,7 @@
                     <navigationItem key="navigationItem" title="Business Cards" id="YGz-Zx-GIF"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1849" y="1080"/>
+            <point key="canvasLocation" x="1746" y="1080"/>
         </scene>
         <!--Vid Selected Speaker View Controller-->
         <scene sceneID="nyT-Kc-sdf">
@@ -460,7 +534,7 @@
                                                     <rect key="frame" x="112" y="0.0" width="172" height="49"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="VpB-E3-763">
@@ -582,6 +656,7 @@
                     <connections>
                         <outlet property="facebookName" destination="qIl-gh-b4p" id="HP8-ti-Eln"/>
                         <outlet property="speakerDescription" destination="laa-JZ-Ape" id="pUJ-EI-BWs"/>
+                        <outlet property="speakerDescriptionCell" destination="a2J-Lt-Gbr" id="gUz-J8-yOr"/>
                         <outlet property="speakerImage" destination="VpB-E3-763" id="MoP-ft-i7a"/>
                         <outlet property="speakerName" destination="j0z-B8-0Ob" id="LmU-Fy-JwM"/>
                         <outlet property="twitterName" destination="E8J-Fv-hDa" id="via-ZP-ExD"/>
@@ -589,13 +664,13 @@
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="2333" y="-508"/>
+            <point key="canvasLocation" x="2317" y="-83"/>
         </scene>
-        <!--Navigation Controller - Business Card-->
+        <!--Vid Navigation View Controller - Business Card-->
         <scene sceneID="d0w-ci-NPs">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JHO-8W-i59" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController id="3sw-Gr-Z3y" sceneMemberID="viewController">
+                <navigationController id="3sw-Gr-Z3y" customClass="vidNavigationViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Business Card" image="businesscardicon.png" id="rB2-sz-aQb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ewg-Fh-Y2S">
@@ -610,28 +685,142 @@
             </objects>
             <point key="canvasLocation" x="797" y="1080"/>
         </scene>
-        <!--Vid Sponsor View Controller - Speakers-->
+        <!--Vid Sponsor View Controller - Sponsors-->
         <scene sceneID="96g-Dt-TpC">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2jA-tb-431" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="FaT-az-9K9" customClass="vidSponsorViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r5Z-4I-uV3">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="95" sectionHeaderHeight="22" sectionFooterHeight="22" id="r5Z-4I-uV3">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="youtube" textLabel="7WI-Ia-OIH" imageView="M6a-jC-v8F" style="IBUITableViewCellStyleDefault" id="qRU-Tm-6B6">
+                                <rect key="frame" x="0.0" y="22" width="320" height="95"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7WI-Ia-OIH">
+                                            <rect key="frame" x="205" y="0.0" width="105" height="58"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="YouTubeScroller@2x.png" id="M6a-jC-v8F">
+                                            <rect key="frame" x="0.0" y="0.0" width="317" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="maker" textLabel="oA6-WK-7Hw" imageView="geE-M3-aOz" style="IBUITableViewCellStyleDefault" id="WnE-wz-Wge">
+                                <rect key="frame" x="0.0" y="117" width="320" height="95"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oA6-WK-7Hw">
+                                            <rect key="frame" x="310" y="0.0" width="17" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="MakerScroller@2x.png" id="geE-M3-aOz">
+                                            <rect key="frame" x="0.0" y="0.0" width="317" height="94"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="platinum" id="2qZ-ve-DYZ" customClass="vidSponsorCell">
+                                <rect key="frame" x="0.0" y="212" width="320" height="95"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="PlatinumSponsorScroller@2x.png" id="QsD-BH-kBU">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="u8f-0C-XVy">
+                                            <rect key="frame" x="7" y="6" width="84" height="84"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="S2w-7I-Zj6">
+                                            <rect key="frame" x="99" y="6" width="201" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="name" destination="S2w-7I-Zj6" id="tZo-ig-hfF"/>
+                                    <outlet property="picture" destination="u8f-0C-XVy" id="Bbf-gT-Lp3"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="gold" id="wgE-yI-Hev" customClass="vidSponsorCell">
+                                <rect key="frame" x="0.0" y="307" width="320" height="95"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="GoldSponsorScroller@2x.png" id="5Uz-XS-ryg">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="LDe-4x-5Mp">
+                                            <rect key="frame" x="7" y="5" width="84" height="84"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vb8-XO-mai">
+                                            <rect key="frame" x="99" y="5" width="201" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="name" destination="vb8-XO-mai" id="sXL-qi-K1V"/>
+                                    <outlet property="picture" destination="LDe-4x-5Mp" id="5qO-kd-AmN"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="FaT-az-9K9" id="dzo-aP-NrY"/>
                             <outlet property="delegate" destination="FaT-az-9K9" id="h96-Qe-jpB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Speakers" id="g6G-O3-i7Z"/>
+                    <navigationItem key="navigationItem" title="Sponsors" id="g6G-O3-i7Z"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1701" y="-83"/>
+            <point key="canvasLocation" x="1323" y="-83"/>
         </scene>
     </scenes>
     <resources>
+        <image name="GoldSponsorScroller@2x.png" width="640" height="150"/>
         <image name="GuestScroller@2x.png" width="640" height="104"/>
+        <image name="GuestScrollerALT@2x.png" width="640" height="104"/>
+        <image name="GuideBackground@2x.png" width="640" height="734"/>
+        <image name="MakerScroller@2x.png" width="640" height="190"/>
+        <image name="PlatinumSponsorScroller@2x.png" width="640" height="150"/>
+        <image name="YouTubeScroller@2x.png" width="640" height="190"/>
         <image name="businesscardicon.png" width="24" height="17"/>
         <image name="guestsicon.png" width="32" height="21"/>
         <image name="notificationicon.png" width="30" height="30"/>
@@ -641,6 +830,9 @@
     <classes>
         <class className="vidBusinessCardViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/vidBusinessCardViewController.h"/>
+        </class>
+        <class className="vidConferenceGuideMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/vidConferenceGuideMainViewController.h"/>
         </class>
         <class className="vidConferenceGuideViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/vidConferenceGuideViewController.h"/>
@@ -655,11 +847,15 @@
         <class className="vidHotelViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/vidHotelViewController.h"/>
         </class>
+        <class className="vidNavigationViewController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/vidNavigationViewController.h"/>
+        </class>
         <class className="vidSelectedSpeakerViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/vidSelectedSpeakerViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="facebookName" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="speakerDescription" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="speakerDescriptionCell" candidateClass="UITableViewCell"/>
                 <relationship kind="outlet" name="speakerImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="speakerName" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="twitterName" candidateClass="UILabel"/>
@@ -669,7 +865,7 @@
         <class className="vidSpeakerCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/vidSpeakerCell.h"/>
             <relationships>
-                <relationship kind="outlet" name="descriptionLabel" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="backgroundImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="picture" candidateClass="UIImageView"/>
             </relationships>
@@ -680,8 +876,18 @@
                 <relationship kind="outlet" name="speakerSearchController" candidateClass="UISearchDisplayController"/>
             </relationships>
         </class>
+        <class className="vidSponsorCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/vidSponsorCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="picture" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
         <class className="vidSponsorViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/vidSponsorViewController.h"/>
+        </class>
+        <class className="vidTabBarViewController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/vidTabBarViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

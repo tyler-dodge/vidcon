@@ -12,6 +12,7 @@
 @property (strong, readonly) UIImage * image;
 @property (strong, readonly) NSString * shortDescription;
 @property (strong, readonly) NSString * longDescription;
+@property (nonatomic) NSUInteger index;
 @end
 @interface vidSpeakerModel : NSObject
 

@@ -139,4 +139,7 @@
     }
     self.visibleEvents = newEvents;
 }
+-(void)viewDidLoad
+{
+}
 @end

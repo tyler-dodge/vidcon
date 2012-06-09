@@ -1,17 +1,18 @@
 //
-//  vidSpeakerCell.m
+//  vidSponsorCell.m
 //  vidcon
 //
-//  Created by Tyler Dodge on 4/13/12.
-//  Copyright (c) 2012 Sting Apps. All rights reserved.
+//  Created by Tyler Dodge on 6/8/12.
+//
 //
 
-#import "vidSpeakerCell.h"
+#import "vidSponsorCell.h"
+#import <QuartzCore/QuartzCore.h>
 
-@implementation vidSpeakerCell
-@synthesize nameLabel = _nameLabel;
+@implementation vidSponsorCell
 @synthesize picture = _picture;
-@synthesize backgroundImage = _backgroundImage;
+@synthesize name = _name;
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -27,8 +28,10 @@
 
     // Configure the view for the selected state
 }
--(void)layoutSubviews
+-(void)setPicture:(UIImageView *)picture
 {
-    [super layoutSubviews];
+    _picture = picture;
+    _picture.layer.borderColor = [[UIColor blackColor] CGColor];
+    _picture.layer.borderWidth = 1;
 }
 @end

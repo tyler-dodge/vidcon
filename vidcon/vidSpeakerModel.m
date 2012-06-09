@@ -125,10 +125,11 @@
 }
 -(vidSpeaker *)speakerAtIndexPath:(NSIndexPath *)path
 {
-   
-    return [self.speakers objectAtIndex:
-            [[self.speakerIndex objectAtIndex:[path indexAtPosition:0]] intValue] +
-            [path indexAtPosition:1]];
+    NSInteger index = [[self.speakerIndex objectAtIndex:[path indexAtPosition:0]] intValue] +
+    [path indexAtPosition:1];
+    vidSpeaker * speaker = [self.speakers objectAtIndex:index];
+    speaker.index = index;
+    return speaker;
 }
 -(NSUInteger)speakerCount
 {

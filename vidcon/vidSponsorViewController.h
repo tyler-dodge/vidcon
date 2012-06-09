@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "vidSpeakerViewController.h"
 
 @interface vidSponsorViewController : UITableViewController
-
 @end

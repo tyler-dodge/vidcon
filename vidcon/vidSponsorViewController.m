@@ -7,81 +7,65 @@
 //
 
 #import "vidSponsorViewController.h"
+#define YOUTUBE_IDENTIFIER @"youtube"
+#define MAKER_IDENTIFIER @"maker"
+#define PLATINUM_IDENTIFIER @"platinum"
+#define GOLD_IDENTIFIER @"gold"
+#define YOUTUBE_SECTION 0
+#define MAKER_SECTION 1
+#define PLATINUM_SECTION 2
+#define GOLD_SECTION 3
 
 @interface vidSponsorViewController ()
 
 @end
 
 @implementation vidSponsorViewController
-
-- (id)initWithStyle:(UITableViewStyle)style
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
+    UITableViewCell * cell;
+    switch ([indexPath indexAtPosition:0]) {
+        case YOUTUBE_SECTION:
+            cell = [tableView dequeueReusableCellWithIdentifier:YOUTUBE_IDENTIFIER];
+            break;
+        case MAKER_SECTION:
+            cell = [tableView dequeueReusableCellWithIdentifier:MAKER_IDENTIFIER];
+            break;
+        case PLATINUM_SECTION:
+            cell = [tableView dequeueReusableCellWithIdentifier:PLATINUM_IDENTIFIER];
+            break;
+        case GOLD_SECTION:
+            cell = [tableView dequeueReusableCellWithIdentifier:GOLD_IDENTIFIER];
+            break;
+        default:
+            cell = [tableView dequeueReusableCellWithIdentifier:PLATINUM_IDENTIFIER];
+            break;
     }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return YES;
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    switch (section) {
+        case YOUTUBE_SECTION:
+        case MAKER_SECTION:
+            return 1;
+            break;
+        case PLATINUM_SECTION:
+            return 3;
+            break;
+        case GOLD_SECTION:
+            return 3;
+            break;
+        default:
+            return 1;
+    }
 }
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    // Configure the cell...
-    
-    return cell;
+    return 4;
 }
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+-(void)viewDidLoad
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
 }
-
 @end

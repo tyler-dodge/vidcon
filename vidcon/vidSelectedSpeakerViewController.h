@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *twitterName;
 @property (weak, nonatomic) IBOutlet UIImageView *speakerImage;
 @property (weak, nonatomic) IBOutlet UILabel *speakerName;
+@property (weak, nonatomic) IBOutlet UITableViewCell *speakerDescriptionCell;
 
 @property (strong, nonatomic) vidSpeaker * speaker;
 @end

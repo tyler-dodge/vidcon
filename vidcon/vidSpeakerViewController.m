@@ -8,9 +8,8 @@
 
 #import "vidSpeakerViewController.h"
 #import "vidSpeakerCell.h"
-#import <QuartzCore/QuartzCore.h>
 #import "vidSelectedSpeakerViewController.h"
-
+#import <QuartzCore/QuartzCore.h>
 @interface vidSpeakerViewController () <UISearchDisplayDelegate>
 @property (strong, nonatomic) vidSpeaker * selectedSpeaker;
 @end
@@ -84,20 +83,34 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"SpeakerCell";
-    vidSpeakerCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifierAlt = @"SpeakerCellALT";
+    vidSpeakerCell *speakerCell = nil;
+    
     vidSpeaker * speaker = nil;
     if (tableView==self.tableView) {
-       speaker=[self.model speakerAtIndexPath:indexPath];
+        speaker=[self.model speakerAtIndexPath:indexPath];
     } else {
         speaker = [self.model.searchResults objectAtIndex:[indexPath indexAtPosition:1]];
     }
-    cell.nameLabel.text = speaker.name;
-    cell.descriptionLabel.text = speaker.shortDescription;
-    cell.imageView.image = speaker.image;
-    cell.imageView.frame = CGRectMake(0, 0, 32, 32);
-    cell.imageView.layer.borderColor = [UIColor blackColor].CGColor;
-    cell.imageView.layer.borderWidth = 2;
-    return cell;
+    
+    if (speaker.index % 2 == 0) {
+        speakerCell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    } else {
+        speakerCell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifierAlt];
+    }
+    speakerCell.picture.clipsToBounds = YES;
+    //speakerCell.imageView.layer.masksToBounds= YES;
+    if (tableView==self.tableView) {
+        speakerCell.backgroundImage.hidden=NO;
+    } else {
+        speakerCell.backgroundImage.hidden=YES;
+    }
+    speakerCell.nameLabel.text = speaker.name;
+    speakerCell.picture.image = speaker.image;
+    speakerCell.picture.layer.borderColor = [UIColor blackColor].CGColor;
+    speakerCell.picture.layer.borderWidth = 1;
+    speakerCell.picture.layer.masksToBounds = YES;
+    return speakerCell;
 }
 
 #pragma mark - Table view delegate
