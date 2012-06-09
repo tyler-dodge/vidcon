@@ -82,7 +82,7 @@
     NSData * data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"guests"
                                                                                    ofType:@"json"]];
     NSArray * speakerList = [NSJSONSerialization JSONObjectWithData:data
-                                                            options:NULL
+                                                            options:0
                                                               error:&error];
     int indexCounter = 0;
     [self.speakerIndex addObject:[NSNumber numberWithInt:0]];

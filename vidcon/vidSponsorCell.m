@@ -31,7 +31,5 @@
 -(void)setPicture:(UIImageView *)picture
 {
     _picture = picture;
-    _picture.layer.borderColor = [[UIColor blackColor] CGColor];
-    _picture.layer.borderWidth = 1;
 }
 @end

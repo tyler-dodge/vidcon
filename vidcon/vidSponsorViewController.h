@@ -10,4 +10,8 @@
 #import "vidSpeakerViewController.h"
 
 @interface vidSponsorViewController : UITableViewController
+@property (strong, nonatomic) NSArray * DiamondSponsors;
+@property (strong, nonatomic) NSArray * PlatinumSponsors;
+@property (strong, nonatomic) NSArray * GoldSponsors;
+@property (strong, nonatomic) NSArray * NormalSponsors;
 @end

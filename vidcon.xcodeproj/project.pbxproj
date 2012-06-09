@@ -11,6 +11,19 @@
 		22B08672154C7103007CF794 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08671154C7103007CF794 /* Icon@2x.png */; };
 		22B08674154C711A007CF794 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08673154C711A007CF794 /* Icon-72.png */; };
 		22B08676154C711C007CF794 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 22B08675154C711C007CF794 /* Icon-72@2x.png */; };
+		8F09BBE11583E401003A80C2 /* BigFramelogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F09BBE01583E400003A80C2 /* BigFramelogo.png */; };
+		8F09BBE31583E41B003A80C2 /* dftbaLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F09BBE21583E41B003A80C2 /* dftbaLogo.png */; };
+		8F09BBE51583E448003A80C2 /* IAWTV-Logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F09BBE41583E448003A80C2 /* IAWTV-Logo.jpeg */; };
+		8F09BBE71583E4A1003A80C2 /* mekanism.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F09BBE61583E4A1003A80C2 /* mekanism.png */; };
+		8F09BBEB1583E553003A80C2 /* SAG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F09BBEA1583E553003A80C2 /* SAG.jpg */; };
+		8F09BBED1583E56E003A80C2 /* SnapYourself_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F09BBEC1583E56E003A80C2 /* SnapYourself_logo.png */; };
+		8F09BBEF1583E593003A80C2 /* vidStatsxLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F09BBEE1583E593003A80C2 /* vidStatsxLogo.jpg */; };
+		8F09BBF11583E5A6003A80C2 /* WGAW-Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F09BBF01583E5A6003A80C2 /* WGAW-Logo.jpg */; };
+		8F09BBF31583E5E2003A80C2 /* younowlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F09BBF21583E5E2003A80C2 /* younowlogo.png */; };
+		8F09BBF51583E60C003A80C2 /* audioSocketLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F09BBF41583E60C003A80C2 /* audioSocketLogo.jpg */; };
+		8F09BBFD1583EBAE003A80C2 /* alloydigitalogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F09BBFC1583EBAD003A80C2 /* alloydigitalogo.jpg */; };
+		8F09BC061583EE00003A80C2 /* My-Damn-ChannelLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F09BC051583EE00003A80C2 /* My-Damn-ChannelLogo.jpg */; };
+		8F09BC091583F140003A80C2 /* vidSelectedSponsorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F09BC081583F140003A80C2 /* vidSelectedSponsorViewController.m */; };
 		8F151B491576C45800208D44 /* notificationicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B471576C45800208D44 /* notificationicon.png */; };
 		8F151B4A1576C45800208D44 /* notificationicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B481576C45800208D44 /* notificationicon@2x.png */; };
 		8F151B4D1576C4AC00208D44 /* guestsicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B4B1576C4AC00208D44 /* guestsicon.png */; };
@@ -207,12 +220,12 @@
 		8FBC1CE71582F60A00D0796E /* PlatinumSponsorScroller@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBC1CE51582F60A00D0796E /* PlatinumSponsorScroller@2x.png */; };
 		8FBC1CEE1582FC4500D0796E /* vidSponsorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBC1CED1582FC4500D0796E /* vidSponsorCell.m */; };
 		8FBC1CFB1583007000D0796E /* MachinimaLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBC1CFA1583007000D0796E /* MachinimaLogo.png */; };
-		8FBC1CFD1583007D00D0796E /* BlipTvLog.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBC1CFC1583007D00D0796E /* BlipTvLog.png */; };
-		8FBC1CFF158300A300D0796E /* AlloydigitalLogo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8FBC1CFE158300A300D0796E /* AlloydigitalLogo.jpeg */; };
+		8FBC1CFD1583007D00D0796E /* BlipTvLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBC1CFC1583007D00D0796E /* BlipTvLogo.png */; };
 		8FBC1D01158300D200D0796E /* Revision3Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBC1D00158300D200D0796E /* Revision3Logo.png */; };
 		8FBC1D031583010100D0796E /* kowLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBC1D021583010100D0796E /* kowLogo.png */; };
 		8FBC1D07158301B700D0796E /* VYouLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FBC1D06158301B700D0796E /* VYouLogo.png */; };
 		8FBC1D09158301E000D0796E /* sponsors.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FBC1D08158301DF00D0796E /* sponsors.json */; };
+		8FBC1D141583BAAF00D0796E /* vidSponsor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBC1D131583BAAF00D0796E /* vidSponsor.m */; };
 		8FC3E4581576764B00E42A82 /* vidSponsorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC3E4571576764B00E42A82 /* vidSponsorViewController.m */; };
 		8FE4398E15471D49003D9657 /* vidConferenceGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4398D15471D49003D9657 /* vidConferenceGuide.m */; };
 		8FE4399215471DE1003D9657 /* vidConferenceEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4399115471DE1003D9657 /* vidConferenceEvent.m */; };
@@ -238,6 +251,21 @@
 		22B08671154C7103007CF794 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		22B08673154C711A007CF794 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		22B08675154C711C007CF794 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		8F09BBD61583BBF5003A80C2 /* vidcon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = vidcon.entitlements; sourceTree = "<group>"; };
+		8F09BBE01583E400003A80C2 /* BigFramelogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigFramelogo.png; sourceTree = "<group>"; };
+		8F09BBE21583E41B003A80C2 /* dftbaLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dftbaLogo.png; sourceTree = "<group>"; };
+		8F09BBE41583E448003A80C2 /* IAWTV-Logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IAWTV-Logo.jpeg"; sourceTree = "<group>"; };
+		8F09BBE61583E4A1003A80C2 /* mekanism.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mekanism.png; sourceTree = "<group>"; };
+		8F09BBEA1583E553003A80C2 /* SAG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SAG.jpg; sourceTree = "<group>"; };
+		8F09BBEC1583E56E003A80C2 /* SnapYourself_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SnapYourself_logo.png; sourceTree = "<group>"; };
+		8F09BBEE1583E593003A80C2 /* vidStatsxLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vidStatsxLogo.jpg; sourceTree = "<group>"; };
+		8F09BBF01583E5A6003A80C2 /* WGAW-Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WGAW-Logo.jpg"; sourceTree = "<group>"; };
+		8F09BBF21583E5E2003A80C2 /* younowlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = younowlogo.png; sourceTree = "<group>"; };
+		8F09BBF41583E60C003A80C2 /* audioSocketLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = audioSocketLogo.jpg; sourceTree = "<group>"; };
+		8F09BBFC1583EBAD003A80C2 /* alloydigitalogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alloydigitalogo.jpg; sourceTree = "<group>"; };
+		8F09BC051583EE00003A80C2 /* My-Damn-ChannelLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "My-Damn-ChannelLogo.jpg"; sourceTree = "<group>"; };
+		8F09BC071583F140003A80C2 /* vidSelectedSponsorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSelectedSponsorViewController.h; sourceTree = "<group>"; };
+		8F09BC081583F140003A80C2 /* vidSelectedSponsorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSelectedSponsorViewController.m; sourceTree = "<group>"; };
 		8F151B471576C45800208D44 /* notificationicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notificationicon.png; sourceTree = "<group>"; };
 		8F151B481576C45800208D44 /* notificationicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notificationicon@2x.png"; sourceTree = "<group>"; };
 		8F151B4B1576C4AC00208D44 /* guestsicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guestsicon.png; sourceTree = "<group>"; };
@@ -448,12 +476,13 @@
 		8FBC1CEC1582FC4500D0796E /* vidSponsorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSponsorCell.h; sourceTree = "<group>"; };
 		8FBC1CED1582FC4500D0796E /* vidSponsorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSponsorCell.m; sourceTree = "<group>"; };
 		8FBC1CFA1583007000D0796E /* MachinimaLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MachinimaLogo.png; sourceTree = "<group>"; };
-		8FBC1CFC1583007D00D0796E /* BlipTvLog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlipTvLog.png; sourceTree = "<group>"; };
-		8FBC1CFE158300A300D0796E /* AlloydigitalLogo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlloydigitalLogo.jpeg; sourceTree = "<group>"; };
+		8FBC1CFC1583007D00D0796E /* BlipTvLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlipTvLogo.png; sourceTree = "<group>"; };
 		8FBC1D00158300D200D0796E /* Revision3Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Revision3Logo.png; sourceTree = "<group>"; };
 		8FBC1D021583010100D0796E /* kowLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kowLogo.png; sourceTree = "<group>"; };
 		8FBC1D06158301B700D0796E /* VYouLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VYouLogo.png; sourceTree = "<group>"; };
 		8FBC1D08158301DF00D0796E /* sponsors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sponsors.json; sourceTree = "<group>"; };
+		8FBC1D121583BAAF00D0796E /* vidSponsor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSponsor.h; sourceTree = "<group>"; };
+		8FBC1D131583BAAF00D0796E /* vidSponsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSponsor.m; sourceTree = "<group>"; };
 		8FC3E4561576764B00E42A82 /* vidSponsorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSponsorViewController.h; sourceTree = "<group>"; };
 		8FC3E4571576764B00E42A82 /* vidSponsorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSponsorViewController.m; sourceTree = "<group>"; };
 		8FE4398C15471D49003D9657 /* vidConferenceGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidConferenceGuide.h; sourceTree = "<group>"; };
@@ -544,6 +573,7 @@
 		8F6BA04E1523BDFC004C5DF3 /* vidcon */ = {
 			isa = PBXGroup;
 			children = (
+				8F09BBD61583BBF5003A80C2 /* vidcon.entitlements */,
 				8FBC1CBD1582F35700D0796E /* sponsors */,
 				8F76097E1575A6C100C71652 /* guestPics */,
 				8FBC1CBC1582F2F200D0796E /* backgrounds */,
@@ -581,6 +611,10 @@
 				8FBC1CB01582A9B100D0796E /* vidConferenceGuideMainViewController.m */,
 				8FBC1CEC1582FC4500D0796E /* vidSponsorCell.h */,
 				8FBC1CED1582FC4500D0796E /* vidSponsorCell.m */,
+				8FBC1D121583BAAF00D0796E /* vidSponsor.h */,
+				8FBC1D131583BAAF00D0796E /* vidSponsor.m */,
+				8F09BC071583F140003A80C2 /* vidSelectedSponsorViewController.h */,
+				8F09BC081583F140003A80C2 /* vidSelectedSponsorViewController.m */,
 			);
 			path = vidcon;
 			sourceTree = "<group>";
@@ -840,12 +874,23 @@
 		8FBC1CF81582FEB700D0796E /* icon */ = {
 			isa = PBXGroup;
 			children = (
+				8F09BBFC1583EBAD003A80C2 /* alloydigitalogo.jpg */,
+				8F09BBF41583E60C003A80C2 /* audioSocketLogo.jpg */,
 				8FBC1CFA1583007000D0796E /* MachinimaLogo.png */,
-				8FBC1CFC1583007D00D0796E /* BlipTvLog.png */,
-				8FBC1CFE158300A300D0796E /* AlloydigitalLogo.jpeg */,
+				8FBC1CFC1583007D00D0796E /* BlipTvLogo.png */,
+				8F09BBE01583E400003A80C2 /* BigFramelogo.png */,
+				8F09BBE21583E41B003A80C2 /* dftbaLogo.png */,
 				8FBC1D00158300D200D0796E /* Revision3Logo.png */,
 				8FBC1D021583010100D0796E /* kowLogo.png */,
+				8F09BC051583EE00003A80C2 /* My-Damn-ChannelLogo.jpg */,
 				8FBC1D06158301B700D0796E /* VYouLogo.png */,
+				8F09BBE41583E448003A80C2 /* IAWTV-Logo.jpeg */,
+				8F09BBE61583E4A1003A80C2 /* mekanism.png */,
+				8F09BBEA1583E553003A80C2 /* SAG.jpg */,
+				8F09BBEC1583E56E003A80C2 /* SnapYourself_logo.png */,
+				8F09BBEE1583E593003A80C2 /* vidStatsxLogo.jpg */,
+				8F09BBF01583E5A6003A80C2 /* WGAW-Logo.jpg */,
+				8F09BBF21583E5E2003A80C2 /* younowlogo.png */,
 			);
 			name = icon;
 			sourceTree = "<group>";
@@ -911,7 +956,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = vid;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 8F6BA03E1523BDFC004C5DF3 /* Build configuration list for PBXProject "vidcon" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1110,12 +1155,23 @@
 				8FBC1CE61582F60A00D0796E /* GoldSponsorScroller@2x.png in Resources */,
 				8FBC1CE71582F60A00D0796E /* PlatinumSponsorScroller@2x.png in Resources */,
 				8FBC1CFB1583007000D0796E /* MachinimaLogo.png in Resources */,
-				8FBC1CFD1583007D00D0796E /* BlipTvLog.png in Resources */,
-				8FBC1CFF158300A300D0796E /* AlloydigitalLogo.jpeg in Resources */,
+				8FBC1CFD1583007D00D0796E /* BlipTvLogo.png in Resources */,
 				8FBC1D01158300D200D0796E /* Revision3Logo.png in Resources */,
 				8FBC1D031583010100D0796E /* kowLogo.png in Resources */,
 				8FBC1D07158301B700D0796E /* VYouLogo.png in Resources */,
 				8FBC1D09158301E000D0796E /* sponsors.json in Resources */,
+				8F09BBE11583E401003A80C2 /* BigFramelogo.png in Resources */,
+				8F09BBE31583E41B003A80C2 /* dftbaLogo.png in Resources */,
+				8F09BBE51583E448003A80C2 /* IAWTV-Logo.jpeg in Resources */,
+				8F09BBE71583E4A1003A80C2 /* mekanism.png in Resources */,
+				8F09BBEB1583E553003A80C2 /* SAG.jpg in Resources */,
+				8F09BBED1583E56E003A80C2 /* SnapYourself_logo.png in Resources */,
+				8F09BBEF1583E593003A80C2 /* vidStatsxLogo.jpg in Resources */,
+				8F09BBF11583E5A6003A80C2 /* WGAW-Logo.jpg in Resources */,
+				8F09BBF31583E5E2003A80C2 /* younowlogo.png in Resources */,
+				8F09BBF51583E60C003A80C2 /* audioSocketLogo.jpg in Resources */,
+				8F09BBFD1583EBAE003A80C2 /* alloydigitalogo.jpg in Resources */,
+				8F09BC061583EE00003A80C2 /* My-Damn-ChannelLogo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1169,6 +1225,8 @@
 				8FBC1CA91582A46800D0796E /* vidTabBarViewController.m in Sources */,
 				8FBC1CB11582A9B100D0796E /* vidConferenceGuideMainViewController.m in Sources */,
 				8FBC1CEE1582FC4500D0796E /* vidSponsorCell.m in Sources */,
+				8FBC1D141583BAAF00D0796E /* vidSponsor.m in Sources */,
+				8F09BC091583F140003A80C2 /* vidSelectedSponsorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1268,14 +1326,16 @@
 		8F6BA07B1523BDFC004C5DF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = vidcon/vidcon.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "vidcon/vidcon-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "vidcon/vidcon-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
@@ -1291,14 +1351,16 @@
 		8F6BA07C1523BDFC004C5DF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = vidcon/vidcon.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "vidcon/vidcon-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "vidcon/vidcon-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = "-ObjC";
