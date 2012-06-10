@@ -150,21 +150,37 @@
             </objects>
             <point key="canvasLocation" x="1323" y="-1233"/>
         </scene>
+        <!--View Controller - FAQs-->
+        <scene sceneID="ZTq-YF-sor">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Xz-g6-cgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="zUY-76-7m2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kjy-cg-9kA">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FAQs" id="jf3-fd-9hb"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3225" y="-1305"/>
+        </scene>
         <!--Vid Conference Guide View Controller - Guide-->
         <scene sceneID="GtB-yC-WJ4">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rOe-sd-0kC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Guide" id="xy8-Sj-AG4" customClass="vidConferenceGuideViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0rq-wq-4qn">
-                        <rect key="frame" x="0.0" y="64" width="640" height="254"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DYc-2g-2yS">
-                                <rect key="frame" x="0.0" y="27" width="640" height="227"/>
+                                <rect key="frame" x="0.0" y="27" width="320" height="340"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
                             <view contentMode="scaleToFill" id="ZRw-sQ-U1x" customClass="vidEventTimeSlotHeader">
-                                <rect key="frame" x="0.0" y="0.0" width="640" height="28"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -172,13 +188,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Conference Guide" id="Kfw-Mg-Xam"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="eventHeader" destination="ZRw-sQ-U1x" id="qYU-gB-Y5r"/>
                         <outlet property="eventScrollView" destination="DYc-2g-2yS" id="6Ti-0T-sFS"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2209" y="-654"/>
+            <point key="canvasLocation" x="3225" y="-670"/>
         </scene>
         <!--Vid Navigation View Controller - Speakers-->
         <scene sceneID="bPz-nz-jbw">
@@ -232,52 +249,235 @@
                                 <rect key="frame" x="0.0" y="1" width="320" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="tOR-vi-Sip">
-                                <rect key="frame" x="301" y="340" width="38" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <pageControl opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" numberOfPages="3" id="tOR-vi-Sip">
+                                <rect key="frame" x="0.0" y="340" width="640" height="36"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
                             <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsVerticalScrollIndicator="NO" id="4GM-lj-UhD">
                                 <rect key="frame" x="0.0" y="1" width="640" height="367"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" id="I23-zq-vQ7">
+                                    <view contentMode="scaleToFill" id="I23-zq-vQ7">
                                         <rect key="frame" x="0.0" y="0.0" width="640" height="367"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ncP-ix-DDS">
-                                                <rect key="frame" x="113" y="148" width="94" height="72"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ovQ-dc-DBX">
+                                                <rect key="frame" x="20" y="112" width="155" height="65"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal">
-                                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.36862745098039218" green="0.55686274509803924" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <state key="normal" title="June 28, Thursday">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <state key="highlighted">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="xy8-Sj-AG4" kind="push" id="gmQ-T2-gTb"/>
+                                                    <action selector="buttonPressed:" destination="BN9-c7-0uV" eventType="touchDown" id="DX5-F1-1gA"/>
+                                                    <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpOutside" id="6xo-ko-hfE"/>
+                                                    <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpInside" id="l3y-zs-uMO"/>
+                                                    <segue destination="xy8-Sj-AG4" identifier="thursday" kind="push" id="s1U-Td-rF4"/>
                                                 </connections>
                                             </button>
-                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" id="ZWt-1I-jyd">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zVe-Km-nnE">
+                                                <rect key="frame" x="20" y="186" width="155" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.36862745099999999" green="0.5568627451" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <state key="normal" title="June 29, Friday">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BN9-c7-0uV" eventType="touchDown" id="QXj-g1-BET"/>
+                                                    <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpInside" id="4rH-2S-DTf"/>
+                                                    <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpOutside" id="lQ2-Oc-ioA"/>
+                                                    <segue destination="xy8-Sj-AG4" identifier="friday" kind="push" id="76y-h9-PeA"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" id="ZWt-1I-jyd">
                                                 <rect key="frame" x="328" y="-20" width="640" height="367"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gAG-HK-rJ1">
-                                                        <rect key="frame" x="113" y="148" width="94" height="72"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="e62-2a-S7B">
+                                                        <rect key="frame" x="20" y="286" width="262" height="61"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                        <state key="normal">
-                                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="0.36862745099999999" green="0.5568627451" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <state key="normal" title="Frequently Asked Questions">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
                                                         <state key="highlighted">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BN9-c7-0uV" eventType="touchDown" id="IoL-jk-5Za"/>
+                                                            <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpInside" id="Rey-pt-8yP"/>
+                                                            <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpOutside" id="o6w-z9-kjp"/>
+                                                            <segue destination="zUY-76-7m2" identifier="faq" kind="push" id="gTS-jS-pB4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zYS-yU-F2B">
+                                                        <rect key="frame" x="20" y="154" width="134" height="124"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.36862745099999999" green="0.5568627451" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <state key="normal" title="Do's and Don'ts">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BN9-c7-0uV" eventType="touchDown" id="OkU-S6-d36"/>
+                                                            <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpInside" id="CTD-za-qkn"/>
+                                                            <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpOutside" id="csa-Zx-FrL"/>
+                                                            <segue destination="NJE-6L-00P" identifier="dos" kind="push" id="azb-ok-QTL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0k0-dl-e5T">
+                                                        <rect key="frame" x="162" y="217" width="120" height="61"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.36862745099999999" green="0.5568627451" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <state key="normal" title="Booths">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BN9-c7-0uV" eventType="touchDown" id="uie-mO-tXP"/>
+                                                            <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpInside" id="dln-lq-BEv"/>
+                                                            <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpOutside" id="pem-WZ-MOd"/>
+                                                            <segue destination="EYl-yi-ved" identifier="booths" kind="push" id="e0u-iu-0CO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ver-zN-tfD">
+                                                        <rect key="frame" x="162" y="154" width="120" height="55"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.36862745099999999" green="0.5568627451" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <state key="normal" title="Hotels">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BN9-c7-0uV" eventType="touchDown" id="Bmx-xc-7iu"/>
+                                                            <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpInside" id="L3P-mo-ZhI"/>
+                                                            <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpOutside" id="wpP-HW-gg8"/>
+                                                            <segue destination="RaJ-xC-2wi" identifier="hotes" kind="push" id="Jra-io-tbM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6Hj-4C-E50">
+                                                        <rect key="frame" x="20" y="91" width="262" height="55"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.36862745099999999" green="0.5568627451" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <state key="normal" title="Parking Guide">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="selected">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <state key="highlighted">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="buttonPressed:" destination="BN9-c7-0uV" eventType="touchDown" id="ggx-zC-a0f"/>
+                                                            <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpOutside" id="Kgp-Jm-oDz"/>
+                                                            <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpInside" id="YUF-2H-odO"/>
+                                                            <segue destination="OQq-ec-kaE" identifier="parking" kind="push" id="pEJ-Jo-xtC"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6oH-rc-M44">
+                                                <rect key="frame" x="20" y="259" width="155" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.36862745099999999" green="0.5568627451" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <state key="normal" title="June 30, Saturday">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BN9-c7-0uV" eventType="touchDown" id="V2e-Ds-iQ8"/>
+                                                    <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpInside" id="YGO-Fn-6eE"/>
+                                                    <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpOutside" id="mNl-mJ-W1O"/>
+                                                    <segue destination="xy8-Sj-AG4" identifier="saturday" kind="push" id="M1O-CX-dhf"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Conference Agenda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="fCI-bf-TRd">
+                                                <rect key="frame" x="20" y="68" width="286" height="36"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xCu-4H-r6v">
+                                                <rect key="frame" x="183" y="112" width="123" height="213"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.73725490196078436" green="0.20784313725490194" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <state key="normal" title="Today">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="selected">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BN9-c7-0uV" eventType="touchDown" id="BFA-5z-DP2"/>
+                                                    <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpOutside" id="cWk-FA-o8n"/>
+                                                    <action selector="buttonUp:" destination="BN9-c7-0uV" eventType="touchUpInside" id="eW9-00-Wbk"/>
+                                                    <segue destination="xy8-Sj-AG4" identifier="today" kind="push" id="ZgQ-Yi-r5d"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
@@ -295,7 +495,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1301" y="-662"/>
+            <point key="canvasLocation" x="2317" y="-678"/>
         </scene>
         <!--Vid Navigation View Controller - Sponsors-->
         <scene sceneID="3LF-L6-8Q8">
@@ -942,6 +1142,70 @@
             </objects>
             <point key="canvasLocation" x="1323" y="-83"/>
         </scene>
+        <!--View Controller - Do's and Don'ts-->
+        <scene sceneID="4bk-Ko-4JR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="264-dS-Fm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="NJE-6L-00P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pc3-tT-JqI">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Do's and Don'ts" id="j6f-5z-HdO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3235" y="-33"/>
+        </scene>
+        <!--View Controller - Hotels-->
+        <scene sceneID="XSA-pP-VpM">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbR-pc-m5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="RaJ-xC-2wi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3YW-Um-X5P">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hotels" id="xfP-Zc-SjO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3235" y="607"/>
+        </scene>
+        <!--View Controller - Parking-->
+        <scene sceneID="awS-4J-6nk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAI-hv-OIt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="OQq-ec-kaE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nSM-Fe-c2U">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Parking" id="RjJ-oP-thE"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3219" y="-1921"/>
+        </scene>
+        <!--View Controller - Booths-->
+        <scene sceneID="ki7-iE-byv">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0zY-BW-Gc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="EYl-yi-ved" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y8E-ol-OTV">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Booths" id="bqp-dP-ZyQ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3235" y="1255"/>
+        </scene>
     </scenes>
     <resources>
         <image name="GoldSponsorScroller@2x.png" width="640" height="150"/>
@@ -1037,7 +1301,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="AVY-Ic-JfE"/>
+        <segue reference="TnI-pH-BOH"/>
         <segue reference="Dyk-cU-GIQ"/>
+        <segue reference="ZgQ-Yi-r5d"/>
     </inferredMetricsTieBreakers>
 </document>

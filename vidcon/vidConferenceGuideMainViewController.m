@@ -7,14 +7,20 @@
 //
 
 #import "vidConferenceGuideMainViewController.h"
-#define PAGE_SIZE 320
+#define CONFERENCE_PAGE_SIZE 320
+#define PAGE_COUNT 2
 @interface vidConferenceGuideMainViewController () <UIScrollViewDelegate>
-
 @end
 
 @implementation vidConferenceGuideMainViewController
 @synthesize scrollView = _scrollView;
 @synthesize pageControl = _pageControl;
+- (IBAction)buttonPressed:(UIButton *)sender {
+    sender.alpha += 0.1;
+}
+- (IBAction)buttonUp:(UIButton *)sender {
+    sender.alpha -= 0.1;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +34,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.scrollView.contentSize = CGSizeMake(PAGE_SIZE * 2, self.scrollView.contentSize.height);
+    self.scrollView.contentSize = CGSizeMake(CONFERENCE_PAGE_SIZE * 2, self.scrollView.contentSize.height);
+    self.pageControl.numberOfPages = PAGE_COUNT;
 }
 
 - (void)viewDidUnload
@@ -54,7 +61,7 @@
 }
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    self.pageControl.currentPage = scrollView.contentOffset.x / PAGE_SIZE;
+    self.pageControl.currentPage = scrollView.contentOffset.x / CONFERENCE_PAGE_SIZE;
 }
 
 @end
