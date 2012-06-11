@@ -233,6 +233,7 @@
 		8FE4399D1547287D003D9657 /* vidConferenceGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4399C1547287D003D9657 /* vidConferenceGuideViewController.m */; };
 		8FE439A5154728FC003D9657 /* vidEventTimeSlotHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE439A4154728FC003D9657 /* vidEventTimeSlotHeader.m */; };
 		8FF038911582A19600B7EFF7 /* vidNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF038901582A19600B7EFF7 /* vidNavigationViewController.m */; };
+		8FF2A29415855806008EE117 /* guide.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FF2A29315855806008EE117 /* guide.json */; };
 		8FFA8C1B1538B73000BFD0AF /* vidSpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFA8C1A1538B73000BFD0AF /* vidSpeakerViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -497,6 +498,7 @@
 		8FE439A4154728FC003D9657 /* vidEventTimeSlotHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidEventTimeSlotHeader.m; sourceTree = "<group>"; };
 		8FF0388F1582A19600B7EFF7 /* vidNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidNavigationViewController.h; sourceTree = "<group>"; };
 		8FF038901582A19600B7EFF7 /* vidNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidNavigationViewController.m; sourceTree = "<group>"; };
+		8FF2A29315855806008EE117 /* guide.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guide.json; sourceTree = "<group>"; };
 		8FFA8C191538B73000BFD0AF /* vidSpeakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSpeakerViewController.h; sourceTree = "<group>"; };
 		8FFA8C1A1538B73000BFD0AF /* vidSpeakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSpeakerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -582,6 +584,7 @@
 				8F6BA04F1523BDFC004C5DF3 /* Supporting Files */,
 				8F760BA11575A80E00C71652 /* guests.json */,
 				8FBC1D08158301DF00D0796E /* sponsors.json */,
+				8FF2A29315855806008EE117 /* guide.json */,
 				8F6BA0571523BDFC004C5DF3 /* vidAppDelegate.h */,
 				8F6BA0581523BDFC004C5DF3 /* vidAppDelegate.m */,
 				8F6BA05A1523BDFC004C5DF3 /* MainStoryboard_iPhone.storyboard */,
@@ -1172,6 +1175,7 @@
 				8F09BBF51583E60C003A80C2 /* audioSocketLogo.jpg in Resources */,
 				8F09BBFD1583EBAE003A80C2 /* alloydigitalogo.jpg in Resources */,
 				8F09BC061583EE00003A80C2 /* My-Damn-ChannelLogo.jpg in Resources */,
+				8FF2A29415855806008EE117 /* guide.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

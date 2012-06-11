@@ -175,14 +175,18 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DYc-2g-2yS">
-                                <rect key="frame" x="0.0" y="27" width="320" height="340"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="GuideBackground@2x.png" id="rjl-Bp-sii">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="DYc-2g-2yS">
+                                <rect key="frame" x="0.0" y="130" width="320" height="237"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
                             <view contentMode="scaleToFill" id="ZRw-sQ-U1x" customClass="vidEventTimeSlotHeader">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
+                                <rect key="frame" x="0.0" y="67" width="320" height="64"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -195,7 +199,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3225" y="-670"/>
+            <point key="canvasLocation" x="3225" y="-678"/>
         </scene>
         <!--Vid Navigation View Controller - Speakers-->
         <scene sceneID="bPz-nz-jbw">
@@ -487,7 +491,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Conference Guide" id="DrX-wQ-FDA"/>
+                    <navigationItem key="navigationItem" title="Conference Guide" id="DrX-wQ-FDA">
+                        <barButtonItem key="backBarButtonItem" title="Guide" id="JgP-Gg-RPs"/>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="pageControl" destination="tOR-vi-Sip" id="mWj-ku-Sq5"/>
@@ -1301,8 +1307,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="TnI-pH-BOH"/>
         <segue reference="Dyk-cU-GIQ"/>
-        <segue reference="ZgQ-Yi-r5d"/>
+        <segue reference="TnI-pH-BOH"/>
+        <segue reference="s1U-Td-rF4"/>
     </inferredMetricsTieBreakers>
 </document>

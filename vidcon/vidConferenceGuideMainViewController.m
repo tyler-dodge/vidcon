@@ -7,8 +7,18 @@
 //
 
 #import "vidConferenceGuideMainViewController.h"
+#import "vidConferenceGuide.h"
+#import "vidConferenceGuideViewController.h"
 #define CONFERENCE_PAGE_SIZE 320
 #define PAGE_COUNT 2
+#define THURSDAY @"thursday"
+#define THURSDAY_DATE 0
+#define FRIDAY @"friday"
+#define FRIDAY_DATE 3600 * 24
+#define SATURDAY @"saturday"
+#define SATURDAY_DATE 3600 * 24 * 2
+#define TODAY @"today"
+
 @interface vidConferenceGuideMainViewController () <UIScrollViewDelegate>
 @end
 
@@ -63,5 +73,21 @@
 {
     self.pageControl.currentPage = scrollView.contentOffset.x / CONFERENCE_PAGE_SIZE;
 }
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSTimeInterval startDate;
+    if ([segue.identifier isEqualToString:TODAY]) {
+        startDate = 0;
+    } else if ([segue.identifier isEqualToString:THURSDAY]) {
+        startDate = THURSDAY_DATE;
+    } else if ([segue.identifier isEqualToString:FRIDAY]) {
+        startDate = FRIDAY_DATE;
+    } else if ([segue.identifier isEqualToString:SATURDAY]) {
+        startDate = SATURDAY_DATE;
+    }
+    if (startDate) {
+        vidConferenceGuideViewController * conferenceGuide = segue.destinationViewController;
+        conferenceGuide.startTimeSinceMinimum = startDate;
+    }
+}
 @end

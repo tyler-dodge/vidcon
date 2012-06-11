@@ -26,15 +26,14 @@
 {
     float newLeft = [vidConferenceEventCell widthFromStart:self.minimum toEnd:self.event.start];
     float newWidth = [vidConferenceEventCell widthFromStart:self.event.start toEnd:self.event.end];
-    self.frame = CGRectMake(newLeft, self.event.verticalIndex * EVENT_HEIGHT, newWidth, EVENT_HEIGHT);
+    self.frame = CGRectMake(newLeft, self.event.verticalIndex * (EVENT_HEIGHT + 10) + 10, newWidth-10, EVENT_HEIGHT);
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"h:mm a"];
     self.timeRangeLabel.frame = CGRectMake(0, 0, self.frame.size.width, 20);
-    self.timeRangeLabel.layer.borderColor = [[UIColor blackColor] CGColor];
-    self.timeRangeLabel.layer.borderWidth = 1;
     self.nameLabel.frame = CGRectMake(0, 20, self.frame.size.width, self.frame.size.height-20);
-    self.nameLabel.backgroundColor = [UIColor grayColor];
+    self.nameLabel.backgroundColor = [UIColor colorWithRed:94./255 green:142./255 blue:184./255 alpha:1];
     self.nameLabel.text = [@" " stringByAppendingString:self.event.name];
+    self.nameLabel.textColor = [UIColor whiteColor];
     if (self.event.start != nil && self.event.end != nil) {
         
         self.timeRangeLabel.text = [NSString stringWithFormat:@" %@ - %@",
@@ -59,8 +58,6 @@
     [self addSubview:self.nameLabel];
     
     self.backgroundColor = [UIColor grayColor];
-    self.layer.borderColor = [[UIColor blackColor] CGColor];
-    self.layer.borderWidth = 1;
     self.minimum = minimum;
     self.event = event;
     return self;

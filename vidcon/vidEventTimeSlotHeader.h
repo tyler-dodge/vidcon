@@ -21,6 +21,7 @@
 -(void)initWithInterval:(NSTimeInterval)timeInterval
                        WithWidthPerInterval:(float)widthPerInterval
                               startInterval:(NSDate *)minimum;
+-(void)setStartDate:(NSTimeInterval)timeSinceMinimum;
 @property (nonatomic) float position;
 @property (readonly, strong, nonatomic) NSDate * start;
 @property (readonly, strong, nonatomic) NSDate * end;
