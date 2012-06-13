@@ -51,7 +51,8 @@
     NSInteger leftIndex = (NSInteger)floorf(intervalIndex);
     float labelPosition = leftIndex * self.widthPerInterval - position;
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"MMMM d, EEEE"];
+    [dateFormat setDateFormat:@"MMMM d YYYY, EEEE"];
+    dateFormat.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"PDT"];
     self.dateLabel.text = [dateFormat stringFromDate:[self.minimum dateByAddingTimeInterval:intervalIndex*1800]];
     [self.dateLabel sizeToFit];
     [self.dateContainer sizeToFit];

@@ -35,7 +35,6 @@
 		8F151B69157712D000208D44 /* vidconicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B68157712D000208D44 /* vidconicon@2x.png */; };
 		8F151B73157716A900208D44 /* vidconicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F151B72157716A900208D44 /* vidconicon.png */; };
 		8F294C0D1579BA3100CB47D5 /* GuestScrollerALT@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F294C0C1579BA3100CB47D5 /* GuestScrollerALT@2x.png */; };
-		8F294C111579D2E200CB47D5 /* GuideBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F294C101579D2E200CB47D5 /* GuideBackground@2x.png */; };
 		8F371C051523FA28008943A2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F371C041523FA28008943A2 /* AudioToolbox.framework */; };
 		8F371C071523FA32008943A2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F371C061523FA32008943A2 /* CFNetwork.framework */; };
 		8F371C091523FA3A008943A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F371C081523FA3A008943A2 /* SystemConfiguration.framework */; };
@@ -56,6 +55,9 @@
 		8F6BA06C1523BDFC004C5DF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6BA04A1523BDFC004C5DF3 /* Foundation.framework */; };
 		8F6BA0741523BDFC004C5DF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F6BA0721523BDFC004C5DF3 /* InfoPlist.strings */; };
 		8F6BA0771523BDFC004C5DF3 /* vidconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BA0761523BDFC004C5DF3 /* vidconTests.m */; };
+		8F6BA8DE1587F9970011A1A4 /* vidFaqController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6BA8DD1587F9970011A1A4 /* vidFaqController.m */; };
+		8F6BA8E9158805770011A1A4 /* GuideBackgroundAgenda@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6BA8E8158805760011A1A4 /* GuideBackgroundAgenda@2x.png */; };
+		8F6BA8ED158808280011A1A4 /* GuideBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6BA8EC158808280011A1A4 /* GuideBackground@2x.png */; };
 		8F6DA6B61538BD9400911E1A /* vidSpeakerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6DA6B51538BD9400911E1A /* vidSpeakerModel.m */; };
 		8F6DA6BA1538C4A000911E1A /* vidSpeakerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6DA6B91538C49F00911E1A /* vidSpeakerCell.m */; };
 		8F760B191575A74800C71652 /* 5sf.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760A901575A74800C71652 /* 5sf.jpeg */; };
@@ -193,6 +195,7 @@
 		8F760BA01575A74800C71652 /* Yosemitebear62.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F760B181575A74800C71652 /* Yosemitebear62.jpg */; };
 		8F760BA21575A80E00C71652 /* guests.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F760BA11575A80E00C71652 /* guests.json */; };
 		8F760BAD1575B44400C71652 /* vidSelectedSpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F760BAC1575B44400C71652 /* vidSelectedSpeakerViewController.m */; };
+		8FA656651588305600D612B3 /* guide.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA656641588305600D612B3 /* guide.json */; };
 		8FA7877D157677030031FFE3 /* vidBusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7877C157677030031FFE3 /* vidBusinessCardViewController.m */; };
 		8FA787851576778F0031FFE3 /* vidHotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA787841576778F0031FFE3 /* vidHotelViewController.m */; };
 		8FAE653C1579700B001F36A4 /* GuestScroller@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAE653B1579700B001F36A4 /* GuestScroller@2x.png */; };
@@ -233,7 +236,6 @@
 		8FE4399D1547287D003D9657 /* vidConferenceGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4399C1547287D003D9657 /* vidConferenceGuideViewController.m */; };
 		8FE439A5154728FC003D9657 /* vidEventTimeSlotHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE439A4154728FC003D9657 /* vidEventTimeSlotHeader.m */; };
 		8FF038911582A19600B7EFF7 /* vidNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF038901582A19600B7EFF7 /* vidNavigationViewController.m */; };
-		8FF2A29415855806008EE117 /* guide.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FF2A29315855806008EE117 /* guide.json */; };
 		8FFA8C1B1538B73000BFD0AF /* vidSpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFA8C1A1538B73000BFD0AF /* vidSpeakerViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -278,7 +280,6 @@
 		8F151B68157712D000208D44 /* vidconicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vidconicon@2x.png"; sourceTree = "<group>"; };
 		8F151B72157716A900208D44 /* vidconicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vidconicon.png; sourceTree = "<group>"; };
 		8F294C0C1579BA3100CB47D5 /* GuestScrollerALT@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GuestScrollerALT@2x.png"; sourceTree = "<group>"; };
-		8F294C101579D2E200CB47D5 /* GuideBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GuideBackground@2x.png"; sourceTree = "<group>"; };
 		8F371C041523FA28008943A2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8F371C061523FA32008943A2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8F371C081523FA3A008943A2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -305,6 +306,10 @@
 		8F6BA0731523BDFC004C5DF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F6BA0751523BDFC004C5DF3 /* vidconTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vidconTests.h; sourceTree = "<group>"; };
 		8F6BA0761523BDFC004C5DF3 /* vidconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vidconTests.m; sourceTree = "<group>"; };
+		8F6BA8DC1587F9970011A1A4 /* vidFaqController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidFaqController.h; sourceTree = "<group>"; };
+		8F6BA8DD1587F9970011A1A4 /* vidFaqController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidFaqController.m; sourceTree = "<group>"; };
+		8F6BA8E8158805760011A1A4 /* GuideBackgroundAgenda@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GuideBackgroundAgenda@2x.png"; sourceTree = "<group>"; };
+		8F6BA8EC158808280011A1A4 /* GuideBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GuideBackground@2x.png"; sourceTree = "<group>"; };
 		8F6DA6B41538BD9400911E1A /* vidSpeakerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSpeakerModel.h; sourceTree = "<group>"; };
 		8F6DA6B51538BD9400911E1A /* vidSpeakerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSpeakerModel.m; sourceTree = "<group>"; };
 		8F6DA6B81538C49F00911E1A /* vidSpeakerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSpeakerCell.h; sourceTree = "<group>"; };
@@ -445,6 +450,7 @@
 		8F760BA11575A80E00C71652 /* guests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guests.json; sourceTree = "<group>"; };
 		8F760BAB1575B44400C71652 /* vidSelectedSpeakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSelectedSpeakerViewController.h; sourceTree = "<group>"; };
 		8F760BAC1575B44400C71652 /* vidSelectedSpeakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSelectedSpeakerViewController.m; sourceTree = "<group>"; };
+		8FA656641588305600D612B3 /* guide.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guide.json; sourceTree = "<group>"; };
 		8FA7877B157677030031FFE3 /* vidBusinessCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidBusinessCardViewController.h; sourceTree = "<group>"; };
 		8FA7877C157677030031FFE3 /* vidBusinessCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidBusinessCardViewController.m; sourceTree = "<group>"; };
 		8FA787831576778F0031FFE3 /* vidHotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidHotelViewController.h; sourceTree = "<group>"; };
@@ -498,7 +504,6 @@
 		8FE439A4154728FC003D9657 /* vidEventTimeSlotHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidEventTimeSlotHeader.m; sourceTree = "<group>"; };
 		8FF0388F1582A19600B7EFF7 /* vidNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidNavigationViewController.h; sourceTree = "<group>"; };
 		8FF038901582A19600B7EFF7 /* vidNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidNavigationViewController.m; sourceTree = "<group>"; };
-		8FF2A29315855806008EE117 /* guide.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guide.json; sourceTree = "<group>"; };
 		8FFA8C191538B73000BFD0AF /* vidSpeakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSpeakerViewController.h; sourceTree = "<group>"; };
 		8FFA8C1A1538B73000BFD0AF /* vidSpeakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSpeakerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -584,7 +589,7 @@
 				8F6BA04F1523BDFC004C5DF3 /* Supporting Files */,
 				8F760BA11575A80E00C71652 /* guests.json */,
 				8FBC1D08158301DF00D0796E /* sponsors.json */,
-				8FF2A29315855806008EE117 /* guide.json */,
+				8FA656641588305600D612B3 /* guide.json */,
 				8F6BA0571523BDFC004C5DF3 /* vidAppDelegate.h */,
 				8F6BA0581523BDFC004C5DF3 /* vidAppDelegate.m */,
 				8F6BA05A1523BDFC004C5DF3 /* MainStoryboard_iPhone.storyboard */,
@@ -618,6 +623,8 @@
 				8FBC1D131583BAAF00D0796E /* vidSponsor.m */,
 				8F09BC071583F140003A80C2 /* vidSelectedSponsorViewController.h */,
 				8F09BC081583F140003A80C2 /* vidSelectedSponsorViewController.m */,
+				8F6BA8DC1587F9970011A1A4 /* vidFaqController.h */,
+				8F6BA8DD1587F9970011A1A4 /* vidFaqController.m */,
 			);
 			path = vidcon;
 			sourceTree = "<group>";
@@ -825,7 +832,8 @@
 			children = (
 				8FAE653B1579700B001F36A4 /* GuestScroller@2x.png */,
 				8F294C0C1579BA3100CB47D5 /* GuestScrollerALT@2x.png */,
-				8F294C101579D2E200CB47D5 /* GuideBackground@2x.png */,
+				8F6BA8EC158808280011A1A4 /* GuideBackground@2x.png */,
+				8F6BA8E8158805760011A1A4 /* GuideBackgroundAgenda@2x.png */,
 			);
 			name = backgrounds;
 			sourceTree = "<group>";
@@ -1136,7 +1144,6 @@
 				8F151B73157716A900208D44 /* vidconicon.png in Resources */,
 				8FAE653C1579700B001F36A4 /* GuestScroller@2x.png in Resources */,
 				8F294C0D1579BA3100CB47D5 /* GuestScrollerALT@2x.png in Resources */,
-				8F294C111579D2E200CB47D5 /* GuideBackground@2x.png in Resources */,
 				8FBC1CC01582F37100D0796E /* MakerScroller@2x.png in Resources */,
 				8FBC1CC21582F37D00D0796E /* YouTubeScroller@2x.png in Resources */,
 				8FBC1CC61582F3D100D0796E /* Maker-Sponsor.png in Resources */,
@@ -1175,7 +1182,9 @@
 				8F09BBF51583E60C003A80C2 /* audioSocketLogo.jpg in Resources */,
 				8F09BBFD1583EBAE003A80C2 /* alloydigitalogo.jpg in Resources */,
 				8F09BC061583EE00003A80C2 /* My-Damn-ChannelLogo.jpg in Resources */,
-				8FF2A29415855806008EE117 /* guide.json in Resources */,
+				8F6BA8E9158805770011A1A4 /* GuideBackgroundAgenda@2x.png in Resources */,
+				8F6BA8ED158808280011A1A4 /* GuideBackground@2x.png in Resources */,
+				8FA656651588305600D612B3 /* guide.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1231,6 +1240,7 @@
 				8FBC1CEE1582FC4500D0796E /* vidSponsorCell.m in Sources */,
 				8FBC1D141583BAAF00D0796E /* vidSponsor.m in Sources */,
 				8F09BC091583F140003A80C2 /* vidSelectedSponsorViewController.m in Sources */,
+				8F6BA8DE1587F9970011A1A4 /* vidFaqController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

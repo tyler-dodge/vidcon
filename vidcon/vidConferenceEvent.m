@@ -47,4 +47,18 @@
     }
     return self;
 }
+-(vidConferenceEvent *)initWithDictionary:(NSDictionary *)dictionary
+{
+    self = [self init];
+    if (self) {
+        self.name = [dictionary objectForKey:EVENT_NAME_KEY];
+        NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
+        [dateformat setDateFormat:@"MMMM dd yyyy, hh:mm aa zzz"];
+        self.start = [dateformat dateFromString:[dictionary objectForKey:EVENT_START_KEY]];
+        self.end = [dateformat dateFromString:[dictionary objectForKey:EVENT_END_KEY]];
+        self.speaker = [dictionary objectForKey:EVENT_SPEAKER_KEY];
+        self.description = [dictionary objectForKey:EVENT_DESCRIPTION_KEY];
+    }
+    return self;
+}
 @end

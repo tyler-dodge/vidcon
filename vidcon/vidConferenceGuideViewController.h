@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "vidEventTimeSlotHeader.h"
 #import "vidConferenceGuide.h"
-#define VIDCON_START_DATE 1340856000
+#define VIDCON_START_DATE 1340895600 //June 28, 2012 8:00 AM PDT
 @interface vidConferenceGuideViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIScrollView *eventScrollView;
 @property (weak, nonatomic) IBOutlet vidEventTimeSlotHeader *eventHeader;

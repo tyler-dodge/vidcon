@@ -71,39 +71,19 @@
 }
 -(void)setEventHeader:(vidEventTimeSlotHeader *)eventHeader
 {
+    
     _eventHeader = eventHeader;
-    [_eventHeader initWithInterval:30*60 WithWidthPerInterval:WIDTH_PER_MINUTE * 30 startInterval:[NSDate dateWithTimeIntervalSince1970:VIDCON_START_DATE]];
+    [_eventHeader initWithInterval:DEFAULT_TIME_WIDTH * 60 WithWidthPerInterval:WIDTH_PER_MINUTE * DEFAULT_TIME_WIDTH startInterval:[NSDate dateWithTimeIntervalSince1970:VIDCON_START_DATE]];
 }
 -(void)setEventScrollView:(UIScrollView *)eventScrollView
 {
     _eventScrollView = eventScrollView;
     _eventScrollView.delegate = self;
     self.eventHeader.delegate = self;
-    NSDate * test = [NSDate dateWithTimeIntervalSince1970:VIDCON_START_DATE];
-    for (int i = 0; i < 300; i++) {
-        [self.model addEvent:[[vidConferenceEvent alloc] initWithName:[NSString stringWithFormat:@"Name%d", i]
-                                                           startingAt:[NSDate dateWithTimeIntervalSince1970:60*30*i + VIDCON_START_DATE]
-                                                             endingAt:[NSDate dateWithTimeIntervalSince1970:60*30*(i+1) + VIDCON_START_DATE]]];
+    NSArray * jsonData = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"guide" ofType:@"json"] ] options:0 error:nil];
+    for (NSDictionary * json in jsonData) {
+        [self.model addEvent:[[vidConferenceEvent alloc] initWithDictionary:json]];
     }
-    for (int i = 0; i < 20; i++) {
-        [self.model addEvent:[[vidConferenceEvent alloc] initWithName:[NSString stringWithFormat:@"aName%d", i]
-                                                           startingAt:[NSDate dateWithTimeIntervalSince1970:60*30*(3*i) + VIDCON_START_DATE]
-                                                             endingAt:[NSDate dateWithTimeIntervalSince1970:60*30*(3*i+2) +VIDCON_START_DATE]]];
-        
-    }
-    for (int i = 0; i < 20; i++) {
-        [self.model addEvent:[[vidConferenceEvent alloc] initWithName:[NSString stringWithFormat:@"bName%d", i]
-                                                           startingAt:[NSDate dateWithTimeIntervalSince1970:60*45*(2*i) + VIDCON_START_DATE]
-                                                             endingAt:[NSDate dateWithTimeIntervalSince1970:60*45*(2*i+2) + VIDCON_START_DATE]]];
-        
-    }
-    for (int i = 0; i < 20; i++) {
-        [self.model addEvent:[[vidConferenceEvent alloc] initWithName:[NSString stringWithFormat:@"cName%d", i]
-                                                           startingAt:[NSDate dateWithTimeIntervalSince1970:60*30*(2*i) + VIDCON_START_DATE]
-                                                             endingAt:[NSDate dateWithTimeIntervalSince1970:60*30*(2*i+1) + VIDCON_START_DATE]]];
-        
-    }
-    
     self.eventScrollView.contentSize=CGSizeMake([vidConferenceEventCell
                                                  widthFromStart:self.model.firstDate toEnd:self.model.lastDate],
                                                 (self.model.maxVerticalIndex + 1) * EVENT_HEIGHT);

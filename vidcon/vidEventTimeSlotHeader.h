@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "vidConferenceEventCell.h"
 #import <QuartzCore/QuartzCore.h>
-#define DEFAULT_TIME_WIDTH 30 //minutes
+#define DEFAULT_TIME_WIDTH 60 //minutes
 #define SECONDS_IN_MINUTE 60 //seconds
 @class vidEventTimeSlotHeader;
 @protocol vidEventTimeSlotHeaderDelegate

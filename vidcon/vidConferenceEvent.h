@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "vidSpeakerModel.h"
+#define EVENT_NAME_KEY @"name"
+#define EVENT_START_KEY @"start"
+#define EVENT_END_KEY @"end"
+#define EVENT_SPEAKER_KEY @"speaker"
+#define EVENT_DESCRIPTION_KEY @"description"
+#define EVENT_LOCATION_KEY @"location"
 
 @interface vidConferenceEvent : NSObject
 @property (strong, nonatomic) NSDate * start;
@@ -22,4 +28,5 @@
 -(vidConferenceEvent *)initWithName:(NSString *)name
                          startingAt:(NSDate *)start
                            endingAt:(NSDate *)end;
+-(vidConferenceEvent *)initWithDictionary:(NSDictionary *)dictionary;
 @end
