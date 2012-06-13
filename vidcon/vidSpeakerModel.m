@@ -17,6 +17,9 @@
 @synthesize shortDescription = _shortDescription;
 @synthesize image = _image;
 @synthesize imageSource = _imageSource;
+@synthesize twitter = _twitter;
+@synthesize youtube = _youtube;
+@synthesize facebook = _facebook;
 -(UIImage *)image
 {
     if (!_image && _imageSource) {

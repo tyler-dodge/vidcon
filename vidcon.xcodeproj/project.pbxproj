@@ -197,6 +197,11 @@
 		8F760BAD1575B44400C71652 /* vidSelectedSpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F760BAC1575B44400C71652 /* vidSelectedSpeakerViewController.m */; };
 		8FA656651588305600D612B3 /* guide.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA656641588305600D612B3 /* guide.json */; };
 		8FA6566715883DEC00D612B3 /* scratch.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA6566615883DEC00D612B3 /* scratch.json */; };
+		8FA6566E1588F44900D612B3 /* vidConferenceEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6566D1588F44900D612B3 /* vidConferenceEventViewController.m */; };
+		8FA656731589038900D612B3 /* ExpoHallFirstFloor.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FA656711589038900D612B3 /* ExpoHallFirstFloor.png */; };
+		8FA656741589038900D612B3 /* ExpoHallSecondFloor.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FA656721589038900D612B3 /* ExpoHallSecondFloor.png */; };
+		8FA65677158903D700D612B3 /* vidMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA65676158903D700D612B3 /* vidMapViewController.m */; };
+		8FA6567A15890EA700D612B3 /* vidBusinessCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6567915890EA600D612B3 /* vidBusinessCard.m */; };
 		8FA7877D157677030031FFE3 /* vidBusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7877C157677030031FFE3 /* vidBusinessCardViewController.m */; };
 		8FA787851576778F0031FFE3 /* vidHotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA787841576778F0031FFE3 /* vidHotelViewController.m */; };
 		8FAE653C1579700B001F36A4 /* GuestScroller@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAE653B1579700B001F36A4 /* GuestScroller@2x.png */; };
@@ -255,7 +260,6 @@
 		22B08671154C7103007CF794 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		22B08673154C711A007CF794 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		22B08675154C711C007CF794 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
-		8F09BBD61583BBF5003A80C2 /* vidcon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = vidcon.entitlements; sourceTree = "<group>"; };
 		8F09BBE01583E400003A80C2 /* BigFramelogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BigFramelogo.png; sourceTree = "<group>"; };
 		8F09BBE21583E41B003A80C2 /* dftbaLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dftbaLogo.png; sourceTree = "<group>"; };
 		8F09BBE41583E448003A80C2 /* IAWTV-Logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IAWTV-Logo.jpeg"; sourceTree = "<group>"; };
@@ -453,6 +457,14 @@
 		8F760BAC1575B44400C71652 /* vidSelectedSpeakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSelectedSpeakerViewController.m; sourceTree = "<group>"; };
 		8FA656641588305600D612B3 /* guide.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guide.json; sourceTree = "<group>"; };
 		8FA6566615883DEC00D612B3 /* scratch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scratch.json; sourceTree = "<group>"; };
+		8FA6566C1588F44900D612B3 /* vidConferenceEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidConferenceEventViewController.h; sourceTree = "<group>"; };
+		8FA6566D1588F44900D612B3 /* vidConferenceEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidConferenceEventViewController.m; sourceTree = "<group>"; };
+		8FA656711589038900D612B3 /* ExpoHallFirstFloor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExpoHallFirstFloor.png; sourceTree = "<group>"; };
+		8FA656721589038900D612B3 /* ExpoHallSecondFloor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExpoHallSecondFloor.png; sourceTree = "<group>"; };
+		8FA65675158903D600D612B3 /* vidMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidMapViewController.h; sourceTree = "<group>"; };
+		8FA65676158903D700D612B3 /* vidMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidMapViewController.m; sourceTree = "<group>"; };
+		8FA6567815890EA600D612B3 /* vidBusinessCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidBusinessCard.h; sourceTree = "<group>"; };
+		8FA6567915890EA600D612B3 /* vidBusinessCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidBusinessCard.m; sourceTree = "<group>"; };
 		8FA7877B157677030031FFE3 /* vidBusinessCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidBusinessCardViewController.h; sourceTree = "<group>"; };
 		8FA7877C157677030031FFE3 /* vidBusinessCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidBusinessCardViewController.m; sourceTree = "<group>"; };
 		8FA787831576778F0031FFE3 /* vidHotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidHotelViewController.h; sourceTree = "<group>"; };
@@ -582,7 +594,7 @@
 		8F6BA04E1523BDFC004C5DF3 /* vidcon */ = {
 			isa = PBXGroup;
 			children = (
-				8F09BBD61583BBF5003A80C2 /* vidcon.entitlements */,
+				8FA656701589036600D612B3 /* maps */,
 				8FBC1CBD1582F35700D0796E /* sponsors */,
 				8F76097E1575A6C100C71652 /* guestPics */,
 				8FBC1CBC1582F2F200D0796E /* backgrounds */,
@@ -628,6 +640,12 @@
 				8F6BA8DC1587F9970011A1A4 /* vidFaqController.h */,
 				8F6BA8DD1587F9970011A1A4 /* vidFaqController.m */,
 				8FA6566615883DEC00D612B3 /* scratch.json */,
+				8FA6566C1588F44900D612B3 /* vidConferenceEventViewController.h */,
+				8FA6566D1588F44900D612B3 /* vidConferenceEventViewController.m */,
+				8FA65675158903D600D612B3 /* vidMapViewController.h */,
+				8FA65676158903D700D612B3 /* vidMapViewController.m */,
+				8FA6567815890EA600D612B3 /* vidBusinessCard.h */,
+				8FA6567915890EA600D612B3 /* vidBusinessCard.m */,
 			);
 			path = vidcon;
 			sourceTree = "<group>";
@@ -811,6 +829,15 @@
 				8F760B181575A74800C71652 /* Yosemitebear62.jpg */,
 			);
 			path = guestPics;
+			sourceTree = "<group>";
+		};
+		8FA656701589036600D612B3 /* maps */ = {
+			isa = PBXGroup;
+			children = (
+				8FA656711589038900D612B3 /* ExpoHallFirstFloor.png */,
+				8FA656721589038900D612B3 /* ExpoHallSecondFloor.png */,
+			);
+			name = maps;
 			sourceTree = "<group>";
 		};
 		8FBC1CBB1582F2E000D0796E /* icons */ = {
@@ -1189,6 +1216,8 @@
 				8F6BA8ED158808280011A1A4 /* GuideBackground@2x.png in Resources */,
 				8FA656651588305600D612B3 /* guide.json in Resources */,
 				8FA6566715883DEC00D612B3 /* scratch.json in Resources */,
+				8FA656731589038900D612B3 /* ExpoHallFirstFloor.png in Resources */,
+				8FA656741589038900D612B3 /* ExpoHallSecondFloor.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1245,6 +1274,9 @@
 				8FBC1D141583BAAF00D0796E /* vidSponsor.m in Sources */,
 				8F09BC091583F140003A80C2 /* vidSelectedSponsorViewController.m in Sources */,
 				8F6BA8DE1587F9970011A1A4 /* vidFaqController.m in Sources */,
+				8FA6566E1588F44900D612B3 /* vidConferenceEventViewController.m in Sources */,
+				8FA65677158903D700D612B3 /* vidMapViewController.m in Sources */,
+				8FA6567A15890EA700D612B3 /* vidBusinessCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1344,7 +1376,7 @@
 		8F6BA07B1523BDFC004C5DF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = vidcon/vidcon.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1361,7 +1393,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1369,9 +1401,9 @@
 		8F6BA07C1523BDFC004C5DF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = vidcon/vidcon.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -1386,7 +1418,7 @@
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

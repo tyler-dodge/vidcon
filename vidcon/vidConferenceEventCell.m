@@ -12,10 +12,12 @@
 @property (strong, nonatomic) UILabel * nameLabel;
 @property (strong, nonatomic) NSDate * minimum;
 -(void)onUpdateStartOrEnd;
+-(void)cellTapped:(UIGestureRecognizer *)gesture;
 @end
 @implementation vidConferenceEventCell
 @synthesize event = _event;
 @synthesize minimum = _minimum;
+@synthesize delegate = _delegate;
 
 -(void)setEvent:(vidConferenceEvent *)event
 {
@@ -49,6 +51,8 @@
 -(vidConferenceEventCell *)initWithEvent:(vidConferenceEvent *)event minimumDate:(NSDate *)minimum
 {
     self = [self init];
+    UITapGestureRecognizer * tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cellTapped:)];
+    [self addGestureRecognizer:tapGesture];
     self.timeRangeLabel = [[UILabel alloc] init];
     self.timeRangeLabel.textAlignment = UITextAlignmentRight;
     self.timeRangeLabel.font = [UIFont systemFontOfSize:10];
@@ -61,5 +65,9 @@
     self.minimum = minimum;
     self.event = event;
     return self;
+}
+-(void)cellTapped:(UIGestureRecognizer *)gesture
+{
+    [self.delegate didTapEventCell:self withEvent:self.event];
 }
 @end

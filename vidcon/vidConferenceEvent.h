@@ -12,7 +12,7 @@
 #define EVENT_START_KEY @"start"
 #define EVENT_END_KEY @"end"
 #define EVENT_SPEAKER_KEY @"speaker"
-#define EVENT_DESCRIPTION_KEY @"description"
+#define EVENT_DESCRIPTION_KEY @"details"
 #define EVENT_LOCATION_KEY @"location"
 
 @interface vidConferenceEvent : NSObject
@@ -21,7 +21,7 @@
 @property (strong, nonatomic) NSString * name;
 @property (strong, nonatomic) vidSpeaker * speaker;
 @property (strong, nonatomic) NSString * room;
-@property (strong, nonatomic) NSString * description;
+@property (strong, nonatomic) NSString * details;
 @property (nonatomic) int verticalIndex; //index set by conference guide to prevent overlapping
 -(BOOL)isInRangeStartingAt:(NSDate *)start
                   EndingAt:(NSDate *)end;

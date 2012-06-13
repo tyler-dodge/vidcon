@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 @interface vidSpeaker : NSObject
-@property (strong, readonly) NSString * name;
-@property (strong, readonly) UIImage * image;
-@property (strong, readonly) NSString * shortDescription;
-@property (strong, readonly) NSString * longDescription;
+@property (strong, nonatomic) NSString * name;
+@property (strong, nonatomic) UIImage * image;
+@property (strong, nonatomic) NSString * shortDescription;
+@property (strong, nonatomic) NSString * longDescription;
+@property (strong, nonatomic) NSString * twitter;
+@property (strong, nonatomic) NSString * youtube;
+@property (strong, nonatomic) NSString * facebook;
 @property (nonatomic) NSUInteger index;
 @end
 @interface vidSpeakerModel : NSObject

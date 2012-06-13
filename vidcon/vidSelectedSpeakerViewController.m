@@ -39,10 +39,15 @@
     [super viewDidLoad];
     self.speakerName.text = self.speaker.name;
     self.speakerDescription.text = self.speaker.longDescription;
-    self.speakerImage.image = self.speaker.image;
-    self.speakerImage.layer.borderColor = [[UIColor blackColor] CGColor];
-    self.speakerImage.layer.borderWidth = 1;
-    
+    if (self.speaker.image != nil) {
+        self.speakerImage.image = self.speaker.image;
+        self.speakerImage.layer.borderColor = [[UIColor blackColor] CGColor];
+        self.speakerImage.layer.borderWidth = 1;
+    } else {
+        [self.speakerName setFrame:CGRectMake(0, 0, self.speakerName.frame.size.width+self.speakerName.frame.origin.x,
+                                             self.speakerName.frame.size.height)];
+        self.speakerName.textAlignment = NSTextAlignmentCenter;
+    }
 }
 -(void)setSpeakerDescription:(UITextView *)speakerDescription
 {

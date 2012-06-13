@@ -13,7 +13,7 @@
 @synthesize end = _end;
 @synthesize name = _name;
 @synthesize speaker = _speaker;
-@synthesize description = _description;
+@synthesize details = _details;
 @synthesize verticalIndex = _verticalIndex;
 -(BOOL)isInRangeStartingAt:(NSDate *)start EndingAt:(NSDate *)end
 {
@@ -57,7 +57,7 @@
         self.start = [dateformat dateFromString:[dictionary objectForKey:EVENT_START_KEY]];
         self.end = [dateformat dateFromString:[dictionary objectForKey:EVENT_END_KEY]];
         self.speaker = [dictionary objectForKey:EVENT_SPEAKER_KEY];
-        self.description = [dictionary objectForKey:EVENT_DESCRIPTION_KEY];
+        self.details = [dictionary objectForKey:EVENT_DESCRIPTION_KEY];
     }
     return self;
 }

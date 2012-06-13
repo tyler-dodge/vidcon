@@ -9,7 +9,8 @@
 #import "vidConferenceGuideViewController.h"
 #import "vidEventTimeSlotHeader.h"
 #import "vidConferenceEventCell.h"
-@interface vidConferenceGuideViewController () <UIScrollViewDelegate, vidEventTimeSlotHeaderDelegate>
+#import "vidConferenceEventViewController.h"
+@interface vidConferenceGuideViewController () <UIScrollViewDelegate, vidEventTimeSlotHeaderDelegate, vidConferenceEventCellDelegate>
 @property (strong, nonatomic) NSMutableDictionary * eventCells;
 @property (strong, nonatomic) NSArray * visibleEvents;
 @property (strong, nonatomic) NSMutableArray * unusedCells;
@@ -113,6 +114,7 @@
                 cell.event = event;
             } else {
                 cell = [[vidConferenceEventCell alloc] initWithEvent:event minimumDate:[NSDate dateWithTimeIntervalSince1970:VIDCON_START_DATE]];
+                cell.delegate = self;
                 [self.eventScrollView addSubview:cell];
             }
             [self.eventCells setValue:cell forKey:event.name];
@@ -124,5 +126,17 @@
 {
     [self.eventHeader setStartDate:self.startTimeSinceMinimum];
     self.eventScrollView.contentOffset = CGPointMake(self.eventHeader.position,self.eventScrollView.contentOffset.y);
+}
+-(void)didTapEventCell:(vidConferenceEventCell *)eventCell withEvent:(vidConferenceEvent *)event
+{
+    [self performSegueWithIdentifier:@"showEvent" sender:event];
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[vidConferenceEvent class]] &&
+        [segue.destinationViewController isKindOfClass:[vidConferenceEventViewController class]] ) {
+        vidConferenceEventViewController * eventView = (vidConferenceEventViewController *)segue.destinationViewController;
+        eventView.event = sender;
+    }
 }
 @end
