@@ -196,6 +196,7 @@
 		8F760BA21575A80E00C71652 /* guests.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F760BA11575A80E00C71652 /* guests.json */; };
 		8F760BAD1575B44400C71652 /* vidSelectedSpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F760BAC1575B44400C71652 /* vidSelectedSpeakerViewController.m */; };
 		8FA656651588305600D612B3 /* guide.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA656641588305600D612B3 /* guide.json */; };
+		8FA6566715883DEC00D612B3 /* scratch.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA6566615883DEC00D612B3 /* scratch.json */; };
 		8FA7877D157677030031FFE3 /* vidBusinessCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7877C157677030031FFE3 /* vidBusinessCardViewController.m */; };
 		8FA787851576778F0031FFE3 /* vidHotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA787841576778F0031FFE3 /* vidHotelViewController.m */; };
 		8FAE653C1579700B001F36A4 /* GuestScroller@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FAE653B1579700B001F36A4 /* GuestScroller@2x.png */; };
@@ -451,6 +452,7 @@
 		8F760BAB1575B44400C71652 /* vidSelectedSpeakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSelectedSpeakerViewController.h; sourceTree = "<group>"; };
 		8F760BAC1575B44400C71652 /* vidSelectedSpeakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSelectedSpeakerViewController.m; sourceTree = "<group>"; };
 		8FA656641588305600D612B3 /* guide.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guide.json; sourceTree = "<group>"; };
+		8FA6566615883DEC00D612B3 /* scratch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scratch.json; sourceTree = "<group>"; };
 		8FA7877B157677030031FFE3 /* vidBusinessCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidBusinessCardViewController.h; sourceTree = "<group>"; };
 		8FA7877C157677030031FFE3 /* vidBusinessCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidBusinessCardViewController.m; sourceTree = "<group>"; };
 		8FA787831576778F0031FFE3 /* vidHotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidHotelViewController.h; sourceTree = "<group>"; };
@@ -625,6 +627,7 @@
 				8F09BC081583F140003A80C2 /* vidSelectedSponsorViewController.m */,
 				8F6BA8DC1587F9970011A1A4 /* vidFaqController.h */,
 				8F6BA8DD1587F9970011A1A4 /* vidFaqController.m */,
+				8FA6566615883DEC00D612B3 /* scratch.json */,
 			);
 			path = vidcon;
 			sourceTree = "<group>";
@@ -1185,6 +1188,7 @@
 				8F6BA8E9158805770011A1A4 /* GuideBackgroundAgenda@2x.png in Resources */,
 				8F6BA8ED158808280011A1A4 /* GuideBackground@2x.png in Resources */,
 				8FA656651588305600D612B3 /* guide.json in Resources */,
+				8FA6566715883DEC00D612B3 /* scratch.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
