@@ -25,7 +25,11 @@
 
 @property (strong, nonatomic) vidConferenceEvent * event;
 -(vidConferenceEventCell *)initWithEvent:(vidConferenceEvent *)event
-                              minimumDate:(NSDate *)minimum;
+                              minimumDate:(NSDate *)minimum
+                            withMinimumX:(NSInteger)minimumX;
+@property (nonatomic) NSInteger minimumX;
+
+-(void)checkMinimum;
 
 @property (weak, nonatomic) id<vidConferenceEventCellDelegate> delegate;
 

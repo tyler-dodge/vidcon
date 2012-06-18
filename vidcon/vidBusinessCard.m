@@ -13,27 +13,25 @@
 @synthesize youtube = _youtube;
 @synthesize facebook = _facebook;
 @synthesize name =_name;
+@synthesize isFacebookEnabled = _isFacebookEnabled;
+@synthesize isTwitterEnabled = _isTwitterEnabled;
+@synthesize isYoutubeEnabled = _isYoutubeEnabled;
 
 -(NSDictionary *)toDictionary
 {
-    return [[NSDictionary alloc] initWithObjectsAndKeys:
-            self.twitter,TWITTER_KEY,
-            self.youtube,YOUTUBE_KEY,
-            self.facebook,FACEBOOK_KEY,
-            self.name, NAME_KEY,
-            [NSNumber numberWithBool:self.isFacebookEnabled], FACEBOOK_ENABLED_KEY,
-            [NSNumber numberWithBool:self.isTwitterEnabled], TWITTER_ENABLED_KEY,
-            [NSNumber numberWithBool:self.isYoutubeEnabled], YOUTUBE_ENABLED_KEY, nil];
+    NSMutableDictionary * dict = [[NSMutableDictionary alloc] init];
+    [dict setValue:self.twitter forKey:TWITTER_KEY];
+    [dict setValue:self.name forKey:NAME_KEY];
+    [dict setValue:[NSNumber numberWithBool:self.isTwitterEnabled] forKey:TWITTER_ENABLED_KEY];
+    return dict;
 }
 -(NSDictionary *)toSendableDictionary
 {
     NSMutableDictionary * sendable = [[NSMutableDictionary alloc] init];
-    if (self.isTwitterEnabled)
+    if (self.isTwitterEnabled && self.twitter != nil)
         [sendable setObject:self.twitter forKey:TWITTER_KEY];
-    if (self.isYoutubeEnabled)
+    if (self.isYoutubeEnabled && self.youtube != nil)
         [sendable setObject:self.youtube forKey:YOUTUBE_KEY];
-    if (self.isFacebookEnabled)
-        [sendable setObject:self.facebook forKey:FACEBOOK_KEY];
     [sendable setObject:self.name forKey:NAME_KEY];
     return sendable;
 }
@@ -54,7 +52,7 @@
     speaker.name = self.name;
     speaker.youtube = self.isYoutubeEnabled ? self.youtube : nil;
     speaker.facebook = self.isFacebookEnabled ? self.facebook : nil;
-    speaker.twitter = self.isTwitterEnabled ? self.twitter : nil;
+    speaker.twitter = self.twitter;
     return speaker;
 }
 @end

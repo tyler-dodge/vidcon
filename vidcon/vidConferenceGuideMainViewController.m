@@ -32,6 +32,8 @@
 @synthesize parkingGuide = _parkingGuide;
 @synthesize hotels = _hotels;
 @synthesize booths = _booths;
+@synthesize thirdFloorButton = _thirdFloorButton;
+@synthesize secondHotelFloor = _secondHotelFloor;
 - (IBAction)buttonPressed:(UIButton *)sender {
     sender.alpha += 0.1;
 }
@@ -55,7 +57,6 @@
     self.scrollView.contentOffset = CGPointMake(START_PAGE * CONFERENCE_PAGE_SIZE, 0);
     self.pageControl.numberOfPages = PAGE_COUNT;
     self.pageControl.currentPage = START_PAGE;
-    self.pageControl.pageIndicatorTintColor = [UIColor blackColor];
 }
 
 - (void)viewDidUnload
@@ -67,6 +68,8 @@
     [self setParkingGuide:nil];
     [self setHotels:nil];
     [self setBooths:nil];
+    [self setThirdFloorButton:nil];
+    [self setSecondHotelFloor:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -92,7 +95,9 @@
 {
     NSTimeInterval startDate = -1;
     if ([segue.identifier isEqualToString:TODAY]) {
-        startDate = 0;
+        startDate = [[NSDate date] timeIntervalSinceDate:[NSDate dateWithTimeIntervalSince1970:VIDCON_START_DATE]];
+        if (startDate < 0)
+            startDate = 0;
     } else if ([segue.identifier isEqualToString:THURSDAY]) {
         startDate = THURSDAY_DATE;
     } else if ([segue.identifier isEqualToString:FRIDAY]) {
@@ -108,14 +113,36 @@
         UIButton * senderButton = (UIButton *)sender;
         NSString * mapPath = @"";
         NSString * mapName = @"";
-        if (senderButton == self.firstFloorButton) {
-            mapPath = [[NSBundle mainBundle] pathForResource:@"ExpoHallFirstFloor" ofType:@"png"];
-            mapName = @"Expo Hall First Floor";
-        } else if (senderButton == self.secondFloorButton) {
-            mapPath = [[NSBundle mainBundle] pathForResource:@"ExpoHallSecondFloor" ofType:@"png"];
-            mapName = @"Expo Hall Second Floor";
-        }
         vidMapViewController * mapView = (vidMapViewController *)segue.destinationViewController;
+        if (senderButton == self.firstFloorButton) {
+            mapPath = [[NSBundle mainBundle] pathForResource:@"FirstFloor" ofType:@"png"];
+            mapView.defaultScale = 0.37;
+            mapName = @"First Floor";
+        } else if (senderButton == self.secondFloorButton) {    
+            mapPath = [[NSBundle mainBundle] pathForResource:@"SecondFloor" ofType:@"png"];
+            mapView.defaultScale = 0.4;
+            mapName = @"Second Floor";
+        } else if (senderButton == self.thirdFloorButton) {
+            mapPath = [[NSBundle mainBundle] pathForResource:@"ThirdFloor" ofType:@"png"];
+            mapName = @"Third Floor";
+            
+        } else if (senderButton == self.parkingGuide) {
+            mapPath = [[NSBundle mainBundle] pathForResource:@"ParkingMap" ofType:@"png"];
+            mapView.defaultScale = 0.2;
+            mapName = @"Parking Map";
+        } else if (senderButton == self.booths) {
+            mapPath = [[NSBundle mainBundle] pathForResource:@"ExpoHall" ofType:@"png"];
+            mapName = @"Expo Hall";
+            mapView.defaultScale = 0.3;
+        } else if (senderButton == self.hotels) {
+            mapPath = [[NSBundle mainBundle] pathForResource:@"hotelsSecond" ofType:@"png"];
+            mapName = @"Hilton - Second Floor";
+            
+        } else if (senderButton == self.secondHotelFloor) {
+            mapPath = [[NSBundle mainBundle] pathForResource:@"hotelsFourth" ofType:@"png"];
+            mapName = @"Hilton - Fourth Floor";
+            
+        }
         mapView.image = [[UIImage alloc] initWithContentsOfFile:mapPath];
         mapView.mapName = mapName;
     }

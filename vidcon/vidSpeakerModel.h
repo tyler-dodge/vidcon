@@ -15,7 +15,10 @@
 @property (strong, nonatomic) NSString * twitter;
 @property (strong, nonatomic) NSString * youtube;
 @property (strong, nonatomic) NSString * facebook;
+@property (strong, nonatomic) NSString * webSite;
 @property (nonatomic) NSUInteger index;
+@property (nonatomic) bool hasImage;
+
 @end
 @interface vidSpeakerModel : NSObject
 

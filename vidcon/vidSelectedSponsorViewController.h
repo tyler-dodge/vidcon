@@ -13,4 +13,6 @@
 @property (strong, nonatomic) vidSponsor * sponsor;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIButton *websiteButton;
+@property (weak, nonatomic) IBOutlet UIButton *twitterButton;
 @end

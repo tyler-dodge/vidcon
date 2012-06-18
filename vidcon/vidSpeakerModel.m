@@ -20,6 +20,9 @@
 @synthesize twitter = _twitter;
 @synthesize youtube = _youtube;
 @synthesize facebook = _facebook;
+@synthesize webSite = _webSite;
+@synthesize hasImage = _hasImage;
+@synthesize index = _index;
 -(UIImage *)image
 {
     if (!_image && _imageSource) {
@@ -117,9 +120,15 @@
             }
         }      
         speaker.longDescription = [speakerData valueForKey:@"description"];
+        speaker.twitter = [speakerData valueForKey:@"twitter"];
+        speaker.youtube = [speakerData valueForKey:@"youtube"];
+        speaker.facebook = [speakerData valueForKey:@"facebook"];
         NSString * image = [speakerData valueForKey:@"image"];
         if (image) {
             speaker.imageSource = [[NSBundle mainBundle] pathForResource:image ofType:nil];
+            speaker.hasImage = YES;
+        } else {
+            speaker.imageSource = [[NSBundle mainBundle] pathForResource:@"" ofType:nil];
         }
         [self.speakers addObject:speaker];
         indexCounter++;

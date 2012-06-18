@@ -13,4 +13,5 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) UIImage * image;
 @property (strong, nonatomic) NSString * mapName;
+@property (nonatomic) float defaultScale;
 @end

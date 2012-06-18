@@ -11,4 +11,6 @@
 @interface vidSpeakerViewController : UITableViewController
 @property (strong, nonatomic) vidSpeakerModel * model;
 @property (strong, nonatomic) IBOutlet UISearchDisplayController *speakerSearchController;
+@property (nonatomic) bool hasImage;
+
 @end

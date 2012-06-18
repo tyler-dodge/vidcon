@@ -22,6 +22,7 @@
 
 @interface vidAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) dispatch_queue_t parseQueue;
 
+@property (strong, nonatomic) UIWindow *window;
 @end

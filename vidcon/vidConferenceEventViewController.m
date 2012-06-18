@@ -22,6 +22,29 @@
 {
     [super viewDidLoad];
     self.nameLabel.text = self.event.name;
+    NSDateFormatter * dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"EEEE, h:mm aa zzz"];
+    dateFormat.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"PDT"];
+    self.startTimeLabel.text = [dateFormat stringFromDate:self.event.start];
+    self.endTimeLabel.text = [dateFormat stringFromDate:self.event.end];
+}
+- (void)viewDidUnload {
+    [self setNameLabel:nil];
+    [self setDescriptionView:nil];
+    [self setStartTimeLabel:nil];
+    [self setEndTimeLabel:nil];
+    [super viewDidUnload];
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([indexPath indexAtPosition:0]==2) {
+        return self.descriptionView.scrollView.contentSize.height;
+    }
+    return [super tableView:tableView heightForRowAtIndexPath:indexPath];
+}
+-(void)setDescriptionView:(UIWebView *)descriptionView
+{
+    _descriptionView = descriptionView;
     self.descriptionView.delegate = self;
     NSString * html = [NSString stringWithFormat:
                        @"<html><head><style>body { \
@@ -40,31 +63,17 @@
                        font-style: none; \
                        border-bottom: 1px solid #666; \
                        display: block; \
-                       }</style></head><body>%@</body></html>",self.event.details];
-    NSDateFormatter * dateFormat = [[NSDateFormatter alloc] init];
-    [dateFormat setDateFormat:@"EEEE, h:mm aa zzz"];
-    dateFormat.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"PDT"];
-    self.startTimeLabel.text = [dateFormat stringFromDate:self.event.start];
-    self.endTimeLabel.text = [dateFormat stringFromDate:self.event.end];
+                       }​</style></head><body>%@</body></html>",self.event.details];
     [self.descriptionView loadHTMLString:html baseURL:[[NSURL alloc] initWithString:@""]];
     [self.descriptionView.scrollView setScrollEnabled:NO];
-}
-- (void)viewDidUnload {
-    [self setNameLabel:nil];
-    [self setDescriptionView:nil];
-    [self setStartTimeLabel:nil];
-    [self setEndTimeLabel:nil];
-    [super viewDidUnload];
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if ([indexPath indexAtPosition:0]==2) {
-        return self.descriptionView.scrollView.contentSize.height;
-    }
-    return [super tableView:tableView heightForRowAtIndexPath:indexPath];
 }
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [self.tableView reloadData];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 @end

@@ -97,28 +97,37 @@
           updatedWithNewStart:(NSDate *)start
                    withNewEnd:(NSDate *)end
 {
-    NSArray * newEvents = [self.model eventsInTimeRangeStartingAt:start EndingAt:end];
+    NSArray * newEvents = [self.model eventsInTimeRangeStartingAt:[start dateByAddingTimeInterval:-30*60]
+                                                         EndingAt:[end dateByAddingTimeInterval:30*60]];
     for (vidConferenceEvent * event in self.visibleEvents) {
         if (![newEvents containsObject:event]) {
-            vidConferenceEventCell * cell = [self.eventCells valueForKey:event.name];
-            [self.eventCells removeObjectForKey:event.name];
+            vidConferenceEventCell * cell = [self.eventCells valueForKey:[event.uid description]];
+            [self.eventCells removeObjectForKey:[event.uid description]];
+            [cell removeFromSuperview];
             [self.unusedCells addObject:cell];
         }
     }
     for (vidConferenceEvent * event in newEvents) {
-        if ([self.eventCells valueForKey:event.name] == nil) {
-            vidConferenceEventCell * cell = nil;
+        vidConferenceEventCell * cell = [self.eventCells valueForKey:[event.uid  description]];
+        
+        if (cell) {
+            cell.minimumX = self.eventScrollView.contentOffset.x;
+        } else {
             if (self.unusedCells.count > 0) {
                 cell = [self.unusedCells lastObject];
                 [self.unusedCells removeLastObject];
                 cell.event = event;
+                [self.eventScrollView addSubview:cell];
             } else {
-                cell = [[vidConferenceEventCell alloc] initWithEvent:event minimumDate:[NSDate dateWithTimeIntervalSince1970:VIDCON_START_DATE]];
+                cell = [[vidConferenceEventCell alloc] initWithEvent:event minimumDate:[NSDate dateWithTimeIntervalSince1970:VIDCON_START_DATE]
+                                                        withMinimumX:self.eventScrollView.contentOffset.x];
                 cell.delegate = self;
                 [self.eventScrollView addSubview:cell];
             }
-            [self.eventCells setValue:cell forKey:event.name];
+            cell.minimumX = self.eventScrollView.contentOffset.x;
+            [self.eventCells setValue:cell forKey:[event.uid description]];
         }
+        [cell checkMinimum];
     }
     self.visibleEvents = newEvents;
 }

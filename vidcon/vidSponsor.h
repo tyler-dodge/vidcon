@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "vidSpeakerModel.h"
 #define SPONSOR_NAME_KEY @"name"
 #define SPONSOR_TYPE_KEY @"speakerType"
 #define SPONSOR_TWITTER_KEY @"twitter"
@@ -30,6 +31,8 @@ enum SpeakerType
 @property (strong, nonatomic) UIImage * descriptionImage;
 @property (strong, nonatomic) NSString * descriptionText;
 @property (strong, nonatomic) NSString * twitter;
+@property (strong, nonatomic) NSString * webSite;
 @property (nonatomic) enum SpeakerType  speakerType;
+-(vidSpeaker *)toSpeaker;
 -(vidSponsor *)initWithJsonDictionary:(NSDictionary *)dictionary;
 @end

@@ -16,6 +16,7 @@
 #define EVENT_LOCATION_KEY @"location"
 
 @interface vidConferenceEvent : NSObject
+@property (strong, nonatomic) NSNumber * uid;
 @property (strong, nonatomic) NSDate * start;
 @property (strong, nonatomic) NSDate * end;
 @property (strong, nonatomic) NSString * name;

@@ -16,5 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *parkingGuide;
 @property (weak, nonatomic) IBOutlet UIButton *hotels;
 @property (weak, nonatomic) IBOutlet UIButton *booths;
+@property (weak, nonatomic) IBOutlet UIButton *thirdFloorButton;
+@property (weak, nonatomic) IBOutlet UIButton *secondHotelFloor;
 
 @end

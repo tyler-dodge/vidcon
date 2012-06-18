@@ -18,6 +18,7 @@
 @synthesize model = _model;
 @synthesize speakerSearchController = _speakerSearchController;
 @synthesize selectedSpeaker = _selectedSpeaker;
+@synthesize hasImage = _hasImage;
 -(vidSpeakerModel *)model
 {
     if (!_model)
@@ -106,7 +107,12 @@
         speakerCell.backgroundImage.hidden=YES;
     }
     speakerCell.nameLabel.text = speaker.name;
-    speakerCell.picture.image = speaker.image;
+    if (speaker.hasImage) {
+        speakerCell.picture.image = speaker.image;
+    } else {
+        speakerCell.picture.image = nil;
+        speakerCell.picture.backgroundColor = [UIColor blackColor];
+    }
     speakerCell.picture.layer.borderColor = [UIColor blackColor].CGColor;
     speakerCell.picture.layer.borderWidth = 1;
     speakerCell.picture.layer.masksToBounds = YES;

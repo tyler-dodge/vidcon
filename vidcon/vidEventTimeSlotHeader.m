@@ -26,7 +26,8 @@
 @synthesize end = _end;
 @synthesize dateLabel = _dateLabel;
 @synthesize dateContainer = _dateContainer;
-
+@synthesize intervalSize = _intervalSize;
+@synthesize widthPerInterval = _widthPerInterval;
 -(void)setEnd:(NSDate *)end
 {
     _end = end;
@@ -53,7 +54,7 @@
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"MMMM d YYYY, EEEE"];
     dateFormat.timeZone = [NSTimeZone timeZoneWithAbbreviation:@"PDT"];
-    self.dateLabel.text = [dateFormat stringFromDate:[self.minimum dateByAddingTimeInterval:intervalIndex*1800]];
+    self.dateLabel.text = [dateFormat stringFromDate:[self.minimum dateByAddingTimeInterval:intervalIndex*3600]];
     [self.dateLabel sizeToFit];
     [self.dateContainer sizeToFit];
     [self.dateContainer setFrame:CGRectMake(self.dateContainer.frame.origin.x, self.dateContainer.frame.origin.y, self.dateLabel.frame.size.width+DAY_LABEL_MARGIN*2, self.dateLabel.frame.size.height+DAY_LABEL_MARGIN)];

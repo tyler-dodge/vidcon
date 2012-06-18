@@ -10,6 +10,7 @@
 #import "vidSponsor.h"
 #import "vidSponsorCell.h"
 #import "vidSelectedSponsorViewController.h"
+#import "vidSelectedSpeakerViewController.h"
 #define YOUTUBE_IDENTIFIER @"youtube"
 #define MAKER_IDENTIFIER @"maker"
 #define PLATINUM_IDENTIFIER @"platinum"
@@ -44,11 +45,11 @@
             sponsor = [self.PlatinumSponsors objectAtIndex:[indexPath indexAtPosition:1]];
             break;
         case GOLD_SECTION:
-            cell = [tableView dequeueReusableCellWithIdentifier:GOLD_IDENTIFIER];
+            cell = [tableView dequeueReusableCellWithIdentifier:PLATINUM_IDENTIFIER];
             sponsor = [self.GoldSponsors objectAtIndex:[indexPath indexAtPosition:1]];
             break;
         default:
-            cell = [tableView dequeueReusableCellWithIdentifier:NORMAL_IDENTIFIER];
+            cell = [tableView dequeueReusableCellWithIdentifier:PLATINUM_IDENTIFIER];
             sponsor = [self.NormalSponsors objectAtIndex:[indexPath indexAtPosition:1]];
             break;
     }
@@ -83,23 +84,6 @@
 }
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    switch ([indexPath indexAtPosition:0]) {
-        case YOUTUBE_SECTION:
-            self.selectedSponsor = [self.DiamondSponsors objectAtIndex:1];
-            break;
-        case MAKER_SECTION:
-            self.selectedSponsor = [self.DiamondSponsors objectAtIndex:0];
-            break;
-        case PLATINUM_SECTION:
-            self.selectedSponsor = [self.PlatinumSponsors objectAtIndex:[indexPath indexAtPosition:1]];
-            break;
-        case GOLD_SECTION:
-            self.selectedSponsor = [self.GoldSponsors objectAtIndex:[indexPath indexAtPosition:1]];
-            break;
-        case NORMAL_SECTION:
-            self.selectedSponsor = [self.NormalSponsors objectAtIndex:[indexPath indexAtPosition:1]];
-            break;
-    }
     return indexPath;
 }
 -(void)viewDidLoad
@@ -133,11 +117,40 @@
     self.GoldSponsors = gold;
     self.NormalSponsors = normal;
 }
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    switch ([indexPath indexAtPosition:0]) {
+        case YOUTUBE_SECTION:
+            self.selectedSponsor = [self.DiamondSponsors objectAtIndex:1];
+            break;
+        case MAKER_SECTION:
+            self.selectedSponsor = [self.DiamondSponsors objectAtIndex:0];
+            break;
+        case PLATINUM_SECTION:
+            self.selectedSponsor = [self.PlatinumSponsors objectAtIndex:[indexPath indexAtPosition:1]];
+            break;
+        case GOLD_SECTION:
+            self.selectedSponsor = [self.GoldSponsors objectAtIndex:[indexPath indexAtPosition:1]];
+            break;
+        case NORMAL_SECTION:
+            self.selectedSponsor = [self.NormalSponsors objectAtIndex:[indexPath indexAtPosition:1]];
+            break;
+    }
+    if (self.selectedSponsor.descriptionImagePath.length == 0) {
+        [self performSegueWithIdentifier:@"selectSponsor" sender:self];
+    } else {
+        [self performSegueWithIdentifier:@"imageSponsor" sender:self];
+    }
+}
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.destinationViewController isKindOfClass:[vidSelectedSponsorViewController class]]) {
         vidSelectedSponsorViewController * controller = (vidSelectedSponsorViewController *)segue.destinationViewController;
         controller.sponsor = self.selectedSponsor;
+    } else if ([segue.destinationViewController isKindOfClass:[vidSelectedSpeakerViewController class]]) {
+        vidSelectedSpeakerViewController * speakerController = (vidSelectedSpeakerViewController *)segue.destinationViewController;
+        speakerController.speaker = [self.selectedSponsor toSpeaker];
     }
 }
 @end

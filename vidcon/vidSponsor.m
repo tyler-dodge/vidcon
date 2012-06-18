@@ -7,7 +7,6 @@
 //
 
 #import "vidSponsor.h"
-
 @implementation vidSponsor
 @synthesize descriptionImage = _descriptionImage;
 @synthesize descriptionText = _descriptionText;
@@ -16,6 +15,8 @@
 @synthesize picturePath = _picturePath;
 @synthesize name = _name;
 @synthesize twitter = _twitter;
+@synthesize webSite = _webSite;
+@synthesize speakerType = _speakerType;
 
 -(vidSponsor *)initWithJsonDictionary:(NSDictionary *)dictionary
 {
@@ -27,6 +28,7 @@
         self.name = [dictionary objectForKey:SPONSOR_NAME_KEY];
         self.twitter = [dictionary objectForKey:SPONSOR_TWITTER_KEY];
         self.speakerType = [[dictionary objectForKey:SPONSOR_TYPE_KEY] intValue];
+        self.webSite = [dictionary objectForKey:SPONSOR_SITE_KEY];
     }
     return self;
 }
@@ -63,5 +65,14 @@
             self.descriptionImage = nil;
         }
     }
+}
+-(vidSpeaker *)toSpeaker
+{
+    vidSpeaker * speaker = [[vidSpeaker alloc] init];
+    speaker.name = self.name;
+    speaker.longDescription = self.descriptionText;
+    speaker.twitter = self.twitter;
+    speaker.webSite = self.webSite;
+    return speaker;
 }
 @end
