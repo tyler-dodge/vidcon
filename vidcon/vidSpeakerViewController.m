@@ -61,7 +61,7 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSUInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     if (tableView == self.tableView) {
         // Return the number of sections.
@@ -71,7 +71,7 @@
     }
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSUInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSUInteger)section
 {
     if (tableView == self.tableView) {
         // Return the number of rows in the section.
@@ -168,7 +168,7 @@
     }
 }
 
--(NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
+-(NSUInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSUInteger)index
 {
     if (index == 0) {
         self.tableView.contentOffset = CGPointMake(0, 0);
@@ -193,7 +193,7 @@
 }
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
-    NSInteger count = self.model.searchResults.count;
+    NSUInteger count = self.model.searchResults.count;
     [self.model updateSearch:searchString];
     return count != self.model.searchResults.count;
 }

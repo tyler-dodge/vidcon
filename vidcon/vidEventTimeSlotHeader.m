@@ -78,7 +78,9 @@
                                      28);
         }
         labelPosition += self.widthPerInterval;
-    }    [self.delegate vidEventTimeSlotHeader:self updatedWithNewStart:self.start withNewEnd:self.end];
+    }
+    id delegate = self.delegate;
+    [delegate vidEventTimeSlotHeader:self updatedWithNewStart:self.start withNewEnd:self.end];
 }
 -(UILabel *)dateLabel
 {
@@ -95,7 +97,7 @@
     }
     return _dateLabel;
 }
--(void)initWithInterval:(NSTimeInterval)timeInterval
+-(void)initializeWithInterval:(NSTimeInterval)timeInterval
 WithWidthPerInterval:(float)widthPerInterval
        startInterval:(NSDate *)minimum
 {

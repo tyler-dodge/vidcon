@@ -64,8 +64,9 @@
                        border-bottom: 1px solid #666; \
                        display: block; \
                        }​</style></head><body>%@</body></html>",self.event.details];
-    [self.descriptionView loadHTMLString:html baseURL:[[NSURL alloc] initWithString:@""]];
-    [self.descriptionView.scrollView setScrollEnabled:NO];
+    UIWebView * view = self.descriptionView;
+    [view loadHTMLString:html baseURL:[[NSURL alloc] initWithString:@""]];
+    [view.scrollView setScrollEnabled:NO];
 }
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {

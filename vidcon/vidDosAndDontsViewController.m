@@ -19,7 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.webView loadHTMLString:@"<html><head><style>h1 { \
+    UIWebView * webView = self.webView;
+    [webView loadHTMLString:@"<html><head><style>h1 { \
                          display:block; \
      font-size: 18px; \
      font-weight: bold; \

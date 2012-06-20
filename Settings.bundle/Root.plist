@@ -6,15 +6,11 @@
 	<array>
 		<dict>
 			<key>Type</key>
-			<string>PSGroupSpecifier</string>
+			<string>PSChildPaneSpecifier</string>
+			<key>File</key>
+			<string>about</string>
 			<key>Title</key>
 			<string>About</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-			<key>Title</key>
-			<string>Sponsor Logo’s used with contractual permission between Bryan Allen Events and 3rd party sponsors.  All content has been pre approved for this apps use.All icons used with permission from http://icons.mysitemyway.com and http://glyphish.com under the Creative Commons License 3.0The Bump name, logo, and hands-bumping icon are trademarks of Bump Technologies, Inc. in the United States and other countries. API used with permission </string>
 		</dict>
 	</array>
 	<key>StringsTable</key>

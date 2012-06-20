@@ -18,7 +18,7 @@
                    withNewEnd:(NSDate *)end;
 @end
 @interface vidEventTimeSlotHeader : UIView
--(void)initWithInterval:(NSTimeInterval)timeInterval
+-(void)initializeWithInterval:(NSTimeInterval)timeInterval
                        WithWidthPerInterval:(float)widthPerInterval
                               startInterval:(NSDate *)minimum;
 -(void)setStartDate:(NSTimeInterval)timeSinceMinimum;

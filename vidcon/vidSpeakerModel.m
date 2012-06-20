@@ -92,19 +92,19 @@
                                                               error:&error];
     int indexCounter = 0;
     [self.speakerIndex addObject:[NSNumber numberWithInt:0]];
-    char lastLetter = 'A';
+    unichar lastLetter = 'A';
     for (NSDictionary * speakerData in speakerList) {
         vidSpeaker * speaker = [[vidSpeaker alloc] init];
         speaker.name = [speakerData valueForKey:@"name"];
         bool foundLetter = NO;
         int index = 0;
-        char checkLetter = 0;
+        unichar checkLetter = 0;
         if ([speaker.name characterAtIndex:0] <= '9' && [speaker.name characterAtIndex:0] >= '0') {
             
         } else {
             
             while (!foundLetter) {
-                checkLetter = [speaker.name characterAtIndex:index++];
+                checkLetter = [speaker.name characterAtIndex:(NSUInteger)index++];
                 if (checkLetter >= 'a' && checkLetter <= 'z') {
                     checkLetter += 'A'-'a';
                 }
@@ -137,7 +137,7 @@
 }
 -(vidSpeaker *)speakerAtIndexPath:(NSIndexPath *)path
 {
-    NSInteger index = [[self.speakerIndex objectAtIndex:[path indexAtPosition:0]] intValue] +
+    NSUInteger index = [[self.speakerIndex objectAtIndex:[path indexAtPosition:0]] unsignedIntegerValue] +
     [path indexAtPosition:1];
     vidSpeaker * speaker = [self.speakers objectAtIndex:index];
     speaker.index = index;
@@ -150,12 +150,12 @@
 -(NSUInteger)speakersInSection:(NSUInteger)section
 {
     if (section == self.speakerIndex.count - 1) {
-        return self.speakers.count - [[self.speakerIndex objectAtIndex:section] intValue];
+        return self.speakers.count - [[self.speakerIndex objectAtIndex:section] unsignedIntegerValue];
     } else if (section >= self.speakerIndex.count) {
         return 0;
     } else {
-        return [[self.speakerIndex objectAtIndex:section+1] intValue] -
-        [[self.speakerIndex objectAtIndex:section] intValue];
+        return [[self.speakerIndex objectAtIndex:section+1] unsignedIntegerValue] -
+        [[self.speakerIndex objectAtIndex:section] unsignedIntegerValue];
     }
 }
 -(NSUInteger)numberOfSections
@@ -171,7 +171,7 @@
 {
     NSMutableArray * newSearchResults;
     if (term.length < 20) { //just to prevent memory madness!!!
-        if (self.lastSearchCount <= term.length) {
+        if ((NSUInteger)self.lastSearchCount <= term.length) {
             newSearchResults = [[NSMutableArray alloc] init];
             NSArray * tokens = [term.lowercaseString componentsSeparatedByString:@" "];
             for (vidSpeaker * speaker in self.searchResults) {

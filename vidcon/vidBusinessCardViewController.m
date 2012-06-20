@@ -30,6 +30,7 @@
 @synthesize isPresenting = _isPresenting;
 @synthesize presentLock = _presentLock;
 @synthesize savedCards = _savedCards;
+@synthesize businessCard = _businessCard;
 -(NSArray *)savedCards
 {
     if (!_savedCards) {

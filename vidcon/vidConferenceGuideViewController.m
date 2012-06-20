@@ -25,7 +25,6 @@
 @synthesize unusedCells = _unusedCells;
 @synthesize startTimeSinceMinimum = _startTimeSinceMinimum;
 
-#pragma Lazy instantiation
 -(NSMutableDictionary *)eventCells
 {
     if (!_eventCells) {
@@ -74,7 +73,7 @@
 {
     
     _eventHeader = eventHeader;
-    [_eventHeader initWithInterval:DEFAULT_TIME_WIDTH * 60 WithWidthPerInterval:WIDTH_PER_MINUTE * DEFAULT_TIME_WIDTH startInterval:[NSDate dateWithTimeIntervalSince1970:VIDCON_START_DATE]];
+    [self.eventHeader initializeWithInterval:DEFAULT_TIME_WIDTH * 60 WithWidthPerInterval:WIDTH_PER_MINUTE * DEFAULT_TIME_WIDTH startInterval:[NSDate dateWithTimeIntervalSince1970:VIDCON_START_DATE]];
 }
 -(void)setEventScrollView:(UIScrollView *)eventScrollView
 {
@@ -117,12 +116,14 @@
                 cell = [self.unusedCells lastObject];
                 [self.unusedCells removeLastObject];
                 cell.event = event;
-                [self.eventScrollView addSubview:cell];
+                id eventScrollView = self.eventScrollView;
+                [eventScrollView addSubview:cell];
             } else {
                 cell = [[vidConferenceEventCell alloc] initWithEvent:event minimumDate:[NSDate dateWithTimeIntervalSince1970:VIDCON_START_DATE]
-                                                        withMinimumX:self.eventScrollView.contentOffset.x];
+                                                        withMinimumX:(NSInteger)self.eventScrollView.contentOffset.x];
                 cell.delegate = self;
-                [self.eventScrollView addSubview:cell];
+                id eventScrollView = self.eventScrollView;
+                [eventScrollView addSubview:cell];
             }
             cell.minimumX = self.eventScrollView.contentOffset.x;
             [self.eventCells setValue:cell forKey:[event.uid description]];

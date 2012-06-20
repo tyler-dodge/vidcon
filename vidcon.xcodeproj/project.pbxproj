@@ -80,9 +80,10 @@
 		8F736ABC158C1B6D00E72AC7 /* wt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8F736ABB158C1B6D00E72AC7 /* wt.pdf */; };
 		8F736ABE158C1C7A00E72AC7 /* whatsTrending.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F736ABD158C1C7900E72AC7 /* whatsTrending.png */; };
 		8F736AC1158C1F2800E72AC7 /* ExpoHall.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F736ABF158C1F2800E72AC7 /* ExpoHall.png */; };
-		8F736AC2158C1F2800E72AC7 /* hotelsFourthFloor.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F736AC0158C1F2800E72AC7 /* hotelsFourthFloor.png */; };
+		8F736AC2158C1F2800E72AC7 /* hotelsFourth.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F736AC0158C1F2800E72AC7 /* hotelsFourth.png */; };
 		8F760BA21575A80E00C71652 /* guests.json in Resources */ = {isa = PBXBuildFile; fileRef = 8F760BA11575A80E00C71652 /* guests.json */; };
 		8F760BAD1575B44400C71652 /* vidSelectedSpeakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F760BAC1575B44400C71652 /* vidSelectedSpeakerViewController.m */; };
+		8F9A7FE11592265800B9F1B4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9A7FE01592265700B9F1B4 /* Reachability.m */; };
 		8FA656651588305600D612B3 /* guide.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA656641588305600D612B3 /* guide.json */; };
 		8FA6566715883DEC00D612B3 /* scratch.json in Resources */ = {isa = PBXBuildFile; fileRef = 8FA6566615883DEC00D612B3 /* scratch.json */; };
 		8FA6566E1588F44900D612B3 /* vidConferenceEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6566D1588F44900D612B3 /* vidConferenceEventViewController.m */; };
@@ -362,6 +363,7 @@
 		8FE4399515471E0C003D9657 /* vidConferenceEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4399415471E0C003D9657 /* vidConferenceEventCell.m */; };
 		8FE4399D1547287D003D9657 /* vidConferenceGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4399C1547287D003D9657 /* vidConferenceGuideViewController.m */; };
 		8FE439A5154728FC003D9657 /* vidEventTimeSlotHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE439A4154728FC003D9657 /* vidEventTimeSlotHeader.m */; };
+		8FE9FA1E15923A0F00CC5E25 /* ParkingMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FE9FA1D15923A0F00CC5E25 /* ParkingMap.png */; };
 		8FEA7FF9158AB65200847B0D /* vidDosAndDontsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEA7FF8158AB65100847B0D /* vidDosAndDontsViewController.m */; };
 		8FEA8002158AB90800847B0D /* Alloydigital-Sponsor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FEA7FFA158AB90800847B0D /* Alloydigital-Sponsor@2x.png */; };
 		8FEA8003158AB90800847B0D /* Blip-Sponsor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FEA7FFB158AB90800847B0D /* Blip-Sponsor@2x.png */; };
@@ -481,10 +483,12 @@
 		8F736ABB158C1B6D00E72AC7 /* wt.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wt.pdf; sourceTree = "<group>"; };
 		8F736ABD158C1C7900E72AC7 /* whatsTrending.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whatsTrending.png; sourceTree = "<group>"; };
 		8F736ABF158C1F2800E72AC7 /* ExpoHall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExpoHall.png; sourceTree = "<group>"; };
-		8F736AC0158C1F2800E72AC7 /* hotelsFourthFloor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotelsFourthFloor.png; sourceTree = "<group>"; };
+		8F736AC0158C1F2800E72AC7 /* hotelsFourth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hotelsFourth.png; sourceTree = "<group>"; };
 		8F760BA11575A80E00C71652 /* guests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guests.json; sourceTree = "<group>"; };
 		8F760BAB1575B44400C71652 /* vidSelectedSpeakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidSelectedSpeakerViewController.h; sourceTree = "<group>"; };
 		8F760BAC1575B44400C71652 /* vidSelectedSpeakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidSelectedSpeakerViewController.m; sourceTree = "<group>"; };
+		8F9A7FDF1592265700B9F1B4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8F9A7FE01592265700B9F1B4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		8FA656641588305600D612B3 /* guide.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guide.json; sourceTree = "<group>"; };
 		8FA6566615883DEC00D612B3 /* scratch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scratch.json; sourceTree = "<group>"; };
 		8FA6566C1588F44900D612B3 /* vidConferenceEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidConferenceEventViewController.h; sourceTree = "<group>"; };
@@ -779,6 +783,7 @@
 		8FE4399C1547287D003D9657 /* vidConferenceGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidConferenceGuideViewController.m; sourceTree = "<group>"; };
 		8FE439A3154728FC003D9657 /* vidEventTimeSlotHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidEventTimeSlotHeader.h; sourceTree = "<group>"; };
 		8FE439A4154728FC003D9657 /* vidEventTimeSlotHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidEventTimeSlotHeader.m; sourceTree = "<group>"; };
+		8FE9FA1D15923A0F00CC5E25 /* ParkingMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ParkingMap.png; sourceTree = "<group>"; };
 		8FEA7FF7158AB65000847B0D /* vidDosAndDontsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vidDosAndDontsViewController.h; sourceTree = "<group>"; };
 		8FEA7FF8158AB65100847B0D /* vidDosAndDontsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vidDosAndDontsViewController.m; sourceTree = "<group>"; };
 		8FEA7FFA158AB90800847B0D /* Alloydigital-Sponsor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alloydigital-Sponsor@2x.png"; sourceTree = "<group>"; };
@@ -816,6 +821,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F371C091523FA3A008943A2 /* SystemConfiguration.framework in Frameworks */,
 				8FBF4B3E158AF61B00696238 /* Twitter.framework in Frameworks */,
 				8FBF4B3B158AF61400696238 /* Accounts.framework in Frameworks */,
 				8F371C051523FA28008943A2 /* AudioToolbox.framework in Frameworks */,
@@ -825,7 +831,6 @@
 				8F371C0D1523FA54008943A2 /* libz.1.1.3.dylib in Frameworks */,
 				8F6BA04D1523BDFC004C5DF3 /* CoreGraphics.framework in Frameworks */,
 				8F371C0B1523FA42008943A2 /* MobileCoreServices.framework in Frameworks */,
-				8F371C091523FA3A008943A2 /* SystemConfiguration.framework in Frameworks */,
 				8F371C071523FA32008943A2 /* CFNetwork.framework in Frameworks */,
 				8F6BA0491523BDFC004C5DF3 /* UIKit.framework in Frameworks */,
 				8F6BA04B1523BDFC004C5DF3 /* Foundation.framework in Frameworks */,
@@ -958,6 +963,8 @@
 				8FA7877C157677030031FFE3 /* vidBusinessCardViewController.m */,
 				8FBF4D40158BB0BC00696238 /* vidBumpViewController.h */,
 				8FBF4D41158BB0BC00696238 /* vidBumpViewController.m */,
+				8F9A7FDF1592265700B9F1B4 /* Reachability.h */,
+				8F9A7FE01592265700B9F1B4 /* Reachability.m */,
 			);
 			path = vidcon;
 			sourceTree = "<group>";
@@ -1261,7 +1268,8 @@
 			isa = PBXGroup;
 			children = (
 				8F736ABF158C1F2800E72AC7 /* ExpoHall.png */,
-				8F736AC0158C1F2800E72AC7 /* hotelsFourthFloor.png */,
+				8F736AC0158C1F2800E72AC7 /* hotelsFourth.png */,
+				8FE9FA1D15923A0F00CC5E25 /* ParkingMap.png */,
 				F3C02557158B127400FD0381 /* FirstFloor.png */,
 				F3C02559158B127400FD0381 /* hotelsSecond.png */,
 				F3C0255A158B127400FD0381 /* SecondFloor.png */,
@@ -1790,7 +1798,8 @@
 				8F736ABC158C1B6D00E72AC7 /* wt.pdf in Resources */,
 				8F736ABE158C1C7A00E72AC7 /* whatsTrending.png in Resources */,
 				8F736AC1158C1F2800E72AC7 /* ExpoHall.png in Resources */,
-				8F736AC2158C1F2800E72AC7 /* hotelsFourthFloor.png in Resources */,
+				8F736AC2158C1F2800E72AC7 /* hotelsFourth.png in Resources */,
+				8FE9FA1E15923A0F00CC5E25 /* ParkingMap.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1855,6 +1864,7 @@
 				8FEA7FF9158AB65200847B0D /* vidDosAndDontsViewController.m in Sources */,
 				8F62F5BA158AEC7700D87A67 /* vidSavedCardViewController.m in Sources */,
 				8FBF4D42158BB0BC00696238 /* vidBumpViewController.m in Sources */,
+				8F9A7FE11592265800B9F1B4 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1954,6 +1964,14 @@
 		8F6BA07B1523BDFC004C5DF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -1964,7 +1982,23 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "vidcon/vidcon-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
 				INFOPLIST_FILE = "vidcon/vidcon-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
@@ -1975,6 +2009,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -1984,6 +2019,14 @@
 		8F6BA07C1523BDFC004C5DF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -1994,7 +2037,23 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "vidcon/vidcon-Prefix.pch";
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
 				INFOPLIST_FILE = "vidcon/vidcon-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
@@ -2005,6 +2064,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

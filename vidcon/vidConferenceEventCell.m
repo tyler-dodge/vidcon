@@ -88,7 +88,7 @@
 }
 +(float)widthFromStart:(NSDate *)start toEnd:(NSDate *)end
 {
-    return [end timeIntervalSinceDate:start] / SECONDS_IN_MINUTE * WIDTH_PER_MINUTE;
+    return (float)[end timeIntervalSinceDate:start] / SECONDS_IN_MINUTE * WIDTH_PER_MINUTE;
 }
 -(vidConferenceEventCell *)initWithEvent:(vidConferenceEvent *)event minimumDate:(NSDate *)minimum withMinimumX:(NSInteger)minimumX
 {
@@ -115,6 +115,7 @@
 }
 -(void)cellTapped:(UIGestureRecognizer *)gesture
 {
-    [self.delegate didTapEventCell:self withEvent:self.event];
+    id delegate = self.delegate;
+    [delegate didTapEventCell:self withEvent:self.event];
 }
 @end

@@ -22,7 +22,7 @@
 @end
 @interface vidSpeakerModel : NSObject
 
-@property (readonly) NSUInteger speakerCount;
+@property (nonatomic, readonly) NSUInteger speakerCount;
 
 -(vidSpeaker *)speakerAtIndexPath:(NSIndexPath *)path;
 

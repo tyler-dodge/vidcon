@@ -43,11 +43,13 @@
 }
 -(void)clickedDone:(id)button
 {
-    [self.delegate SelectedSpeakerView:self didAcceptWithSpeaker:self.speaker];
+    id delegate = self.delegate;
+    [delegate SelectedSpeakerView:self didAcceptWithSpeaker:self.speaker];
 }
 -(void)clickedCancel:(id)button
 {
-    [self.delegate SelectedSpeakerView:self didCancelWithSpeaker:self.speaker];
+    id delegate = self.delegate;
+    [delegate SelectedSpeakerView:self didCancelWithSpeaker:self.speaker];
 }
 -(void)viewDidLoad
 {
@@ -68,7 +70,8 @@
         self.speakerImage.layer.borderColor = [[UIColor blackColor] CGColor];
         self.speakerImage.layer.borderWidth = 1;
     } else {
-        [self.speakerName setFrame:CGRectMake(0, 0, self.speakerName.superview.frame.size.width,
+        id speakerName = self.speakerName;
+        [speakerName setFrame:CGRectMake(0, 0, self.speakerName.superview.frame.size.width,
                                              self.speakerName.frame.size.height)];
         self.speakerName.textAlignment = UITextAlignmentCenter;
     }
@@ -105,7 +108,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([indexPath indexAtPosition:0] > 0) {
-        int index = [indexPath indexAtPosition:0];
+        NSUInteger index = [indexPath indexAtPosition:0];
         NSURL *url;
         switch (index) {
             case TWITTER_INDEX:

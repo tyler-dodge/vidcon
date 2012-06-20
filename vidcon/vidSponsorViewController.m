@@ -61,7 +61,7 @@
     return cell;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSUInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     switch (section) {
         case YOUTUBE_SECTION:
@@ -150,7 +150,8 @@
         controller.sponsor = self.selectedSponsor;
     } else if ([segue.destinationViewController isKindOfClass:[vidSelectedSpeakerViewController class]]) {
         vidSelectedSpeakerViewController * speakerController = (vidSelectedSpeakerViewController *)segue.destinationViewController;
-        speakerController.speaker = [self.selectedSponsor toSpeaker];
+        id selectedSponsor = self.selectedSponsor;
+        speakerController.speaker = [selectedSponsor toSpeaker];
     }
 }
 @end

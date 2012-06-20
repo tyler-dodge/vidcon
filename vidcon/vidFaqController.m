@@ -13,7 +13,7 @@
 @end
 
 @implementation vidFaqController
-@synthesize webView;
+@synthesize webView = _webView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.webView loadHTMLString:@"<html><head><style>h1 { \
+    id webView = self.webView;
+    [webView loadHTMLString:@"<html><head><style>h1 { \
                          display:block; \
      font-size: 16px; \
      font-weight: bold; \

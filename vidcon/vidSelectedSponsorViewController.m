@@ -35,11 +35,13 @@
     self.imageView.frame = CGRectMake(0, 0, self.scrollView.contentSize.width, self.scrollView.contentSize.height);
     self.imageView.image = self.sponsor.descriptionImage;
     if ([self.sponsor.webSite isEqualToString:@""]) {
-        [self.websiteButton removeFromSuperview];
+        id websiteButton = self.websiteButton;
+        [websiteButton removeFromSuperview];
         self.twitterButton.center = CGPointMake(self.twitterButton.superview.frame.size.width / 2, self.twitterButton.center.y);
     }
     if ([self.sponsor.twitter isEqualToString:@""]) {
-        [self.twitterButton removeFromSuperview];
+        id twitterButton = self.twitterButton;
+        [twitterButton removeFromSuperview];
         self.websiteButton.center = CGPointMake(self.websiteButton.superview.frame.size.width / 2, self.websiteButton.center.y);
     }
 	// Do any additional setup after loading the view.

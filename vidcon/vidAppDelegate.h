@@ -19,10 +19,15 @@
  */
 
 #import <UIKit/UIKit.h>
-
+@class vidAppDelegate;
+@protocol vidNewsDelegate
+@optional
+-(void)vidAppDelegate:(vidAppDelegate *)delegate;
+@end
 @interface vidAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic) dispatch_queue_t parseQueue;
-
+@property (weak, atomic) id<vidNewsDelegate> newsDelegate;
 @property (strong, nonatomic) UIWindow *window;
+@property (atomic) BOOL shouldReloadNews;
 @end

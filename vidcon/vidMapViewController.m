@@ -21,7 +21,7 @@
 -(float)defaultScale
 {
     if (!_defaultScale) {
-        _defaultScale = 0.3;
+        _defaultScale = 0.3f;
     }
     return _defaultScale;
 }
