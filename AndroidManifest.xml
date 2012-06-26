@@ -16,21 +16,21 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       android:versionCode="1"
-      android:versionName="1.0" package="com.example.android.accelerometerplay">
+      android:versionName="1.0" package="com.stingapp.vidcon">
     <application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name=".AccelerometerPlayActivity"
+        <activity android:name=".VidconActivity"
                   android:label="@string/app_name"
-                  android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+                  android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+		<activity android:name=".BusinessCardActivity" />
+		<activity android:name=".SpeakersActivity" />
+		<activity android:name=".SponsorsActivity" />
     </application>
-
-
-<uses-sdk android:minSdkVersion="5"></uses-sdk>
+<uses-sdk android:minSdkVersion="7" />
 <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
 
 <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
