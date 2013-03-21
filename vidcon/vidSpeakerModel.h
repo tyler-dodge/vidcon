@@ -7,19 +7,32 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <JSONKit/JSONKit.h>
 @interface vidSpeaker : NSObject
-@property (strong, readonly) NSString * name;
-@property (strong, readonly) UIImage * image;
-@property (strong, readonly) NSString * shortDescription;
-@property (strong, readonly) NSString * longDescription;
+@property (strong, nonatomic) NSString * name;
+@property (strong, nonatomic) UIImage * image;
+@property (strong, nonatomic) NSString * shortDescription;
+@property (strong, nonatomic) NSString * longDescription;
+@property (strong, nonatomic) NSString * twitter;
+@property (strong, nonatomic) NSString * youtube;
+@property (strong, nonatomic) NSString * facebook;
+@property (strong, nonatomic) NSString * webSite;
+@property (nonatomic) NSUInteger index;
+@property (nonatomic) bool hasImage;
+
 @end
 @interface vidSpeakerModel : NSObject
 
-@property (readonly) NSUInteger speakerCount;
+@property (nonatomic, readonly) NSUInteger speakerCount;
 
 -(vidSpeaker *)speakerAtIndexPath:(NSIndexPath *)path;
 
 -(vidSpeakerModel *)initWithJsonFile:(NSString *)filePath;
 
+-(NSUInteger)speakersInSection:(NSUInteger)section;
+-(NSUInteger)numberOfSections;
+
+-(void)startSearch;
+-(void)updateSearch:(NSString *)term;
+@property (strong, readwrite, nonatomic)NSArray * searchResults;
+-(void)endSearch;
 @end

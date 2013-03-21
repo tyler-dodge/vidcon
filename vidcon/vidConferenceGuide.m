@@ -20,7 +20,7 @@
 -(NSDate *)firstDate
 {
     if (!_firstDate) {
-        _firstDate = [NSDate dateWithTimeIntervalSince1970:0];
+        _firstDate = [NSDate distantFuture];
     }
     return _firstDate;
 }
